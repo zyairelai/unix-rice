@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Kali-X
+Comment=The Kali Linux Default Theme.
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Kali-X
+MetacityTheme=Kali-X
+IconTheme=Vibrancy-Kali
+CursorTheme=Adwaita
+ButtonLayout=:minimize,maximize,close

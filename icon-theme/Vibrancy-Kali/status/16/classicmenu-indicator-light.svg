@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg3172"
+   height="16"
+   width="16"
+   version="1.0"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="classicmenu-indicator-light.svg">
+  <defs
+     id="defs9" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1195"
+     inkscape:window-height="797"
+     id="namedview7"
+     showgrid="false"
+     inkscape:zoom="14.75"
+     inkscape:cx="7.9592899"
+     inkscape:cy="2.5645287"
+     inkscape:window-x="472"
+     inkscape:window-y="133"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg3172" />
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     inkscape:connector-curvature="0"
+     id="menu-3-icon"
+     d="m 8.6295437,4.8894268 -8.28931638,0 0,-2.3946915 8.28931638,0 0,2.3946915 z m 0,2.2104844 -8.28931638,0 0,2.3946914 8.28931638,0 0,-2.3946914 z m 0,4.6051758 -8.28931638,0 0,2.394692 8.28931638,0 0,-2.394692 z m 1.6248903,-4.8111929 2.632208,3.2096609 2.632245,-3.2096609 -5.264453,0 z"
+     style="fill:#252525;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+</svg>
