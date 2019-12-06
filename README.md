@@ -1,4 +1,4 @@
-# myDesktop
+# ZyDesktop
 Just some Desktop and icon configuration, my favorite anyway  
 
 # Run this
