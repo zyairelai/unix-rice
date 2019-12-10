@@ -1,5 +1,5 @@
-# Zydesktop
-Just some Desktop and icon configuration, my favorite anyway  
+# Zyubuntu
+A setup for my Ubuntu Desktop, install and uninstall some applications that I always use and not using. Also some configurations for the Desktop and Icons. Also keyboard shortcut. Fully configured for immediate use after installing Ubuntu and running this script. 
 
 # Run this
 `./install.sh`  
