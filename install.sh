@@ -6,5 +6,5 @@ mv icon-theme/Vibrancy-Kali /usr/share/icons/
 mv icon-theme/Vibrancy-Kali-Dark /usr/share/icons/
 mv icon-theme/Vibrancy-Kali-Full-Dark /usr/share/icons/
 
-apt install git atree pdftk gnome-tweaks telegram-desktop python3-pip nmap wireshark
+apt install net-tools git atree pdftk gnome-tweaks telegram-desktop python3-pip nmap wireshark
 apt remove texlive*
