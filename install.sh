@@ -8,3 +8,7 @@ mv icon-theme/Vibrancy-Kali-Full-Dark /usr/share/icons/
 
 apt install net-tools git screenfetch tree pdftk gnome-tweaks telegram-desktop python3-pip nmap wireshark
 apt remove texlive*
+
+echo "#hackthebox" >> ~/.bashrc 
+echo "export htb=/home/zyaire/Desktop/hackthebox" >> ~/.bashrc 
+echo "export hackthebox=$htb" >> ~/.bashrc 
