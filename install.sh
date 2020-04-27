@@ -10,5 +10,14 @@ apt install net-tools git screenfetch tree pdftk gnome-tweaks telegram-desktop p
 apt remove texlive*
 
 echo "#hackthebox" >> ~/.bashrc 
-echo "export htb=/home/zyaire/Desktop/hackthebox" >> ~/.bashrc 
-echo "export hackthebox=$htb" >> ~/.bashrc 
+echo "export hackthebox=/home/zyaire/Desktop/hackthebox" >> ~/.bashrc 
+echo "export htb=$hackthebox" >> ~/.bashrc 
+echo "" >> ~/.bashrc
+
+mkdir /home/zyaire/Desktop/git
+mkdir /home/zyaire/Desktop/MyProject
+echo "#GitHub" >> ~/.bashrc
+echo "export github=/home/zyaire/Desktop/git" >> ~/.bashrc
+echo "export git=$github" >> ~/.bashrc
+echo "export myProject=/home/zyaire/Desktop/git/MyProject" >> ~/.bashrc
+echo "export me=$myProject" >> ~/.bashrc
