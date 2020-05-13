@@ -6,7 +6,9 @@ mv icon-theme/Vibrancy-Kali /usr/share/icons/
 mv icon-theme/Vibrancy-Kali-Dark /usr/share/icons/
 mv icon-theme/Vibrancy-Kali-Full-Dark /usr/share/icons/
 
-apt install net-tools git screenfetch tree pdftk gnome-tweaks telegram-desktop python3-pip nmap wireshark
+apt install git tree pdftk python3-pip 
+          \ screenfetch gnome-tweaks
+          \ net-tools nmap wireshark
 apt remove texlive*
 
 echo "#hackthebox" >> ~/.bashrc 
