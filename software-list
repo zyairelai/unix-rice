@@ -10,8 +10,11 @@ Telegram
 - https://www.exodus.io/download/
 
 (Add on tools)
-- msfconsole
 - searchsploit
+- msfconsole
+- armitage
+- burpsuite
+- zenmap
 
 Never tried
 - https://github.com/ParrotSec/anonsurf
