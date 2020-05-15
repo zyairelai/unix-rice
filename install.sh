@@ -13,7 +13,6 @@ ln -s /home/zyaire/Desktop/hackthebox ~/hackthebox
 sudo apt install pdftk
 
 # MUST CHECK
-sudo apt install net-tools
 sudo apt install git  
 sudo apt install curl
 sudo apt install tree
