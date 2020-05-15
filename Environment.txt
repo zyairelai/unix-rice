@@ -1,4 +1,4 @@
-Add this to the bottom of the .bashrc to set environment
+Add this to the bottom of the .bashrc to set environment path
 
 #hackthebox
 export hackthebox=/home/zyaire/Desktop/hackthebox
