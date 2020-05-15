@@ -4,6 +4,11 @@ mv icon-theme/Vibrancy-Kali /usr/share/icons/
 mv icon-theme/Vibrancy-Kali-Dark /usr/share/icons/
 mv icon-theme/Vibrancy-Kali-Full-Dark /usr/share/icons/
 
+mkdir /home/zyaire/Desktop/git
+mkdir /home/zyaire/Desktop/git/MyProject
+ln -s /home/zyaire/Desktop/git ~/git
+ln -s /home/zyaire/Desktop/hackthebox ~/hackthebox
+
 # PDFtk is to split and merge PDF files
 sudo apt install pdftk
 
