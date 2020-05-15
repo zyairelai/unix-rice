@@ -15,5 +15,6 @@ sudo apt install net-tools
 
 # For Development
 sudo apt install git  
+sudo apt install curl
 sudo apt install nmap 
 sudo apt install wireshark
