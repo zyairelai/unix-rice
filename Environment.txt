@@ -1,5 +1,4 @@
-Add this to the bottom of the .bashrc to set Environment Path
-But I never use this anymore after I started using https://github.com/ohmyzsh/ohmyzsh
+Add this to the bottom of the .bashrc or .zshrc to set Environment Path
 
 #hackthebox
 export hackthebox=/home/zyaire/Desktop/hackthebox
