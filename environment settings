@@ -1,0 +1,11 @@
+Add this to the bottom of the .bashrc to set environment
+
+#hackthebox
+export hackthebox=/home/zyaire/Desktop/hackthebox
+export htb=$hackthebox
+
+#GitHub
+export github=/home/zyaire/Desktop/git
+export git=$github
+export myProject=/home/zyaire/Desktop/git/MyProject
+export me=$myProject
