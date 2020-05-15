@@ -15,7 +15,7 @@ echo "export htb=$hackthebox" >> ~/.bashrc
 echo "" >> ~/.bashrc
 
 mkdir /home/zyaire/Desktop/git
-mkdir /home/zyaire/Desktop/MyProject
+mkdir /home/zyaire/Desktop/git/MyProject
 echo "#GitHub" >> ~/.bashrc
 echo "export github=/home/zyaire/Desktop/git" >> ~/.bashrc
 echo "export git=$github" >> ~/.bashrc
