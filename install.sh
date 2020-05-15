@@ -7,7 +7,6 @@ mv icon-theme/Vibrancy-Kali-Full-Dark /usr/share/icons/
 apt install git tree pdftk 
           \ screenfetch gnome-tweaks
           \ net-tools nmap wireshark
-apt remove texlive*
 
 echo "#hackthebox" >> ~/.bashrc 
 echo "export hackthebox=/home/zyaire/Desktop/hackthebox" >> ~/.bashrc 
