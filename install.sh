@@ -8,9 +8,9 @@ mv icon-theme/Vibrancy-Kali-Full-Dark /usr/share/icons/
 sudo apt install pdftk
 
 # For Customization
+sudo apt install gnome-tweaks-tool
 sudo apt install tree
 sudo apt install screenfetch
-sudo apt install gnome-tweaks
 sudo apt install net-tools
 
 # For Development
