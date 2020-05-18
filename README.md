@@ -8,6 +8,9 @@ sudo apt install git curl
 git clone https://github.com/louiszhenyean/Zyubuntu.git
 git clone https://github.com/louiszhenyean/hackthebox /home/zyaire/Desktop/hackthebox
 ```
+
+https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
+
 # Self changing settings
 `sudo ./install.sh`
 
@@ -15,9 +18,16 @@ git clone https://github.com/louiszhenyean/hackthebox /home/zyaire/Desktop/hackt
 
 `git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k`
 
-`nano ~/.zshrc`
+Edit `~/.zshrc` 
+```
+ZSH_THEME="powerlevel9k/powerlevel9k"
+POWERLEVEL9K_MODE="nerdfont-complete"
 
-Set ZSH_THEME="powerlevel9k/powerlevel9k"
+POWERLEVEL9K_DISABLE_RPROMPT=true 
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true 
+POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="~$ " 
+POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
+```
 
 ```chsh -s $(which zsh)```
 
