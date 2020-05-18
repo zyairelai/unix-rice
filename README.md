@@ -15,3 +15,8 @@ Also some configurations for the Desktop, Icons and keyboard shortcut.
 `Set ZSH_THEME="powerlevel9k/powerlevel9k"`
 
 `chsh -s $(which zsh)`
+
+# Install Gnome Extensions
+https://extensions.gnome.org/extension/19/user-themes/
+
+https://extensions.gnome.org/extension/307/dash-to-dock/
