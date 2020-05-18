@@ -1,18 +1,12 @@
+(Gnome Extensions)
+https://extensions.gnome.org/extension/19/user-themes/
+https://extensions.gnome.org/extension/307/dash-to-dock/
+
 (App Store)
 - Discord
 - Sublime Text
 - Visual Studio Code
 - Telegram
-
-(.deb package)
-- https://www.exodus.io/download/
-
-(Add on tools)
-- searchsploit
-- msfconsole
-- armitage
-- burpsuite
-- zenmap
 
 Never tried
 - https://github.com/ParrotSec/anonsurf
