@@ -10,12 +10,3 @@ cp hardcoding.jpg /usr/share/backgrounds/
 
 # For Customization
 sudo apt install chrome-gnome-shell gnome-tweak-tool fonts-powerline screenfetch tree zsh nmap
-
-# Installing Zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
-
-# For Development
-sudo git clone https://github.com/offensive-security/exploitdb.git /opt/exploitdb
-sed 's|path_array+=(.*)|path_array+=("/opt/exploitdb")|g' /opt/exploitdb/.searchsploit_rc > ~/.searchsploit_rc
-sudo ln -sf /opt/exploitdb/searchsploit /usr/local/bin/searchsploit
