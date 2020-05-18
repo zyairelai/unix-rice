@@ -8,4 +8,4 @@ ln -s /home/zyaire/Desktop/hackthebox ~/hackthebox
 cp hardcoding.jpg /usr/share/backgrounds/
 
 # For Customization
-sudo apt install chrome-gnome-shell gnome-tweak-tool fonts-powerline neofetch tree zsh nmap
+sudo apt install chrome-gnome-shell gnome-tweak-tool fonts-powerline tree neofetch zsh tmux nmap
