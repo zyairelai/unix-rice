@@ -14,10 +14,7 @@ sudo apt install pdftk
 
 # MUST CHECK
 sudo cp /bin/xdg-open /bin/open
-sudo apt install git  
-sudo apt install curl
-sudo apt install tree
-sudo apt install screenfetch
+sudo apt install git curl tree screenfetch
 
 # For Customization
 sudo apt install gnome-tweaks-tool
