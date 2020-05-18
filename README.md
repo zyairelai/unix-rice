@@ -6,6 +6,7 @@ Also some configurations for the Desktop, Icons and keyboard shortcut.
 ```
 sudo apt install git curl
 git clone https://github.com/louiszhenyean/Zyubuntu.git
+git clone https://github.com/louiszhenyean/hackthebox /home/zyaire/Desktop/hackthebox
 ```
 # Self changing settings
 `sudo ./install.sh`

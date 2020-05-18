@@ -3,7 +3,6 @@ sudo cp /bin/xdg-open /bin/open
 
 mkdir /home/zyaire/Desktop/git
 mkdir /home/zyaire/Desktop/git/MyProject
-git clone https://github.com/louiszhenyean/hackthebox /home/zyaire/Desktop/hackthebox
 ln -s /home/zyaire/Desktop/git ~/git
 ln -s /home/zyaire/Desktop/hackthebox ~/hackthebox
 cp hardcoding.jpg /usr/share/backgrounds/
