@@ -5,6 +5,8 @@ Also some configurations for the Desktop, Icons and keyboard shortcut.
 # Prerequisite
 `sudo apt install git curl`
 
+`git clone https://github.com/louiszhenyean/Zyubuntu.git`
+
 # Self changing settings
 `sudo ./install.sh`
 
