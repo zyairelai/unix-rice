@@ -12,9 +12,20 @@ Also some configurations for the Desktop, Icons and keyboard shortcut.
 
 `nano ~/.zshrc`
 
-`Set ZSH_THEME="powerlevel9k/powerlevel9k"`
+Set `ZSH_THEME="powerlevel9k/powerlevel9k"`
+
+`sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+
+`git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k`
 
 `chsh -s $(which zsh)`
+
+# Install SearchSploit
+`sudo git clone https://github.com/offensive-security/exploitdb.git /opt/exploitdb`
+
+`sed 's|path_array+=(.*)|path_array+=("/opt/exploitdb")|g' /opt/exploitdb/.searchsploit_rc > ~/.searchsploit_rc`
+
+`sudo ln -sf /opt/exploitdb/searchsploit /usr/local/bin/searchsploit`
 
 # Install Gnome Extensions
 https://extensions.gnome.org/extension/19/user-themes/
