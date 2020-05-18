@@ -14,8 +14,9 @@ git clone https://github.com/louiszhenyean/Zyubuntu.git
 
 `git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k`
 
-3. nano ~/.zshrc
-4. Set ZSH_THEME="powerlevel9k/powerlevel9k"
+`nano ~/.zshrc`
+
+Set ZSH_THEME="powerlevel9k/powerlevel9k"
 
 ```chsh -s $(which zsh)```
 
