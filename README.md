@@ -32,6 +32,8 @@ POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
 
 ```chsh -s $(which zsh)```
 
+`sudo update-alternatives --config x-terminal-emulator`
+
 # Install SearchSploit
 `sudo git clone https://github.com/offensive-security/exploitdb.git /opt/exploitdb`
 
