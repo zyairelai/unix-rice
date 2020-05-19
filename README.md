@@ -34,6 +34,9 @@ POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
 
 `sudo update-alternatives --config x-terminal-emulator`
 
+For OCD, can replace the Tilix to the default Terminal icon  
+`/usr/share/icons/hicolor/scalable/apps/com.gexperts.Tilix.svg`
+
 # Install SearchSploit
 `sudo git clone https://github.com/offensive-security/exploitdb.git /opt/exploitdb`
 
