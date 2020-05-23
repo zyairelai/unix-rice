@@ -1,6 +1,10 @@
 # MUST CHECK
 sudo cp /bin/xdg-open /bin/open
 
+cp ~/.bashrc ~/.bashrc.bck
+cp .bashrc ~/.bashrc
+source .bashrc
+
 mkdir /home/zyaire/Desktop/git
 mkdir /home/zyaire/Desktop/git/MyProject
 ln -s /home/zyaire/Desktop/git ~/git
