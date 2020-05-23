@@ -1,6 +1,3 @@
-# MUST CHECK
-sudo cp /bin/xdg-open /bin/open
-
 cp ~/.bashrc ~/.bashrc.bck
 cp .bashrc ~/.bashrc
 source .bashrc
