@@ -12,6 +12,8 @@ git clone https://github.com/louiszhenyean/hackthebox /home/zyaire/Desktop/hackt
 https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
 
 # Self changing settings
+`sudo cp /bin/xdg-open /bin/open`
+
 `sudo ./install.sh`
 
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
