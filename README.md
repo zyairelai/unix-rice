@@ -17,6 +17,7 @@ mkdir /home/zyaire/Desktop/git/MyProject
 ln -s /home/zyaire/Desktop/git ~/git
 ln -s /home/zyaire/Desktop/hackthebox ~/hackthebox  
 cp hardcoding.jpg /usr/share/backgrounds/
+gsettings set org.cinnamon.desktop.background picture-uri "/usr/share/backgrounds/hardcoding.jpg"
 cp tmux.conf ~/.tmux.conf
 cp ~bashrc ~/.bashrc.bck
 cp bashrcKali2019 ~/.bashrc
