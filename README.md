@@ -15,8 +15,7 @@ git clone https://github.com/louiszhenyean/hackthebox /home/zyaire/Desktop/hackt
 mkdir /home/zyaire/Desktop/git
 mkdir /home/zyaire/Desktop/git/MyProject
 ln -s /home/zyaire/Desktop/git ~/git
-ln -s /home/zyaire/Desktop/hackthebox ~/hackthebox
-
+ln -s /home/zyaire/Desktop/hackthebox ~/hackthebox  
 cp hardcoding.jpg /usr/share/backgrounds/
 cp tmux.conf ~/.tmux.conf
 cp ~bashrc ~/.bashrc.bck
