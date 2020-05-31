@@ -3,10 +3,26 @@ Setup for my Ubuntu Desktop, install and uninstall some applications that I alwa
 Also some configurations for the Desktop, Icons and keyboard shortcut.  
 
 # Prerequisite
+`sudo apt install git curl chrome-gnome-shell gnome-tweak-tool fonts-powerline fonts-noto-color-emoji tree neofetch zsh tmux tilix nmap`
+
 ```
-sudo apt install git curl
 git clone https://github.com/louiszhenyean/Zyubuntu.git
 git clone https://github.com/louiszhenyean/hackthebox /home/zyaire/Desktop/hackthebox
+```
+
+
+```
+mkdir /home/zyaire/Desktop/git
+mkdir /home/zyaire/Desktop/git/MyProject
+ln -s /home/zyaire/Desktop/git ~/git
+ln -s /home/zyaire/Desktop/hackthebox ~/hackthebox
+
+cp hardcoding.jpg /usr/share/backgrounds/
+cp tmux.conf ~/.tmux.conf
+cp ~bashrc ~/.bashrc.bck
+cp bashrcKali2019 ~/.bashrc
+source .bashrc
+tmux source-file .tmux.conf
 ```
 
 https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
