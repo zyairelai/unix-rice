@@ -35,19 +35,9 @@ https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/c
 
 `git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k`
 
-Edit `~/.zshrc` 
-```
-ZSH_THEME="powerlevel9k/powerlevel9k"
-POWERLEVEL9K_MODE="nerdfont-complete"
-export TERM="xterm-256color"
+`cp zshrc ~/.zshrc`
 
-POWERLEVEL9K_DISABLE_RPROMPT=true
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="$ "
-POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
-```
-
-```chsh -s $(which zsh)```
+`chsh -s $(which zsh)`
 
 `sudo update-alternatives --config x-terminal-emulator`
 
