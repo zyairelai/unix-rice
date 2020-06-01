@@ -37,14 +37,16 @@ https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/c
 
 `git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k`
 
-`cp zshrc ~/.zshrc`
-
-`chsh -s $(which zsh)`
-
-`sudo update-alternatives --config x-terminal-emulator`
+```
+cp zshrc ~/.zshrc
+chsh -s $(which zsh)
+sudo update-alternatives --config x-terminal-emulator
+```
 
 For OCD, can replace the Tilix to the default Terminal icon  
-`/usr/share/icons/hicolor/scalable/apps/com.gexperts.Tilix.svg`
+```
+/usr/share/icons/hicolor/scalable/apps/com.gexperts.Tilix.svg
+```
 
 This is the command for Ubuntu 20.04, but thing changes every updates  
 ```
@@ -71,3 +73,15 @@ sudo ln -s /bin/zsh /bin/z
 https://extensions.gnome.org/extension/19/user-themes/
 
 https://extensions.gnome.org/extension/307/dash-to-dock/
+
+Cannot install Guest Additions on Debian
+
+# VirtualBox Issues Fixed
+Edit `/etc/fstab`
+
+Change from this line  
+`/dev/sr0        /media/cdrom0   udf,iso9660 user,noauto     0       0`
+
+To  
+`/dev/sr0        /media/cdrom0   udf,iso9660 user,exec     0       0`
+
