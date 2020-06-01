@@ -185,7 +185,7 @@ then
     # https://github.com/bhilburn/powerlevel9k/wiki/Stylizing-Your-Prompt#adding-newline-before-each-prompt
     POWERLEVEL9K_PROMPT_ADD_NEWLINE=false
     # https://github.com/bhilburn/powerlevel9k/tree/next#customizing-prompt-segments
-    POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir_writable dir vcs)
+    ### POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir_writable dir vcs)
     POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs)
 
     # Set 'context' segment colors
@@ -203,8 +203,8 @@ then
 
     # Set 'dir_writable' segment colors
     # https://github.com/bhilburn/powerlevel9k/blob/next/segments/dir_writable/README.md
-    # POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_FOREGROUND=$P9KGT_YELLOW
-    # POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_BACKGROUND=$P9KGT_RED
+    ### POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_FOREGROUND=$P9KGT_YELLOW
+    ### POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_BACKGROUND=$P9KGT_RED
 
     # Set 'dir' segment colors
     # https://github.com/bhilburn/powerlevel9k/blob/next/segments/dir/README.md
