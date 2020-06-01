@@ -84,6 +84,10 @@ https://extensions.gnome.org/extension/19/user-themes/
 
 https://extensions.gnome.org/extension/307/dash-to-dock/
 
+https://extensions.gnome.org/extension/16/auto-move-windows/
+
+https://extensions.gnome.org/extension/905/refresh-wifi-connections/
+
 Cannot install Guest Additions on Debian
 
 # VirtualBox Issues Fixed
