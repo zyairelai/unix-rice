@@ -5,7 +5,9 @@ Also some configurations for the Desktop, Icons and keyboard shortcut.
 # Prerequisite
 Install all the requirements and tools  
 ```
-sudo apt install git curl chrome-gnome-shell gnome-tweak-tool fonts-powerline fonts-noto-color-emoji tree neofetch zsh tmux tilix python-nautilus nmap
+sudo apt install git curl chrome-gnome-shell gnome-tweak-tool 
+       \ fonts-powerline fonts-noto-color-emoji 
+       \ tree neofetch zsh tmux tilix python-nautilus nmap
 ````
 
 Clone the repository
