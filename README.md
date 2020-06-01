@@ -3,7 +3,7 @@ Setup for my Ubuntu Desktop, install and uninstall some applications that I alwa
 Also some configurations for the Desktop, Icons and keyboard shortcut.  
 
 # Prerequisite
-Install all the requirements and tools
+Install all the requirements and tools  
 `sudo apt install git curl chrome-gnome-shell gnome-tweak-tool fonts-powerline fonts-noto-color-emoji tree neofetch zsh tmux tilix python-nautilus nmap`
 
 Clone the repository
@@ -27,6 +27,7 @@ source .bashrc
 tmux source-file .tmux.conf
 ```
 
+# Click this to install Nerd-Fonts (Terminal Emoji)
 https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
 
 # Self changing setting
