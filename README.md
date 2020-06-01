@@ -45,6 +45,10 @@ https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/c
 
 For OCD, can replace the Tilix to the default Terminal icon  
 `/usr/share/icons/hicolor/scalable/apps/com.gexperts.Tilix.svg`
+This is the command for Ubuntu 20.04, but thing changes every updates  
+```
+sudo cp '/usr/share/icons/Yaru/256x256@2x/apps/gnome-terminal.png' /usr/share/icons/hicolor/scalable/apps/com.gexperts.Tilix.svg
+```
 
 # Personal Shortcuts
 Always use easy shortcuts, lol
