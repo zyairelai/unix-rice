@@ -29,7 +29,7 @@ source .bashrc
 tmux source-file .tmux.conf
 ```
 
-Click this to install Nerd-Fonts (Terminal Emoji)  
+Install Nerd-Fonts (Terminal Emoji)  
 https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
 
 # Self changing setting
