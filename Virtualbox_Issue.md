@@ -1,6 +1,6 @@
 Cannot install Guest Additions on Debian
 
-`sudo /etc/fstab  
+`sudo /etc/fstab`  
 
 Change from this line  
 ```
