@@ -114,7 +114,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Set username to consider a default context, which by default will not be shown.
 # https://github.com/bhilburn/powerlevel9k/blob/next/segments/context/README.md
-DEFAULT_USER='luca'
+DEFAULT_USER='zyaire'
 
 # Set P9KGT background color, either 'light' or 'dark' (this should match the GNOME Terminal's theme).
 P9KGT_BACKGROUND='dark'
@@ -165,20 +165,20 @@ then
         P9KGT_RED=009
         P9KGT_GREEN=010
         P9KGT_YELLOW=011
-        P9KGT_BLUE=012
+        P9KGT_BLUE=039
     elif [[ $P9KGT_COLORS == 'dark' ]]
     then
         P9KGT_RED=001
         P9KGT_GREEN=002
         P9KGT_YELLOW=003
-        P9KGT_BLUE=004
+        P9KGT_BLUE=039
     elif [[ $P9KGT_COLORS == 'bright' ]]
     then
         P9KGT_RED=196
         #P9KGT_GREEN=148
         P9KGT_GREEN=154
         P9KGT_YELLOW=220
-        P9KGT_BLUE=075
+        P9KGT_BLUE=039
     fi
 
     # Customize prompt
@@ -203,8 +203,8 @@ then
 
     # Set 'dir_writable' segment colors
     # https://github.com/bhilburn/powerlevel9k/blob/next/segments/dir_writable/README.md
-    POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_FOREGROUND=$P9KGT_YELLOW
-    POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_BACKGROUND=$P9KGT_RED
+    # POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_FOREGROUND=$P9KGT_YELLOW
+    # POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_BACKGROUND=$P9KGT_RED
 
     # Set 'dir' segment colors
     # https://github.com/bhilburn/powerlevel9k/blob/next/segments/dir/README.md
