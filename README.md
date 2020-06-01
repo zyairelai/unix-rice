@@ -33,9 +33,13 @@ Install Nerd-Fonts (Terminal Emoji)
 https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
 
 # Self changing setting
-`sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
 
-`git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k`
+```
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+```
 
 ```
 cp zshrc ~/.zshrc
@@ -62,11 +66,17 @@ sudo ln -s /bin/zsh /bin/z
 ```
 
 # Install SearchSploit
-`sudo git clone https://github.com/offensive-security/exploitdb.git /opt/exploitdb`
+```
+sudo git clone https://github.com/offensive-security/exploitdb.git /opt/exploitdb
+```
 
-`sed 's|path_array+=(.*)|path_array+=("/opt/exploitdb")|g' /opt/exploitdb/.searchsploit_rc > ~/.searchsploit_rc`
+```
+sed 's|path_array+=(.*)|path_array+=("/opt/exploitdb")|g' /opt/exploitdb/.searchsploit_rc > ~/.searchsploit_rc
+```
 
-`sudo ln -sf /opt/exploitdb/searchsploit /usr/local/bin/searchsploit`
+```
+sudo ln -sf /opt/exploitdb/searchsploit /usr/local/bin/searchsploit
+```
 
 
 # Install Gnome Extensions
@@ -80,8 +90,12 @@ Cannot install Guest Additions on Debian
 Edit `/etc/fstab`
 
 Change from this line  
-`/dev/sr0        /media/cdrom0   udf,iso9660 user,noauto     0       0`
+```
+/dev/sr0        /media/cdrom0   udf,iso9660 user,noauto     0       0
+```
 
 To  
-`/dev/sr0        /media/cdrom0   udf,iso9660 user,exec     0       0`
+```
+/dev/sr0        /media/cdrom0   udf,iso9660 user,exec     0       0
+```
 
