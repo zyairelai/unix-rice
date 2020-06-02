@@ -10,16 +10,17 @@ sudo apt install git curl chrome-gnome-shell gnome-tweak-tool fonts-powerline fo
 
 Clone the repository
 ```
-git clone https://github.com/louiszhenyean/Zyubuntu.git
-git clone https://github.com/louiszhenyean/hackthebox /home/zyaire/Desktop/hackthebox
+git clone https://github.com/louiszhenyean/Zyubuntu /home/$USER/Desktop/Zyubuntu
+git clone https://github.com/louiszhenyean/hackthebox /home/$USER/Desktop/hackthebox
 ```
 
 Copy the files and make activate the configurations
 ```
-mkdir /home/zyaire/Desktop/git
-mkdir /home/zyaire/Desktop/git/MyProject
-ln -s /home/zyaire/Desktop/git ~/git
-ln -s /home/zyaire/Desktop/hackthebox ~/hackthebox  
+cd /home/$USER/Desktop/git
+mkdir /home/$USER/Desktop/git
+mkdir /home/$USER/Desktop/git/MyProject
+ln -s /home/$USER/Desktop/git ~/git
+ln -s /home/$USER/Desktop/hackthebox ~/hackthebox  
 cp hardcoding.jpg /usr/share/backgrounds/
 gsettings set org.cinnamon.desktop.background picture-uri "/usr/share/backgrounds/hardcoding.jpg"
 cp tmux.conf ~/.tmux.conf
