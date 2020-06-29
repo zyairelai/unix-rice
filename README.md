@@ -18,7 +18,6 @@ Copy the files and make activate the configurations
 ```
 cd /home/$USER/Desktop/git
 mkdir /home/$USER/Desktop/git
-mkdir /home/$USER/Desktop/git/MyProject
 ln -s /home/$USER/Desktop/git ~/git
 ln -s /home/$USER/Desktop/hackthebox ~/hackthebox  
 cp hardcoding.jpg /usr/share/backgrounds/
