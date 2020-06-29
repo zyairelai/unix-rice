@@ -109,3 +109,6 @@ Type `Install Package Control`
 Type `Package Control: Install Package`  
 Type `Material Theme`  
 Type `Material Theme: Activate theme`  
+
+# Github Store User Credentials
+https://www.freecodecamp.org/news/how-to-fix-git-always-asking-for-user-credentials/
