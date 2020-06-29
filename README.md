@@ -104,8 +104,8 @@ To
 ```
 
 # Sublime Text Material Theme
-Ctrl + Shift + P
-Type `Install Package Control`
-Type `Package Control: Install Package`
-Type `Material Theme`
-Type `Material Theme: Activate theme`
+Ctrl + Shift + P  
+Type `Install Package Control`  
+Type `Package Control: Install Package`  
+Type `Material Theme`  
+Type `Material Theme: Activate theme`  
