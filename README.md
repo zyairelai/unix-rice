@@ -103,3 +103,9 @@ To
 /dev/sr0        /media/cdrom0   udf,iso9660 user,exec     0       0
 ```
 
+# Sublime Text Material Theme
+Ctrl + Shift + P
+Type `Install Package Control`
+Type `Package Control: Install Package`
+Type `Material Theme`
+Type `Material Theme: Activate theme`
