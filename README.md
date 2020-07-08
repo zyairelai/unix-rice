@@ -5,8 +5,13 @@ Also some configurations for the Desktop, Icons and keyboard shortcut.
 # Prerequisite
 Install all the requirements and tools  
 ```
-sudo apt install git curl chrome-gnome-shell gnome-tweak-tool fonts-powerline fonts-noto-color-emoji tree neofetch zsh tmux tilix python-nautilus nmap nikto 
+sudo apt install git curl python3-pip pipenv chrome-gnome-shell gnome-tweak-tool fonts-powerline fonts-noto-color-emoji tree neofetch zsh tmux tilix python-nautilus nmap nikto 
 ````
+
+# To fix `fonts-noto-color-emoji` sometimes
+```
+sudo apt reinstall fonts-noto-color-emoji
+```
 
 Clone the repository
 ```
@@ -29,12 +34,12 @@ source .bashrc
 tmux source-file .tmux.conf
 ```
 
-Install Nerd-Fonts (Terminal Emoji)  
+# Install Nerd-Fonts (Terminal Emoji)  
+https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
 ```
 sudo mv "nerd-font.ttf" /usr/share/fonts/
 sudo fc-cache -vf /usr/share/fonts/
 ```
-https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
 
 # Self changing setting
 ```
@@ -64,7 +69,9 @@ sudo cp '/usr/share/icons/Yaru/256x256@2x/apps/gnome-terminal.png' /usr/share/ic
 # Personal Shortcuts
 Always use easy shortcuts, lol
 ```
-sudo cp /bin/xdg-open /bin/open
+sudo ln -s /bin/xdg-open /bin/open
+sudo ln -s /bin/python3 /bin/py
+sudo ln -s /bin/python3 /bin/python
 sudo ln -s /bin/bash /bin/b
 sudo ln -s /bin/zsh /bin/z 
 ```
