@@ -30,6 +30,10 @@ tmux source-file .tmux.conf
 ```
 
 Install Nerd-Fonts (Terminal Emoji)  
+```
+sudo mv "nerd-font.ttf" /usr/share/fonts/
+sudo fc-cache -vf /usr/share/fonts/
+```
 https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
 
 # Self changing setting
