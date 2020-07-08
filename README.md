@@ -8,11 +8,6 @@ Install all the requirements and tools
 sudo apt install git curl python3-pip pipenv chrome-gnome-shell gnome-tweak-tool fonts-powerline fonts-noto-color-emoji tree neofetch zsh tmux tilix python-nautilus nmap nikto 
 ````
 
-# To fix `fonts-noto-color-emoji` sometimes
-```
-sudo apt reinstall fonts-noto-color-emoji
-```
-
 Clone the repository
 ```
 git clone https://github.com/louiszhenyean/Zyubuntu /home/$USER/Desktop/Zyubuntu
@@ -114,12 +109,10 @@ To
 /dev/sr0        /media/cdrom0   udf,iso9660 user,exec     0       0
 ```
 
-# Sublime Text Material Theme
-Ctrl + Shift + P  
-Type `Install Package Control`  
-Type `Package Control: Install Package`  
-Type `Material Theme`  
-Type `Material Theme: Activate theme`  
-
 # Github Store User Credentials
 https://www.freecodecamp.org/news/how-to-fix-git-always-asking-for-user-credentials/
+
+# To fix `fonts-noto-color-emoji` sometimes
+```
+sudo apt reinstall fonts-noto-color-emoji
+```
