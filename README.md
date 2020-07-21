@@ -20,7 +20,7 @@ cd /home/$USER/Desktop/git
 mkdir /home/$USER/Desktop/git
 ln -s /home/$USER/Desktop/git ~/git
 ln -s /home/$USER/Desktop/hackthebox ~/hackthebox  
-cp hardcoding.jpg /usr/share/backgrounds/
+sudo cp hardcoding.jpg /usr/share/backgrounds/
 gsettings set org.cinnamon.desktop.background picture-uri "/usr/share/backgrounds/hardcoding.jpg"
 cp tmux.conf ~/.tmux.conf
 cp ~bashrc ~/.bashrc.bck
@@ -32,7 +32,7 @@ tmux source-file .tmux.conf
 # Install Nerd-Fonts (Terminal Emoji)  
 https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
 ```
-sudo mv "nerd-font.ttf" /usr/share/fonts/
+sudo cp "nerd-font.ttf" /usr/share/fonts/
 sudo fc-cache -vf /usr/share/fonts/
 ```
 
