@@ -112,6 +112,12 @@ To
 # Github Store User Credentials
 https://www.freecodecamp.org/news/how-to-fix-git-always-asking-for-user-credentials/
 
+# To Clean Up APT Bundles
+```
+sudo apt install python3-apt
+sudo python3 -OEs aptsources-cleanup.pyz
+```
+
 # To fix `fonts-noto-color-emoji` sometimes
 ```
 sudo apt reinstall fonts-noto-color-emoji
