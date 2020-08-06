@@ -11,7 +11,7 @@ sudo apt install git curl python3-pip pipenv chrome-gnome-shell gnome-tweak-tool
 Copy the files and make activate the configurations
 ```
 sudo cp hardcoding.jpg /usr/share/backgrounds/
-gsettings set org.cinnamon.desktop.background picture-uri "/usr/share/backgrounds/hardcoding.jpg"
+gsettings set org.gnome.desktop.background picture-uri "/usr/share/backgrounds/hardcoding.jpg"
 cp tmux.conf ~/.tmux.conf
 cp ~/.bashrc ~/.bashrc.bck
 cp bashrcKali2019 ~/.bashrc
