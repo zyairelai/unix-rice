@@ -16,15 +16,15 @@ git clone https://github.com/louiszhenyean/hackthebox /home/$USER/Desktop/hackth
 
 Copy the files and make activate the configurations
 ```
-cd /home/$USER/Desktop/git
 mkdir /home/$USER/Desktop/git
 ln -s /home/$USER/Desktop/git ~/git
 ln -s /home/$USER/Desktop/hackthebox ~/hackthebox  
 sudo cp hardcoding.jpg /usr/share/backgrounds/
 gsettings set org.cinnamon.desktop.background picture-uri "/usr/share/backgrounds/hardcoding.jpg"
 cp tmux.conf ~/.tmux.conf
-cp ~bashrc ~/.bashrc.bck
+cp ~/.bashrc ~/.bashrc.bck
 cp bashrcKali2019 ~/.bashrc
+cp tmux.conf ~/.tmux.conf
 source .bashrc
 tmux source-file .tmux.conf
 ```
