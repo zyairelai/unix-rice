@@ -6,19 +6,10 @@ Also some configurations for the Desktop, Icons and keyboard shortcut.
 Install all the requirements and tools  
 ```
 sudo apt install git curl python3-pip pipenv chrome-gnome-shell gnome-tweak-tool fonts-powerline fonts-noto-color-emoji tree neofetch zsh tmux tilix python-nautilus nmap nikto 
-````
-
-Clone the repository
-```
-git clone https://github.com/louiszhenyean/Zyubuntu /home/$USER/Desktop/Zyubuntu
-git clone https://github.com/louiszhenyean/hackthebox /home/$USER/Desktop/hackthebox
 ```
 
 Copy the files and make activate the configurations
 ```
-mkdir /home/$USER/Desktop/git
-ln -s /home/$USER/Desktop/git ~/git
-ln -s /home/$USER/Desktop/hackthebox ~/hackthebox  
 sudo cp hardcoding.jpg /usr/share/backgrounds/
 gsettings set org.cinnamon.desktop.background picture-uri "/usr/share/backgrounds/hardcoding.jpg"
 cp tmux.conf ~/.tmux.conf
