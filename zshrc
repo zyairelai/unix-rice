@@ -117,7 +117,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Set username to consider a default context, which by default will not be shown.
 # https://github.com/bhilburn/powerlevel9k/blob/next/segments/context/README.md
-DEFAULT_USER='zyaire'
+# DEFAULT_USER='luca' # set 'luca' to others will result in not showing name
 
 # Set P9KGT background color, either 'light' or 'dark' (this should match the GNOME Terminal's theme).
 P9KGT_BACKGROUND='dark'
@@ -187,8 +187,6 @@ then
     # Customize prompt
     # https://github.com/bhilburn/powerlevel9k/wiki/Stylizing-Your-Prompt#adding-newline-before-each-prompt
     POWERLEVEL9K_PROMPT_ADD_NEWLINE=false
-    # https://github.com/bhilburn/powerlevel9k/tree/next#customizing-prompt-segments
-    ### POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir_writable dir vcs)
     POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs)
 
     # Set 'context' segment colors
@@ -203,11 +201,6 @@ then
     POWERLEVEL9K_CONTEXT_SUDO_BACKGROUND=$P9KGT_TERMINAL_BACKGROUND
     POWERLEVEL9K_CONTEXT_REMOTE_BACKGROUND=$P9KGT_TERMINAL_BACKGROUND
     POWERLEVEL9K_CONTEXT_REMOTE_SUDO_BACKGROUND=$P9KGT_TERMINAL_BACKGROUND
-
-    # Set 'dir_writable' segment colors
-    # https://github.com/bhilburn/powerlevel9k/blob/next/segments/dir_writable/README.md
-    ### POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_FOREGROUND=$P9KGT_YELLOW
-    ### POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_BACKGROUND=$P9KGT_RED
 
     # Set 'dir' segment colors
     # https://github.com/bhilburn/powerlevel9k/blob/next/segments/dir/README.md
@@ -250,3 +243,4 @@ then
     POWERLEVEL9K_BACKGROUND_JOBS_BACKGROUND=$P9KGT_YELLOW
 
 fi
+export PATH="$PATH:/opt/mssql-tools/bin"
