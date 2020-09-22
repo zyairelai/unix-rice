@@ -10,8 +10,8 @@ sudo apt install git curl python3-pip pipenv chrome-gnome-shell gnome-tweak-tool
 
 Copy the files and make activate the configurations
 ```
-sudo cp hardcoding.jpg /usr/share/backgrounds/
-sudo cp kitten.jpg /usr/share/backgrounds/
+sudo cp "extra/hardcoding.jpg" "/usr/share/backgrounds/"
+sudo cp "extra/kitten.jpg" "/usr/share/backgrounds/"
 gsettings set org.gnome.desktop.background picture-uri "/usr/share/backgrounds/hardcoding.jpg"
 cp ~/.bashrc ~/.bashrc.bck
 cp bashrcKali2019 ~/.bashrc
@@ -23,7 +23,7 @@ tmux source-file .tmux.conf
 # Install Nerd-Fonts (Terminal Emoji)  
 https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
 ```
-sudo cp "nerd-font.ttf" /usr/share/fonts/
+sudo cp "extra/nerd-font.ttf" /usr/share/fonts/
 sudo fc-cache -vf /usr/share/fonts/
 ```
 
