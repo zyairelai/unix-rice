@@ -29,3 +29,8 @@ Close window 						- Alt + W
 sudo apt install python3-apt
 sudo python3 -OEs aptsources-cleanup.pyz
 ```
+
+# VSCode Extensions
+```
+Rainglow -> Hive Contrast
+```
