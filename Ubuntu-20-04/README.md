@@ -4,7 +4,7 @@ This is the Setup for Ubuntu 20.04 LTS
 
 # Install daily necessary tools
 ```
-sudo apt install git curl python3-pip pipenv chrome-gnome-shell gnome-tweak-tool fonts-powerline fonts-noto-color-emoji tree neofetch zsh tmux tilix python-nautilus nmap nikto 
+sudo apt install chrome-gnome-shell gnome-tweak-tool fonts-powerline fonts-noto-color-emoji tree neofetch zsh tmux tilix python-nautilus 
 ```
 
 
@@ -48,30 +48,6 @@ This is the Tilix setup for Ubuntu 20.04, perhaps thing changes every updates
 ```
 sudo cp '/usr/share/icons/Yaru/256x256@2x/apps/gnome-terminal.png' /usr/share/icons/hicolor/scalable/apps/com.gexperts.Tilix.svg
 ```
-
-
-# Install SearchSploit
-```
-sudo git clone https://github.com/offensive-security/exploitdb.git /opt/exploitdb
-```
-
-```
-sed 's|path_array+=(.*)|path_array+=("/opt/exploitdb")|g' /opt/exploitdb/.searchsploit_rc > ~/.searchsploit_rc
-```
-
-```
-sudo ln -sf /opt/exploitdb/searchsploit /usr/local/bin/searchsploit
-```
-
-
-# Install Gnome Extensions
-https://extensions.gnome.org/extension/19/user-themes/
-
-https://extensions.gnome.org/extension/307/dash-to-dock/
-
-https://extensions.gnome.org/extension/16/auto-move-windows/
-
-https://extensions.gnome.org/extension/905/refresh-wifi-connections/
 
 
 # VirtualBox Issues Fixed
