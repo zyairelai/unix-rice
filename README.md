@@ -20,8 +20,8 @@ Settings                            - Shift + Ctrl + S
 Hide all normal windows             - Disabled
 Move to workspace above/below       - Ctrl + Alt + Up / Down
 Move window one workspace up/down   - Super + Up / Down
-Eject								                - Ctrl + Alt + Backspace
-Close window 						            - Alt + W
+Eject                               - Ctrl + Alt + Backspace
+Close window                        - Alt + W
 ```
 
 # To Clean Up APT Bundles
