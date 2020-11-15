@@ -1,5 +1,5 @@
 ### Install Necessary Tools
-`sudo apt install git curl python3-pip pipenv chrome-gnome-shell gnome-tweak-tool fonts-powerline fonts-noto-color-emoji tree neofetch`
+`sudo apt install git curl python3-pip pipenv chrome-gnome-shell gnome-tweak-tool fonts-noto-color-emoji tree neofetch`
 
 ### Install from Software Center
 - Discord
