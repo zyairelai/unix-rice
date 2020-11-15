@@ -1,3 +1,4 @@
+# Setup for Beautiful Terminal 
 ### Check if `zsh` is installed
 - `sudo apt install zsh tmux fonts-powerline`
 
@@ -24,7 +25,7 @@ chsh -s $(which zsh)
 
 # Tilix (Optional)
 ### Installing Tilix and Open Tilix Here
-- `sudo apt install tilix nautilus-python`
+- `sudo apt install tilix python-nautilus`
 - `sudo update-alternatives --config x-terminal-emulator`
 
 ### For OCD, can replace the Tilix to the default Terminal icon
