@@ -25,7 +25,7 @@ Close window                        - Alt + W
 ```
 
 ### To Clean Up APT Bundles
-- https://github.com/davidfoerster/aptsources-cleanup/blob/master/README.md
+- https://github.com/davidfoerster/aptsources-cleanup
 ```
 sudo apt install python3-apt python3-regex
 chmod a+x aptsources-cleanup.pyz
