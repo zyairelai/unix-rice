@@ -1,7 +1,7 @@
 # ZyDesk
 Setup for my Desktop, some configurations for my Desktop themes and shortcuts.  
 
-# Personal Shortcuts
+### Personal Shortcuts
 Always use easy shortcuts, lol
 ```
 sudo ln -s /bin/xdg-open /bin/open
@@ -11,7 +11,7 @@ sudo ln -s /bin/bash /bin/b
 sudo ln -s /bin/zsh /bin/z 
 ```
 
-# Keyboard Shortcuts
+### Keyboard Shortcuts
 Sometimes I forgot to setup personal keyboard shortcuts
 ```
 Home folder                         - Ctrl + Alt + F
@@ -24,13 +24,13 @@ Eject                               - Ctrl + Alt + Backspace
 Close window                        - Alt + W
 ```
 
-# To Clean Up APT Bundles
+### To Clean Up APT Bundles
 ```
 sudo apt install python3-apt
 sudo python3 -OEs aptsources-cleanup.pyz
 ```
 
-# VSCode Extensions
+### VSCode Extensions
 ```
 Rainglow -> Hive Contrast
 ```
