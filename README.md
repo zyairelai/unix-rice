@@ -25,9 +25,11 @@ Close window                        - Alt + W
 ```
 
 ### To Clean Up APT Bundles
+- https://github.com/davidfoerster/aptsources-cleanup/blob/master/README.md
 ```
-sudo apt install python3-apt
-sudo python3 -OEs aptsources-cleanup.pyz
+sudo apt install python3-apt python3-regex
+chmod a+x aptsources-cleanup.pyz
+sudo ./aptsources-cleanup.pyz
 ```
 
 ### VSCode Extensions
