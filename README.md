@@ -14,14 +14,14 @@ sudo ln -s /bin/zsh /bin/z
 # Keyboard Shortcuts
 Sometimes I forgot to setup personal keyboard shortcuts
 ```
-Home folder							- Ctrl + Alt + F
-Launch Web Browser					- Ctrl + Alt + G
-Settings							- Shift + Ctrl + S
-Hide all normal windows				- Disabled
-Move to workspace above/below		- Ctrl + Alt + Up / Down
-Move window one workspace up/down	- Super + Up / Down
-Eject								- Ctrl + Alt + Backspace
-Close window 						- Alt + W
+Home folder                         - Ctrl + Alt + F
+Launch Web Browser                  - Ctrl + Alt + G
+Settings                            - Shift + Ctrl + S
+Hide all normal windows             - Disabled
+Move to workspace above/below       - Ctrl + Alt + Up / Down
+Move window one workspace up/down   - Super + Up / Down
+Eject								                - Ctrl + Alt + Backspace
+Close window 						            - Alt + W
 ```
 
 # To Clean Up APT Bundles
