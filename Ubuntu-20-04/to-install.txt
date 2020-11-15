@@ -1,9 +1,0 @@
-(App Store)
-- Discord
-- Sublime Text
-- Visual Studio Code
-- Telegram
-
-Never tried
-- https://github.com/ParrotSec/anonsurf
-- SSL/SSH VNC Viewer
