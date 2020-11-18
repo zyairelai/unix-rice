@@ -13,6 +13,9 @@ To Install:
 Custom Time & Date
 `ddd dd MMM yyyy`
 
+### Fix Square Fonts
+https://community.parrotsec.org/t/parrot-4-8-bug-report/12224/15
+
 
 # Making VSCode Transparent
 https://github.com/microsoft/vscode/issues/12578#issuecomment-444781951
