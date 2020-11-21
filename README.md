@@ -2,7 +2,7 @@
 Setup for my Desktop, some configurations for my Desktop themes and shortcuts.  
 
 ### Personal Shortcuts
-Always use easy shortcuts, lol
+Always use easy shortcuts XD
 ```
 sudo ln -s /bin/xdg-open /bin/open
 sudo ln -s /bin/python3 /bin/py
