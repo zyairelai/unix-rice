@@ -2,8 +2,8 @@
 
 System Settings > Workspace Behavior > Desktop Effects 
 - Blur - Strength = 60~70, Noise = 0  
-- Wobbly Windows  = 50%
-- Magic Lamp      = 400milliseconds
+- Wobbly Windows  = 25%
+- Magic Lamp      = 800milliseconds
  
 System Settings > Workspace Behavior > Screen Edges > Desktop Grid
 

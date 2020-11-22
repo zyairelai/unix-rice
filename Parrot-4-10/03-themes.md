@@ -16,3 +16,7 @@ System Settings > Icons > [Sweet Folders](https://store.kde.org/p/1284047)
 - Open Kvantum and Install Theme
 - Select Sweet as Theme
 - `Kvantum Active Theme > Compositing & General Look > Translucent Windows > Reduce Windows Opacity by 30%`
+
+### GNOME/GTK Application Style
+- `System Settings > Application Style > GNOME/GTK Application Style > Sweet-Ambar-Blue`
+- `System Settings > Application Style > Window Decoration > Aritim-Dark`
