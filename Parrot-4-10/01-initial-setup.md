@@ -15,7 +15,7 @@ System Settings > Windows Management > Task Switcher > [Medium Default](https://
 
 System Settings > Windows Management > KWin Scripts > [Force Blur](https://store.kde.org/p/1294604)
 
-`System Settings > Application Style > Window Decoration > [Aritim-Dark](https://store.kde.org/p/1320512)`
+System Settings > Application Style > Window Decoration > [Aritim-Dark](https://store.kde.org/p/1320512)
 
 System Settings > Application Style > GNOME/GTK > [Sweet](https://store.kde.org/p/1253385/)
 
