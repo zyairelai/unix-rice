@@ -15,4 +15,4 @@ System Settings > Icons > [Sweet Folders](https://store.kde.org/p/1284047)
 - Extract and move to `/home/$USER/.kde/`
 - Open Kvantum and Install Theme
 - Select Sweet as Theme
-
+- `Kvantum Active Theme > Compositing & General Look > Translucent Windows > Reduce Windows Opacity by 30%`
