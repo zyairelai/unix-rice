@@ -7,7 +7,7 @@ System Settings > Icons > [Candy Icons](https://store.kde.org/p/1305251)
 System Settings > Icons > [Sweet Folders](https://store.kde.org/p/1284047)  
 
 ### Installing Kvantum
-- [Kvantum](https://github.com/tsujan/Kvantum/tree/master/Kvantum)  
+- [Kvantum's Github](https://github.com/tsujan/Kvantum/tree/master/Kvantum)  
 - `sudo apt install qt5-style-kvantum qt5-style-kvantum-themes`
 
 ### Install Kvantum Theme to local folder
