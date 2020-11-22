@@ -44,6 +44,9 @@ chmod a+x aptsources-cleanup.pyz
 sudo ./aptsources-cleanup.pyz
 ```
 
+### Fixing Emoji Problem
+- `sudo apt reinstall fonts-noto-color-emoji`
+
 ### VSCode Extensions
 ```
 Rainglow -> Hive Contrast

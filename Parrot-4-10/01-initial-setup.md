@@ -1,15 +1,15 @@
 # Initial Setup
 
-System Settings > Workspace Behavior > Desktop Effects 
+`System Settings > Workspace Behavior > Desktop Effects `
 - Blur - Strength = 60~70, Noise = 0  
 - Wobbly Windows  = 25%
 - Magic Lamp      = 800milliseconds
  
-System Settings > Workspace Behavior > Screen Edges > Desktop Grid
+`System Settings > Workspace Behavior > Screen Edges > Desktop Grid`
 
-System Settings > Workspace Behavior > Screen Locking **ALL NO**
+`System Settings > Workspace Behavior > Screen Locking > ALL NO`
 
-System Settings > Windows Management > Window Behavior > Advanced > Window placement: `Centered / Smart`
+`System Settings > Windows Management > Window Behavior > Advanced > Window placement: Centered / Smart`
 
 System Settings > Windows Management > Task Switcher > [Medium Default](https://store.kde.org/p/1367158) / Large Icons
 
@@ -20,5 +20,5 @@ System Settings > Application Style > Window Decoration > [Aritim-Dark](https://
 System Settings > Application Style > GNOME/GTK > [Sweet](https://store.kde.org/p/1253385/)
 
 ### Display Size
-System Settings > Fonts > Force Font DPI: `120 or 144`
+`System Settings > Fonts > Force Font DPI: 120 or 144`
 
