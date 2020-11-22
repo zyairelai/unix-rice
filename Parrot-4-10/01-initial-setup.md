@@ -1,7 +1,7 @@
 # Initial Setup
 
 `System Settings > Workspace Behavior > Desktop Effects `
-- Blur - Strength = 60~70, Noise = 0  
+- Blur - Strength = 60~70, Noise = 0
 - Wobbly Windows  = 25%
 - Magic Lamp      = 800milliseconds
  
@@ -20,5 +20,5 @@ System Settings > Application Style > Window Decoration > [Aritim-Dark](https://
 System Settings > Application Style > GNOME/GTK > [Sweet](https://store.kde.org/p/1253385/)
 
 ### Display Size
-`System Settings > Fonts > Force Font DPI: 120 or 144`
-
+- `System Settings > Fonts > Force Font DPI: 120 or 144`
+- Referece : https://www.reddit.com/r/kde/comments/9dt46l/kde_display_scaling/
