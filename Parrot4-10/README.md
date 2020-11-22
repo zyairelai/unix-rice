@@ -1,13 +1,12 @@
 ### Fix Square Fonts
-https://community.parrotsec.org/t/parrot-4-8-bug-report/12224/15
+https://community.parrotsec.org/t/parrot-4-8-bug-report/12224/15  
 `System Settings > Application Style > GNOME/GTK Application Style > Sans Serif 10`
 
 # Dock
 [polybar](https://github.com/polybar/polybar)  
 [latte-dock](https://github.com/KDE/latte-dock)  
 
-### One line Data & Clock 50% 
-https://store.kde.org/p/1324315  
+### Split Digital Clock
 To Install:  
 `plasmapkg2 --install org.kde.plasma.splitdigitalclock.tar.gz`
 Custom Time & Date
