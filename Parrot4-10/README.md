@@ -1,6 +1,6 @@
 ### Fix Square Fonts
-https://community.parrotsec.org/t/parrot-4-8-bug-report/12224/15  
-`System Settings > Application Style > GNOME/GTK Application Style > Sans Serif 10`
+- `System Settings > Application Style > GNOME/GTK Application Style > Sans Serif 10`
+- Reference: https://community.parrotsec.org/t/parrot-4-8-bug-report/12224/15  
 
 ### Dock
 - [polybar](https://github.com/polybar/polybar)  
