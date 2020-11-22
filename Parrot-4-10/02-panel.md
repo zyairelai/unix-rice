@@ -1,7 +1,7 @@
 ### Top Panel - Application Menu Bar
 1. Application Launcher  
 2. System Tray  
-3. Split Digital Clock  
+3. [Split Digital Clock](https://store.kde.org/p/1324315)  
             - Show Date  
             - Show Separator  
             - Custom Date Format > `dddd dd MMM yyyy`  
