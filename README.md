@@ -1,5 +1,17 @@
-# ZyDesk
+## ZyDesk
 Setup for my Desktop, some configurations for my Desktop themes and shortcuts.  
+
+## My Current Desktop
+
+### With Default Panel
+<p align="center">
+  <img src="Wallpapers/my-panel.png">
+</p>
+
+### With Latte Dock
+<p align="center">
+  <img src="Wallpapers/my-latte.png">
+</p>
 
 ### Personal Shortcuts
 Always use easy shortcuts XD

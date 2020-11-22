@@ -1,15 +1,3 @@
-# Final Look
-
-### With Default Panel
-<p align="center">
-  <img src="my-panel.png">
-</p>
-
-### With Latte Dock
-<p align="center">
-  <img src="my-latte.png">
-</p>
-
 ### Fix Square Fonts
 - `System Settings > Application Style > GNOME/GTK Application Style > Sans Serif 10`
 - Reference: https://community.parrotsec.org/t/parrot-4-8-bug-report/12224/15  
