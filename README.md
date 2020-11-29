@@ -47,7 +47,5 @@ sudo ./aptsources-cleanup.pyz
 ### Fixing Emoji Problem
 - `sudo apt reinstall fonts-noto-color-emoji`
 
-### VSCode Extensions
-```
-Rainglow -> Hive Contrast
-```
+### Fix VirtualBox Guest Permission
+- `sudo adduser $USER vboxsf`
