@@ -6,13 +6,10 @@
 3. [i3-gaps Cyberpunk Cafe Minimalism](#i3-gaps-Cyberpunk-Cafe-Minimalism)
 4. [Bspwm Qubes OS](#Bspwm-Qubes-OS)
 5. [KDE Inifinity Dark](#KDE-Inifinity-Dark)
-
-
-## KDE Store
-- [Layan -- Look & Feel Theme](https://store.kde.org/p/1325243)
-- [Zafiro Icon -- Classic Icons](https://www.gnome-look.org/s/Gnome/p/1209330)
-- [Nordic Folder Icon -- Classic Chill](https://www.gnome-look.org/p/1267246)
-
+6. [i3-gaps Ubuntu](#i3-gaps-Ubuntu)
+7. [Bspwm Blossom Again](#Bspwm-Blossom-Again)
+8. [](#)
+9. [](#)
 
 <a name="KDE-Nordic"></a>
 [KDE Nordic](https://www.reddit.com/r/unixporn/comments/d9okx3/kde_nordic_kde/)
@@ -46,4 +43,26 @@
 [KDE Inifinity Dark](https://www.reddit.com/r/unixporn/comments/jfa4ct/plasma_5_new_dark_plasma_theme_infinityplasma/)
 <p align="center">
   <img src="Reddit/KDE-Inifinity-Dark.png">
+</p>
+
+
+<a name="i3-gaps-Ubuntu"></a>
+[i3-gaps Ubuntu](https://www.reddit.com/r/unixporn/comments/jsmth2/i3gaps_ubuntu_on_an_alien_planet/)
+<p align="center">
+  <img src="Reddit/i3-gaps-Ubuntu.png">
+</p>
+
+
+<a name="Bspwm-Blossom-Again"></a>
+[#Bspwm-Blossom-Again](https://www.reddit.com/r/unixporn/comments/k4h6xt/bspwm_blossom_again/)
+<p align="center">
+  <img src="Reddit/Bspwm-Blossom-Again.png">
+</p>
+
+
+
+<a name=""></a>
+[]()
+<p align="center">
+  <img src="Reddit/.png">
 </p>
