@@ -9,7 +9,8 @@ This is the Setup for my Ubuntu 20.04 LTS
     - [Installing Gnome Extensions](#Installing-Gnome-Extensions)
 
 2. [Terminal Setup](#Terminal-Setup)
-    - [Bash & Tmux Setup](#bash-tmux)
+    - [Bash Setup](#Bash-Setup)
+    - [Tmux Setup](#Tmux-Setup)
     - [Installing Nerd-Fonts (Terminal Emoji)](#Installing-Nerd-Fonts)
     - [Zsh Setup](#Zsh-Setup)
     - [Tilix (Optional)](#tilix)
