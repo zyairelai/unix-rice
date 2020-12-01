@@ -1,9 +1,9 @@
 # Ubuntu 20.04 LTS
 This is the Setup for my Ubuntu 20.04 LTS
 
-1. [Problem Fix]()
-    - [Sub-heading](#)
-      * [Sub-sub-heading](#)
+1. [Problem Fixed](#Problem-Fixed)
+    - [VirtualBox Issues Fixed](#virtualbox)
+    - [Emoji Font Fixed](#emoji)
 
 2. [Daily-Use Software Installation](#)
     - [Sub-heading](#)
@@ -23,12 +23,13 @@ sudo cp "Wallpapers/retro-coffee-shop.jpg" "/usr/share/backgrounds/"
 gsettings set org.gnome.desktop.background picture-uri "/usr/share/backgrounds/retro-coffee-shop.jpg"
 ```
 
+# Problem Fixed 
+
+<a name="virtualbox"></a>
 ### VirtualBox Issues Fixed
 
-Cannot install Guest Additions on Debian
-
-Edit `/etc/fstab`
-
+Error: `Cannot install Guest Additions on Debian`  
+Edit `/etc/fstab`  
 Change from this line  
 ```
 /dev/sr0        /media/cdrom0   udf,iso9660 user,noauto     0       0
@@ -39,8 +40,8 @@ To
 /dev/sr0        /media/cdrom0   udf,iso9660 user,exec     0       0
 ```
 
-
-### To fix `fonts-noto-color-emoji` sometimes
+<a name="emoji"></a>
+### Emoji Font Fixed
 ```
 sudo apt reinstall fonts-noto-color-emoji
 
@@ -78,10 +79,10 @@ sudo apt reinstall fonts-noto-color-emoji
 
 ```
 
-## Terminal-Setup
+# Terminal-Setup
 
 <a name="bash-tmux"></a>
-### Bash & Tmux Setup
+## Bash & Tmux Setup
 ```
 cp ~/.bashrc ~/.bashrc.bck
 cp Terminal/bashrc-kali-2019 ~/.bashrc
@@ -91,11 +92,11 @@ tmux source-file .tmux.conf
 ```
 
 <a name="Nerd-Fonts"></a>
-### Installing Nerd-Fonts (Terminal Emoji)
+## Installing Nerd-Fonts (Terminal Emoji)
 - [Hack Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf)
 
 <a name="zsh"></a>
-### Zsh Setup
+## Zsh Setup
 - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`  
 - `git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k`  
 
@@ -105,7 +106,7 @@ chsh -s $(which zsh)
 ```
 
 <a name="tilix"></a>
-### Tilix (Optional)
+## Tilix (Optional)
 ### Installing Tilix and Open Tilix Here
 - `sudo apt install tilix python-nautilus`
 - `sudo update-alternatives --config x-terminal-emulator`
