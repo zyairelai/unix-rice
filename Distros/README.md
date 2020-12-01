@@ -1,4 +1,4 @@
-# OS
+# Distros
 
 - [Arch Linux]()
 - [Parrot 4.10]()
