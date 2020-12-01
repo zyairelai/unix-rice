@@ -5,12 +5,12 @@ Setup for my Desktop, some configurations for my Desktop themes and shortcuts.
 
 ### With Default Panel
 <p align="center">
-  <img src="Wallpapers/my-panel.png">
+  <img src="config/Wallpapers/my-panel.png">
 </p>
 
 ### With Latte Dock
 <p align="center">
-  <img src="Wallpapers/my-latte.png">
+  <img src="config/Wallpapers/my-latte.png">
 </p>
 
 ### Personal Shortcuts
@@ -35,17 +35,3 @@ Move window one workspace up/down   - Super + Up / Down
 Eject                               - Ctrl + Alt + Backspace
 Close window                        - Alt + W
 ```
-
-### To Clean Up APT Bundles
-- https://github.com/davidfoerster/aptsources-cleanup
-```
-sudo apt install python3-apt python3-regex
-chmod a+x aptsources-cleanup.pyz
-sudo ./aptsources-cleanup.pyz
-```
-
-### Fixing Emoji Problem
-- `sudo apt reinstall fonts-noto-color-emoji`
-
-### Fix VirtualBox Guest Permission
-- `sudo adduser $USER vboxsf`

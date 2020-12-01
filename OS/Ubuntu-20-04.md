@@ -1,5 +1,5 @@
 # Ubuntu 20.04 LTS
-This is the Setup for my Ubuntu 20.04 LTS
+### These are the Setup for my Ubuntu 20.04 LTS
 
 1. [Installing Tools for Daily use](#Installing-Tools-for-Daily-Use)
     - [Install Necessary Tools](#Install-Necessary-Tools)
@@ -21,7 +21,7 @@ This is the Setup for my Ubuntu 20.04 LTS
     
 # Installing Tools for Daily Use
 ## Install Necessary Tools
-`sudo apt install git curl python3-pip pipenv chrome-gnome-shell gnome-tweak-tool fonts-noto-color-emoji tree neofetch`
+`sudo apt install git curl docker python3-pip pipenv chrome-gnome-shell gnome-tweak-tool fonts-noto-color-emoji tree neofetch`
 
 ## Install from Software Center
 - Discord
