@@ -50,12 +50,12 @@ This is the Setup for my Ubuntu 20.04 LTS
 ## Bash Setup
 ```
 cp ~/.bashrc ~/.bashrc.bck
-cp Terminal/bashrc-kali-2019 ~/.bashrc
+cp config/Terminal/bashrc-kali-2019 ~/.bashrc
 source .bashrc
 ```
 ## Tmux Setup
 ```
-cp Terminal/tmux.conf ~/.tmux.conf
+cp config/Terminal/tmux.conf ~/.tmux.conf
 tmux source-file .tmux.conf
 ```
 
@@ -67,7 +67,7 @@ tmux source-file .tmux.conf
 - [Oh My Zsh Github Repository](https://github.com/ohmyzsh/ohmyzsh)
 - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`  
 - `git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k`  
-- `cp Terminal/zshrc ~/.zshrc`
+- `cp config/Terminal/zshrc ~/.zshrc`
 - `chsh -s $(which zsh)`
 
 
