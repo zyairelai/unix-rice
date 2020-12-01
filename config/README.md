@@ -11,3 +11,8 @@ sudo ./aptsources-cleanup.pyz
 
 ### Fix VirtualBox Guest Permission
 - `sudo adduser $USER vboxsf`
+
+### Transparent VSCode 
+- `sudo apt-get install devilspie`
+- `mkdir -p ~/.devilspie`
+- `cp vscode.ds ~/.devilspie/vscode.ds`
