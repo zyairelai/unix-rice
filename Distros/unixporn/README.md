@@ -1,6 +1,5 @@
 # References
 
-
 1. [KDE Nordic](#KDE-Nordic)
 2. [i3 Spooktober Blossoms](#i3-Spooktober-Blossoms)
 3. [i3-gaps Cyberpunk Cafe Minimalism](#i3-gaps-Cyberpunk-Cafe-Minimalism)
