@@ -2,19 +2,18 @@
 This is the Setup for my Ubuntu 20.04 LTS
 
 1. [Problem Fix]()
-  - [Sub-heading](#)
-    * [Sub-sub-heading](#)
+    - [Sub-heading](#)
+      * [Sub-sub-heading](#)
 
 2. [Daily-Use Software Installation](#)
-  - [Sub-heading](#)
-    * [Sub-sub-heading](#)
+    - [Sub-heading](#)
+      * [Sub-sub-heading](#)
 
 3. [Terminal Setup](#Terminal-Setup)
-  - [Bash & Tmux Setup](#Bash & Tmux Setup)
-  - [Installing Nerd-Fonts (Terminal Emoji)](#Installing Nerd-Fonts (Terminal Emoji))
-  - [Zsh Setup](#Zsh Setup)
-  - [Tilix (Optional)](#Tilix (Optional))
-
+    - [Bash & Tmux Setup](#bash-tmux)
+    - [Installing Nerd-Fonts (Terminal Emoji)](#Nerd-Fonts)
+    - [Zsh Setup](#zsh)
+    - [Tilix (Optional)](#tilix)
 
 
 
@@ -81,6 +80,7 @@ sudo apt reinstall fonts-noto-color-emoji
 
 ## Terminal-Setup
 
+<a name="bash-tmux"></a>
 ### Bash & Tmux Setup
 ```
 cp ~/.bashrc ~/.bashrc.bck
@@ -90,10 +90,11 @@ cp Terminal/tmux.conf ~/.tmux.conf
 tmux source-file .tmux.conf
 ```
 
+<a name="Nerd-Fonts"></a>
 ### Installing Nerd-Fonts (Terminal Emoji)
 - [Hack Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf)
 
-
+<a name="zsh"></a>
 ### Zsh Setup
 - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`  
 - `git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k`  
@@ -103,7 +104,8 @@ cp Terminal/zshrc ~/.zshrc
 chsh -s $(which zsh)
 ```
 
-# Tilix (Optional)
+<a name="tilix"></a>
+### Tilix (Optional)
 ### Installing Tilix and Open Tilix Here
 - `sudo apt install tilix python-nautilus`
 - `sudo update-alternatives --config x-terminal-emulator`
