@@ -9,9 +9,9 @@
 
 
 ## KDE Store
-[Layan -- Look & Feel Theme](https://store.kde.org/p/1325243)
-[Zafiro Icon -- Classic Icons](https://www.gnome-look.org/s/Gnome/p/1209330)
-[Nordic Folder Icon -- Classic Chill](https://www.gnome-look.org/p/1267246)
+- [Layan -- Look & Feel Theme](https://store.kde.org/p/1325243)
+- [Zafiro Icon -- Classic Icons](https://www.gnome-look.org/s/Gnome/p/1209330)
+- [Nordic Folder Icon -- Classic Chill](https://www.gnome-look.org/p/1267246)
 
 
 <a name="KDE-Nordic"></a>
@@ -45,6 +45,5 @@
 <a name="KDE-Inifinity-Dark"></a>
 [KDE Inifinity Dark](https://www.reddit.com/r/unixporn/comments/jfa4ct/plasma_5_new_dark_plasma_theme_infinityplasma/)
 <p align="center">
-  <img src="Reddit/KDE-Inifinity-Dark.png
-  ">
+  <img src="Reddit/KDE-Inifinity-Dark.png">
 </p>
