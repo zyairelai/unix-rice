@@ -21,7 +21,7 @@
 <a name="i3-gaps-Glassy-Sky"></a>
 [i3-gaps Glassy Sky](https://www.reddit.com/r/unixporn/comments/k5wx0y/i3gaps_my_first_comfortable_workspace/)
 <p align="center">
-  <img src="Reddit/Glassy-Sky.png">
+  <img src="Reddit/Glassy-Sky.jpg">
 </p>
 
 
