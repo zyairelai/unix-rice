@@ -114,7 +114,6 @@ source $ZSH/oh-my-zsh.sh
 ##########################################################################
 ##########################################################################
 
-
 # Set username to consider a default context, which by default will not be shown.
 # https://github.com/bhilburn/powerlevel9k/blob/next/segments/context/README.md
 DEFAULT_USER='zyaire' # set 'luca' to others will result in not showing name
@@ -147,58 +146,55 @@ else
     POWERLEVEL9K_MODE=$P9KGT_FONTS
 fi
 
-if [[ $P9KGT_ERROR != true ]]
+# Set P9KGT background color
+if [[ $P9KGT_BACKGROUND == 'light' ]]
 then
+    # https://github.com/bhilburn/powerlevel9k/wiki/Stylizing-Your-Prompt#light-color-theme
+    POWERLEVEL9K_COLOR_SCHEME='light'
+    P9KGT_TERMINAL_BACKGROUND=231
+elif [[ $P9KGT_BACKGROUND == 'dark' ]]
+then
+    POWERLEVEL9K_COLOR_SCHEME='dark'
+    P9KGT_TERMINAL_BACKGROUND=236
+fi
 
-    # Set P9KGT background color
-    if [[ $P9KGT_BACKGROUND == 'light' ]]
-    then
-        # https://github.com/bhilburn/powerlevel9k/wiki/Stylizing-Your-Prompt#light-color-theme
-        POWERLEVEL9K_COLOR_SCHEME='light'
-        P9KGT_TERMINAL_BACKGROUND=231
-    elif [[ $P9KGT_BACKGROUND == 'dark' ]]
-    then
-        POWERLEVEL9K_COLOR_SCHEME='dark'
-        P9KGT_TERMINAL_BACKGROUND=236
-    fi
+# Set P9KGT foreground colors
+if [[ $P9KGT_COLORS == 'light' ]]
+then
+    P9KGT_RED=009
+    P9KGT_GREEN=010
+    P9KGT_YELLOW=011
+    P9KGT_BLUE=039
+elif [[ $P9KGT_COLORS == 'dark' ]]
+then
+    P9KGT_RED=001
+    P9KGT_GREEN=002
+    P9KGT_YELLOW=003
+    P9KGT_BLUE=039
+elif [[ $P9KGT_COLORS == 'bright' ]]
+then
+    P9KGT_RED=196
+    #P9KGT_GREEN=148
+    P9KGT_GREEN=154
+    P9KGT_YELLOW=220
+    P9KGT_BLUE=039
+fi
 
-    # Set P9KGT foreground colors
-    if [[ $P9KGT_COLORS == 'light' ]]
-    then
-        P9KGT_RED=009
-        P9KGT_GREEN=010
-        P9KGT_YELLOW=011
-        P9KGT_BLUE=039
-    elif [[ $P9KGT_COLORS == 'dark' ]]
-    then
-        P9KGT_RED=001
-        P9KGT_GREEN=002
-        P9KGT_YELLOW=003
-        P9KGT_BLUE=039
-    elif [[ $P9KGT_COLORS == 'bright' ]]
-    then
-        P9KGT_RED=196
-        #P9KGT_GREEN=148
-        P9KGT_GREEN=154
-        P9KGT_YELLOW=220
-        P9KGT_BLUE=039
-    fi
+# Customize prompt
+# https://github.com/bhilburn/powerlevel9k/wiki/Stylizing-Your-Prompt#adding-newline-before-each-prompt
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=false
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs)
 
-    # Customize prompt
-    # https://github.com/bhilburn/powerlevel9k/wiki/Stylizing-Your-Prompt#adding-newline-before-each-prompt
-    POWERLEVEL9K_PROMPT_ADD_NEWLINE=false
-    POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs)
-
-    # Set 'context' segment colors
-    # https://github.com/bhilburn/powerlevel9k/blob/next/segments/context/README.md
-    POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND=$P9KGT_YELLOW
-    POWERLEVEL9K_CONTEXT_ROOT_FOREGROUND=$P9KGT_YELLOW
-    POWERLEVEL9K_CONTEXT_SUDO_FOREGROUND=$P9KGT_YELLOW
-    POWERLEVEL9K_CONTEXT_REMOTE_FOREGROUND=$P9KGT_YELLOW
-    POWERLEVEL9K_CONTEXT_REMOTE_SUDO_FOREGROUND=$P9KGT_YELLOW
-    POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND=$P9KGT_TERMINAL_BACKGROUND
-    POWERLEVEL9K_CONTEXT_ROOT_BACKGROUND=$P9KGT_TERMINAL_BACKGROUND
-    POWERLEVEL9K_CONTEXT_SUDO_BACKGROUND=$P9KGT_TERMINAL_BACKGROUND
-    POWERLEVEL9K_CONTEXT_REMOTE_BACKGROUND=$P9KGT_TERMINAL_BACKGROUND
-    POWERLEVEL9K_CONTEXT_REMOTE_SUDO_BACKGROUND=$P9KGT_TERMINAL_BACKGROUND
+# Set 'context' segment colors
+# https://github.com/bhilburn/powerlevel9k/blob/next/segments/context/README.md
+POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND=$P9KGT_YELLOW
+POWERLEVEL9K_CONTEXT_ROOT_FOREGROUND=$P9KGT_YELLOW
+POWERLEVEL9K_CONTEXT_SUDO_FOREGROUND=$P9KGT_YELLOW
+POWERLEVEL9K_CONTEXT_REMOTE_FOREGROUND=$P9KGT_YELLOW
+POWERLEVEL9K_CONTEXT_REMOTE_SUDO_FOREGROUND=$P9KGT_YELLOW
+POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND=$P9KGT_TERMINAL_BACKGROUND
+POWERLEVEL9K_CONTEXT_ROOT_BACKGROUND=$P9KGT_TERMINAL_BACKGROUND
+POWERLEVEL9K_CONTEXT_SUDO_BACKGROUND=$P9KGT_TERMINAL_BACKGROUND
+POWERLEVEL9K_CONTEXT_REMOTE_BACKGROUND=$P9KGT_TERMINAL_BACKGROUND
+POWERLEVEL9K_CONTEXT_REMOTE_SUDO_BACKGROUND=$P9KGT_TERMINAL_BACKGROUND
 
