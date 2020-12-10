@@ -21,7 +21,7 @@
     
 # Installing Tools for Daily Use
 ## Install Necessary Tools
-`sudo apt install git curl docker python3-pip pipenv chrome-gnome-shell gnome-tweak-tool fonts-noto-color-emoji tree neofetch`
+`sudo apt install git curl docker python3-pip pipenv chrome-gnome-shell gnome-tweak-tool fonts-noto-color-emoji tree neofetch ranger`
 
 ## Install from Software Center
 - Discord
