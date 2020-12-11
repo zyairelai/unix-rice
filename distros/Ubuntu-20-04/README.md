@@ -50,12 +50,10 @@
 ## Bash Setup
 ```
 cp ~/.bashrc ~/.bashrc.bck
-cp config/Terminal/bashrc-kali-2019 ~/.bashrc
-source .bashrc
 ```
 ## Tmux Setup
 ```
-cp config/Terminal/tmux.conf ~/.tmux.conf
+cp tmux.conf ~/.tmux.conf
 tmux source-file .tmux.conf
 ```
 
