@@ -10,9 +10,9 @@
 
 2. [Terminal Setup](#Terminal-Setup)
     - [Bash Setup](#Bash-Setup)
-    - [Tmux Setup](#Tmux-Setup)
     - [Installing Nerd-Fonts (Terminal Emoji)](#Installing-Nerd-Fonts)
     - [Zsh Setup](#Zsh-Setup)
+    - [Tmux Setup](#Tmux-Setup)
     - [Tilix (Optional)](#tilix)
     
 3. [Problem Fixed](#Problem-Fixed)
@@ -51,11 +51,6 @@
 ```
 cp ~/.bashrc ~/.bashrc.bck
 ```
-## Tmux Setup
-```
-cp tmux.conf ~/.tmux.conf
-tmux source-file .tmux.conf
-```
 
 ## Installing Nerd-Fonts
 - [Hack Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf)
@@ -68,6 +63,11 @@ tmux source-file .tmux.conf
 - `cp config/Terminal/zshrc ~/.zshrc`
 - `chsh -s $(which zsh)`
 
+## Tmux Setup
+```
+cp tmux.conf ~/.tmux.conf
+tmux source-file .tmux.conf
+```
 
 <a name="tilix"></a>
 ## Tilix (Optional)
