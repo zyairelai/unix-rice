@@ -21,6 +21,7 @@ sudo ln -s /bin/python3 /bin/py
 sudo ln -s /bin/python3 /bin/python
 sudo ln -s /bin/bash /bin/b
 sudo ln -s /bin/zsh /bin/z 
+sudo ln -s /bin/ranger /bin/r
 ```
 
 ### Keyboard Shortcuts
