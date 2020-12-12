@@ -15,7 +15,7 @@
 	- [Install Kvantum Theme to local folder](#Install-Kvantum-Theme-to-local-folder)
 	- [GTK Application Style](#GTK-Application-Style)
 
-4. [Terminal](#Terminal-Setup)
+4. [Terminal](#Terminal)
     - [Basic Theme](#Basic-Theme)
     - [Zsh](#Zsh)
     - [Terminal Font](#Terminal-Font)
