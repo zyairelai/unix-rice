@@ -5,12 +5,12 @@ Setup for my Desktop, some configurations for my Desktop themes and shortcuts.
 
 ### With Default Panel
 <p align="center">
-  <img src="config/Wallpapers/my-panel.png">
+  <img src="wallpaper/my-panel.png">
 </p>
 
 ### With Latte Dock
 <p align="center">
-  <img src="config/Wallpapers/my-latte.png">
+  <img src="wallpaper/my-latte.png">
 </p>
 
 ### Personal Shortcuts
