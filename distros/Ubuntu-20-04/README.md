@@ -9,7 +9,7 @@
     - [Installing Gnome Extensions](#Installing-Gnome-Extensions)
 
 2. [Terminal Setup](#Terminal-Setup)
-    - [Bash Setup](#Bash-Setup)
+    - [Bash Setup](#Bash-Backup)
     - [Installing Nerd-Fonts (Terminal Emoji)](#Installing-Nerd-Fonts)
     - [Zsh Setup](#Zsh-Setup)
     - [Tmux Setup](#Tmux-Setup)
@@ -45,9 +45,7 @@
 
 
 # Terminal-Setup
-
-<a name="bash-tmux"></a>
-## Bash Setup
+## Bash Backup
 ```
 cp ~/.bashrc ~/.bashrc.bck
 ```
@@ -58,10 +56,7 @@ cp ~/.bashrc ~/.bashrc.bck
 ## Zsh Setup
 - `sudo apt install zsh tmux fonts-powerline`
 - [Oh My Zsh Github Repository](https://github.com/ohmyzsh/ohmyzsh)
-- `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`  
-- `git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k`  
-- `cp config/Terminal/zshrc ~/.zshrc`
-- `chsh -s $(which zsh)`
+- [Powerlevel9k Github Repository](https://github.com/Powerlevel9k/powerlevel9k)
 
 ## Tmux Setup
 ```
