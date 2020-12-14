@@ -1,0 +1,12 @@
+{
+    "terminal.integrated.shell.linux": "/bin/zsh",
+    "terminal.integrated.fontFamily": "Hack Nerd Font",
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ]
+}
