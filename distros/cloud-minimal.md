@@ -18,6 +18,9 @@ chsh -s $(which zsh)
 ```
 sudo ln -s /bin/python3.7 /bin/python
 sudo ln -s /bin/python3.7 /bin/py
+sudo ln -s /bin/clear /bin/c
+sudo ln -s /bin/bash /bin/b
+sudo ln -s /bin/zsh /bin/z
 
 echo -e "sudo su louiszhenyean" > louiszhenyean.sh
 sudo mv louiszhenyean.sh /bin/
