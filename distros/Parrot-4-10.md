@@ -108,6 +108,8 @@ System Settings > Icons > [Sweet Folders](https://store.kde.org/p/1284047)
 - [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
 - [PowerLevel10k](https://github.com/romkatv/powerlevel10k)
 - `Settings > Edit Current Profile > General > /bin/zsh`
+- `nano ./.oh-my-zsh/lib/directories.zsh`
+- `alias ll='ls -lh --group-directories-first'`
 
 ### Terminal Font
 - [Hack Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf)
