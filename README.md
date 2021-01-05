@@ -20,8 +20,10 @@ sudo ln -s /bin/xdg-open /bin/open
 sudo ln -s /bin/python3 /bin/py
 sudo ln -s /bin/python3 /bin/python
 sudo ln -s /bin/bash /bin/b
-sudo ln -s /bin/zsh /bin/z 
+sudo ln -s /bin/zsh /bin/z
+sudo ln -s /bin/clear /bin/c
 sudo ln -s /bin/ranger /bin/r
+sudo ln -s /bin/tree /bin/t
 ```
 
 ### Keyboard Shortcuts
