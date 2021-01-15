@@ -1,6 +1,6 @@
 ### Installing Daily Tools
 ```
-sudo apt install python3-pip git zsh tmux tree htop
+sudo apt install python3-pip git wget zsh tmux tree htop 
 ```
 
 ### Setup ZSH
@@ -30,6 +30,7 @@ echo -e "# Change the prefix key to C-a\nset -g prefix C-a\nunbind C-b\nbind C-a
 ```
 
 ### Extra Setup
+- passwd user
 - Setup API Key 
 - source .zshrc && source .tmux.conf
-- tmux new -s eth-core
+- tmux new -s <session-name>
