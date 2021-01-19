@@ -29,9 +29,9 @@ sudo ln -s /bin/louiszhenyean.sh /bin/lo
 
 echo -e "# Change the prefix key to C-a\nset -g prefix C-a\nunbind C-b\nbind C-a send-prefix\nset-option -g mouse on" > .tmux.conf
 
-nano ./.oh-my-zsh/lib/directories.zsh
+nano ~/.oh-my-zsh/lib/directories.zsh
 ❗ alias ll='ls -lh --group-directories-first'
-source ./.oh-my-zsh/lib/directories.zsh
+source ~/.oh-my-zsh/lib/directories.zsh
 ```
 
 ### Extra Setup
