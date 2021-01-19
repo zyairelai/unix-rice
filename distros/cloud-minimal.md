@@ -21,7 +21,6 @@ source .tmux.conf
 source ~/.oh-my-zsh/lib/directories.zsh
 ```
 
-
 ### Setup Shortcut Key
 ```
 sudo ln -s /bin/python3.7 /bin/python
