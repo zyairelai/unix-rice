@@ -57,7 +57,7 @@ cp ~/.bashrc ~/.bashrc.bck
 - `sudo apt install zsh tmux fonts-powerline`
 - [Oh My Zsh Github Repository](https://github.com/ohmyzsh/ohmyzsh)
 - [Powerlevel9k Github Repository](https://github.com/Powerlevel9k/powerlevel9k)
-- `nano ./.oh-my-zsh/lib/directories.zsh`
+- `nano ~/.oh-my-zsh/lib/directories.zsh`
 - `alias ll='ls -lh --group-directories-first'`
 
 ## Tmux Setup
