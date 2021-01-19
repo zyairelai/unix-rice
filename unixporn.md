@@ -9,10 +9,10 @@
 ### Arch-based
 - [Check him out!](https://www.reddit.com/user/sureshit01/posts/)
 
-1. [i3 Spooktober Blossoms](#i3-Spooktober-Blossoms)
+1. [i3 Spooktober Blossoms](https://www.reddit.com/r/unixporn/comments/j3s3hv/i3_spooktober_blossoms/)
 2. [i3-gaps Glassy Sky](#i3-gaps-Glassy-Sky)
-3. [i3-gaps Cyberpunk Cafe Minimalism](#i3-gaps-Cyberpunk-Cafe-Minimalism)
-4. [Bspwm Blossom Again](#Bspwm-Blossom-Again)
+3. [i3-gaps Cyberpunk Cafe Minimalism](https://www.reddit.com/r/unixporn/comments/j3nzan/i3gaps_cyberpunk_cafe_minimalism_first_rice_ever/)
+4. [Bspwm Blossom Again](https://www.reddit.com/r/unixporn/comments/k4h6xt/bspwm_blossom_again/)
 5. [](#)
 
 ### Start Up Page
