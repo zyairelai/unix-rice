@@ -38,3 +38,12 @@ echo -e "# Change the prefix key to C-a\nset -g prefix C-a\nunbind C-b\nbind C-a
 
 ### Extra Setup
 - passwd user
+
+### Pip3 Install
+```
+pip3 install apscheduler==3.6.3
+pip3 install cryptography==3.2 
+pip3 install python-binance==0.7.5
+pip3 install python-telegram-bot
+pip3 install termcolor==1.1.0
+```
