@@ -24,6 +24,7 @@ sudo ln -s /bin/zsh /bin/z
 sudo ln -s /bin/clear /bin/c
 sudo ln -s /bin/ranger /bin/r
 sudo ln -s /bin/tree /bin/t
+sudo ln -s /bin/nano /bin/n
 ```
 
 ### Keyboard Shortcuts
