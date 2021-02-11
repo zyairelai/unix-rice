@@ -17,6 +17,7 @@ Setup for my Desktop, some configurations for my Desktop themes and shortcuts.
 Always use easy shortcuts XD
 ```
 sudo ln -s /bin/xdg-open /bin/open
+sudo ln -s /bin/pip3 /bin/pip
 sudo ln -s /bin/python3 /bin/py
 sudo ln -s /bin/python3 /bin/python
 sudo ln -s /bin/bash /bin/b
