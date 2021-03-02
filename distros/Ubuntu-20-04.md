@@ -42,7 +42,7 @@
 - [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
 - [Auto Move Windows](https://extensions.gnome.org/extension/16/auto-move-windows/)
 - [Refresh Wifi Connections](https://extensions.gnome.org/extension/905/refresh-wifi-connections/)
-
+- [Crypto Price Tracker](https://extensions.gnome.org/extension/2817/crypto-price-tracker/)
 
 # Terminal-Setup
 ## Bash Backup
