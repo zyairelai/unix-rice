@@ -3,6 +3,21 @@
 sudo apt install python3-pip git wget zsh tmux tree htop 
 ```
 
+### Setup Shortcut Key
+```
+sudo ln -s /bin/python3.7 /bin/python
+sudo ln -s /bin/python3.7 /bin/py
+sudo ln -s /bin/clear /bin/c
+sudo ln -s /bin/bash /bin/b
+sudo ln -s /bin/zsh /bin/z
+
+echo -e "sudo su louiszhenyean" > louiszhenyean.sh
+sudo mv louiszhenyean.sh /bin/
+sudo ln -s /bin/louiszhenyean.sh /bin/lo
+
+echo -e "# Change the prefix key to C-a\nset -g prefix C-a\nunbind C-b\nbind C-a send-prefix\nset-option -g mouse on" > .tmux.conf
+```
+
 ### Setup ZSH
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -19,21 +34,6 @@ nano ~/.zshrc
 source .zshrc
 source .tmux.conf
 source ~/.oh-my-zsh/lib/directories.zsh
-```
-
-### Setup Shortcut Key
-```
-sudo ln -s /bin/python3.7 /bin/python
-sudo ln -s /bin/python3.7 /bin/py
-sudo ln -s /bin/clear /bin/c
-sudo ln -s /bin/bash /bin/b
-sudo ln -s /bin/zsh /bin/z
-
-echo -e "sudo su louiszhenyean" > louiszhenyean.sh
-sudo mv louiszhenyean.sh /bin/
-sudo ln -s /bin/louiszhenyean.sh /bin/lo
-
-echo -e "# Change the prefix key to C-a\nset -g prefix C-a\nunbind C-b\nbind C-a send-prefix\nset-option -g mouse on" > .tmux.conf
 ```
 
 ### Extra Setup
