@@ -58,12 +58,8 @@ cp ~/.bashrc ~/.bashrc.bck
 - [Powerlevel9k Github Repository](https://github.com/Powerlevel9k/powerlevel9k)
 - `nano ~/.oh-my-zsh/lib/directories.zsh`
 - `alias ll='ls -lh --group-directories-first'`
-
-## Tmux Setup
-```
-cp tmux.conf ~/.tmux.conf
-tmux source-file .tmux.conf
-```
+- `chsh -s $(which zsh)`
+- `tmux source-file .tmux.conf`
 
 <a name="tilix"></a>
 ## Tilix (Optional)
