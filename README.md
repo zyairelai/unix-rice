@@ -51,3 +51,5 @@ sudo ./aptsources-cleanup.pyz
 
 ### Fix VirtualBox Guest Permission
 - `sudo adduser $USER vboxsf`
+
+(Fix DNS issue)[https://askubuntu.com/questions/951057/ubuntu-dns-error-chrome-dns-probe-finished-nxdomain-firefox-similar]
