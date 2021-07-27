@@ -52,4 +52,5 @@ sudo ./aptsources-cleanup.pyz
 ### Fix VirtualBox Guest Permission
 - `sudo adduser $USER vboxsf`
 
-[Fix DNS issue](https://askubuntu.com/questions/951057/ubuntu-dns-error-chrome-dns-probe-finished-nxdomain-firefox-similar)
+[Fix DNS issue](https://askubuntu.com/questions/951057/ubuntu-dns-error-chrome-dns-probe-finished-nxdomain-firefox-similar)  
+[Fix Dual Boot Wrong Time](https://www.howtogeek.com/323390/how-to-fix-windows-and-linux-showing-different-times-when-dual-booting/)
