@@ -21,7 +21,10 @@
     
 # Installing Tools for Daily Use
 ## Install Necessary Tools
-`sudo apt install git curl docker python3-pip pipenv chrome-gnome-shell gnome-tweak-tool fonts-noto-color-emoji tree neofetch simplescreenrecorder ranger telegram-desktop`
+`sudo apt install git curl docker python3-pip pipenv chrome-gnome-shell gnome-tweak-tool fonts-noto-color-emoji tree neofetch ranger telegram-desktop zsh tmux fonts-powerline`
+
+### Maybe not that Necessary
+`sudo apt install simplescreenrecorder nmap nikto`
 
 ## Install from Snap / Software Center
 - Discord
