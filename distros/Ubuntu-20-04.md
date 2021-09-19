@@ -46,6 +46,9 @@
 - [Auto Move Windows](https://extensions.gnome.org/extension/16/auto-move-windows/)
 - [Refresh Wifi Connections](https://extensions.gnome.org/extension/905/refresh-wifi-connections/)
 
+## Uninstall Unnecessary Extensions
+- `sudo apt remove gnome-shell-extension-ubuntu-dock`
+
 # Terminal-Setup
 ## Bash Backup
 ```
