@@ -59,6 +59,8 @@ cp ~/.bashrc ~/.bashrc.bck
 - `sudo apt install zsh tmux fonts-powerline`
 - [Oh My Zsh Github Repository](https://github.com/ohmyzsh/ohmyzsh)
 - [Powerlevel9k Github Repository](https://github.com/Powerlevel9k/powerlevel9k)
+- `sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+- `git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k`
 - `nano ~/.oh-my-zsh/lib/directories.zsh`
 - `alias ll='ls -lh --group-directories-first'`
 - `chsh -s $(which zsh)`
