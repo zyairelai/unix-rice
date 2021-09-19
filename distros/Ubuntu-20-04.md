@@ -98,3 +98,5 @@ To
 ## Emoji Font Fixed
 `sudo apt reinstall fonts-noto-color-emoji`
 
+## Local Time Fixed
+`timedatectl set-local-rtc 1 --adjust-system-clock`
