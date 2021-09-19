@@ -43,7 +43,6 @@
 ## Installing Gnome Extensions
 - [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
 - [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
-- [Auto Move Windows](https://extensions.gnome.org/extension/16/auto-move-windows/)
 - [Refresh Wifi Connections](https://extensions.gnome.org/extension/905/refresh-wifi-connections/)
 
 ## Uninstall Unnecessary Extensions
