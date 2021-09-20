@@ -100,3 +100,6 @@ To
 
 ## Local Time Fixed
 `timedatectl set-local-rtc 1 --adjust-system-clock`
+
+## Emoji Font Fixed
+- https://www.py4u.net/discuss/1121744
