@@ -13,8 +13,17 @@ Setup for my Desktop, some configurations for my Desktop themes and shortcuts.
   <img src="wallpaper/my-latte.png">
 </p>
 
+## Must HAVE Apps!!!
+- https://github.com/zyairelai/kali-anonsurf
+- https://marktext.app/
+```
+chmod a+x {marktext.AppImage}
+mv $HOME/Downloads/{marktext.AppImage} /usr/bin/marktext
+```
+
 ### Personal Shortcuts
 ```
+sudo apt install polybar rofi neofetch tree ranger
 sudo ln -s /bin/xdg-open /bin/open
 sudo ln -s /bin/python3 /bin/py
 sudo ln -s /bin/python3 /bin/python
