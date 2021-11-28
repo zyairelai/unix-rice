@@ -1,7 +1,7 @@
 ## ZyDesk
 Setup for my Desktop, some configurations for my Desktop themes and shortcuts.  
 
-## My Current Desktop
+### My Current Desktop
 
 ### With Default Panel
 <p align="center">
@@ -13,7 +13,10 @@ Setup for my Desktop, some configurations for my Desktop themes and shortcuts.
   <img src="wallpaper/my-latte.png">
 </p>
 
-## Must HAVE Apps!!!
+### Must HAVE Apps!!!
+```
+sudo apt install polybar rofi neofetch tree ranger tilix python3-nautilus fonts-noto-color-emoji
+```
 - https://github.com/zyairelai/kali-anonsurf
 - https://marktext.app/
 ```
@@ -21,9 +24,8 @@ chmod a+x {marktext.AppImage}
 mv $HOME/Downloads/{marktext.AppImage} /usr/bin/marktext
 ```
 
-### Personal Shortcuts
+### Personal Terminal Shortcuts
 ```
-sudo apt install polybar rofi neofetch tree ranger
 sudo ln -s /bin/xdg-open /bin/open
 sudo ln -s /bin/python3 /bin/py
 sudo ln -s /bin/python3 /bin/python
@@ -64,3 +66,11 @@ sudo adduser $USER vboxsf
 [Fix DNS issue](https://askubuntu.com/questions/951057/ubuntu-dns-error-chrome-dns-probe-finished-nxdomain-firefox-similar)  
 [Fix Dual Boot Wrong Time](https://www.howtogeek.com/323390/how-to-fix-windows-and-linux-showing-different-times-when-dual-booting/)
 
+### Emoji Font Fixed
+`sudo apt reinstall fonts-noto-color-emoji`
+
+### Local Time Fixed
+`timedatectl set-local-rtc 1 --adjust-system-clock`
+
+### Emoji Font Fixed
+- https://www.py4u.net/discuss/1121744
