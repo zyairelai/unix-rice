@@ -35,8 +35,9 @@ sudo ln -s /bin/ranger /bin/r
 ```
 Home folder                         - Ctrl + Alt + F
 Launch Web Browser                  - Ctrl + Alt + G
-Settings                            - Ctrl + Alt + S
+Marktext                            - Ctrl + Alt + M
 Hide all normal windows             - Ctrl + Alt + D
+Settings                            - Ctrl + Alt + S
 Move to workspace above/below       - Ctrl + Alt + Up / Down
 Move window one workspace up/down   - Super + Up / Down
 Close window                        - Alt + W
