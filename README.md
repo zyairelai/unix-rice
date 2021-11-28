@@ -15,7 +15,10 @@ Setup for my Desktop, some configurations for my Desktop themes and shortcuts.
 
 ### Must HAVE Apps!!!
 ```
-sudo apt install polybar rofi neofetch tree ranger tilix python3-nautilus fonts-noto-color-emoji
+sudo apt install git wget curl python3-pip
+sudo apt install zsh tmux fonts-powerline tilix python3-nautilus
+sudo apt install polybar rofi ranger
+sudo apt install neofetch tree htop fonts-noto-color-emoji telegram-desktop
 ```
 - https://github.com/zyairelai/kali-anonsurf
 - https://marktext.app/
