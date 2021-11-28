@@ -14,7 +14,6 @@ Setup for my Desktop, some configurations for my Desktop themes and shortcuts.
 </p>
 
 ### Personal Shortcuts
-Always use easy shortcuts XD
 ```
 sudo ln -s /bin/xdg-open /bin/open
 sudo ln -s /bin/python3 /bin/py
@@ -24,15 +23,13 @@ sudo ln -s /bin/ranger /bin/r
 ```
 
 ### Keyboard Shortcuts
-Sometimes I forgot to setup personal keyboard shortcuts
 ```
 Home folder                         - Ctrl + Alt + F
 Launch Web Browser                  - Ctrl + Alt + G
-Settings                            - Shift + Ctrl + S
-Hide all normal windows             - Disabled
+Settings                            - Ctrl + Alt + S
+Hide all normal windows             - Ctrl + Alt + D
 Move to workspace above/below       - Ctrl + Alt + Up / Down
 Move window one workspace up/down   - Super + Up / Down
-Eject                               - Ctrl + Alt + Backspace
 Close window                        - Alt + W
 ```
 
