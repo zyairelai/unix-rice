@@ -59,6 +59,7 @@ cp ~/.bashrc ~/.bashrc.bck
 
 ## Zsh Setup
 - `sudo apt install zsh tmux fonts-powerline`
+- `sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh`
 - [Oh My Zsh Github Repository](https://github.com/ohmyzsh/ohmyzsh)
 - [Powerlevel9k Github Repository](https://github.com/Powerlevel9k/powerlevel9k)
 - `sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
