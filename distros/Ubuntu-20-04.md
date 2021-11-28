@@ -32,11 +32,6 @@
 - Visual Studio Code
 - `sudo snap install --classic heroku`
 
-## Something Extra for Pentest Fun
-- `sudo apt install nmap nikto`
-- [AnonSurf](https://github.com/ParrotSec/anonsurf)
-- [SSL/SSH VNC Viewer](http://ssvnc.sourceforge.net/)
-
 ## Installing SearchSploit
 - [SearchSploit](https://github.com/offensive-security/exploitdb)
 
@@ -72,7 +67,7 @@ cp ~/.bashrc ~/.bashrc.bck
 <a name="tilix"></a>
 ## Tilix (Optional)
 ### Installing Tilix and Open Tilix Here
-- `sudo apt install tilix python-nautilus`
+- `sudo apt install tilix python3-nautilus`
 - `sudo update-alternatives --config x-terminal-emulator`
 
 ### For OCD, can replace the Tilix to the default Terminal icon
