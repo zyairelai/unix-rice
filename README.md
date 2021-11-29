@@ -17,6 +17,7 @@ Setup for my Desktop, some configurations for my Desktop themes and shortcuts.
 ```
 sudo apt install git wget curl python3-pip
 sudo apt install zsh tmux fonts-powerline tilix python3-nautilus
+sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
 sudo apt install polybar rofi ranger
 sudo apt install neofetch tree htop fonts-noto-color-emoji telegram-desktop
 ```
