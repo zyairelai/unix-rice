@@ -1,5 +1,5 @@
 # Ubuntu 20.04 LTS
-### These are the Setup for my Ubuntu 20.04 LTS
+These are the Setup for my Ubuntu 20.04 LTS
 
 # Installing Tools for Daily Use
 ## Install from Snap / Software Center
