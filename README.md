@@ -28,6 +28,16 @@ chmod a+x {marktext.AppImage}
 mv $HOME/Downloads/{marktext.AppImage} /usr/bin/marktext
 ```
 
+## Zsh Setup
+```
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+nano ~/.oh-my-zsh/lib/directories.zsh
+alias ll='ls -lh --group-directories-first'
+chsh -s $(which zsh)
+tmux source-file .tmux.conf
+```
+
 ### Personal Terminal Shortcuts
 ```
 sudo ln -s /bin/xdg-open /bin/open
