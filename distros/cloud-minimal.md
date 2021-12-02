@@ -35,7 +35,9 @@ source ~/.oh-my-zsh/lib/directories.zsh
 ```
 
 ### Extra Setup
-- passwd user
+```
+passwd $USER
+```
 
 ### Pip3 Install
 ```
