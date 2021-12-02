@@ -8,8 +8,6 @@ sudo apt install python3-pip git wget zsh tmux tree htop
 sudo ln -s /bin/python3.7 /bin/python
 sudo ln -s /bin/python3.7 /bin/py
 sudo ln -s /bin/clear /bin/c
-sudo ln -s /bin/bash /bin/b
-sudo ln -s /bin/zsh /bin/z
 
 echo -e "sudo su louiszhenyean" > louiszhenyean.sh
 sudo mv louiszhenyean.sh /bin/
