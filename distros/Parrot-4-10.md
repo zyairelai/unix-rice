@@ -1,33 +1,5 @@
 # Parrot KDE 4.10
-### These are the Setup for my Parrot KDE 4.10s
-
-1. [Initial Setup](#Initial-Setup)
-	- [Workspace Behavior](#Workspace-Behavior)
-	- [Display Scale](#Display-Scale)
-
-2. [Panel Settings](#Panel-Settings)
-	- [Top Panel](#top-panel)
-	- [Bottom Panel](#Bottom-panel)
-
-3. [Themes](#Themes)
-	- [Basic Theme](#Basic-Theme)
-	- [Installing Kvantum](#Installing-Kvantum)
-	- [Install Kvantum Theme to local folder](#Install-Kvantum-Theme-to-local-folder)
-	- [GTK Application Style](#GTK-Application-Style)
-
-4. [Terminal](#Terminal)
-    - [Basic Theme](#Basic-Theme)
-    - [Zsh](#Zsh)
-    - [Terminal Font](#Terminal-Font)
-
-5. [Visual Studio Code](#Visual-Studio-Code)
-    - [Setup for VSCode / Codium](#vscode-codium-setup)
-    - [Install Devilspie](#Install-Devilspie)
-    
-6. [Problem Fixed](#Problem-Fixed)
-    - [Fix Square Fonts](#Fix-Square-Fonts)
-    - [Emoji Font Fixed](#Emoji-Font-Fixed)
-
+These are the Setup for my Parrot KDE 4.10s
 
 # Initial Setup
 ### Workspace Behavior
@@ -102,18 +74,6 @@ System Settings > Icons > [Sweet Folders](https://store.kde.org/p/1284047)
 - `Settings > Edit Current Profile > Appearance > Sweet`
 - `Edit the Blue Scheme on Color 5`
 - `Blur background with 30% Transparency`
-
-### Zsh
-- `sudo apt install zsh tmux fonts-powerline`
-- [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
-- [PowerLevel10k](https://github.com/romkatv/powerlevel10k)
-- `Settings > Edit Current Profile > General > /bin/zsh`
-- `nano ./.oh-my-zsh/lib/directories.zsh`
-- `alias ll='ls -lh --group-directories-first'`
-
-### Terminal Font
-- [Hack Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf)
-
 
 # Visual Studio Code
 
