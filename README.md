@@ -16,10 +16,11 @@ Setup for my Desktop, some configurations for my Desktop themes and shortcuts.
 ### Must HAVE Apps!!!
 ```
 sudo apt install git wget curl python3-pip
+sudo apt install neofetch tree htop fonts-noto-color-emoji telegram-desktop
+sudo apt install polybar rofi ranger
 sudo apt install zsh tmux fonts-powerline tilix python3-nautilus
 sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
-sudo apt install polybar rofi ranger
-sudo apt install neofetch tree htop fonts-noto-color-emoji telegram-desktop
+sudo update-alternatives --config x-terminal-emulator
 ```
 - https://github.com/zyairelai/kali-anonsurf
 - https://marktext.app/
@@ -37,6 +38,7 @@ alias ll='ls -lh --group-directories-first'
 chsh -s $(which zsh)
 tmux source-file .tmux.conf
 ```
+- [Hack Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf)
 
 ### Personal Terminal Shortcuts
 ```
