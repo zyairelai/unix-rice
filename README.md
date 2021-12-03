@@ -50,16 +50,18 @@ sudo ln -s /bin/ranger /bin/r
 ```
 
 ### Keyboard Shortcuts
-```
-Home folder                         - Ctrl + Alt + F
-Launch Web Browser                  - Ctrl + Alt + G
-Marktext                            - Ctrl + Alt + M
-Hide all normal windows             - Ctrl + Alt + D
-Settings                            - Ctrl + Alt + S
-Move to workspace above/below       - Ctrl + Alt + Up / Down
-Move window one workspace up/down   - Super + Up / Down
-Close window                        - Alt + W
-```
+| Shortcuts              | Description                                        |
+|------------------------|----------------------------------------------------|
+| Ctrl + Alt + F         | Home folder                                        |
+| Ctrl + Alt + G         |  Launch Web Browser                                |
+| Ctrl + Alt + D         | Hide all normal windows                            |
+| Ctrl + Alt + S         | Settings                                           |
+| Ctrl + Alt + Arrows    | Move to workspace (direction)                      |
+| Super + Arrows         | Move window one workspace (direction)              |
+| Alt + Super + Arrows   | Tiling Windows to (direction)                      |
+| Alt + W                | Close window                                       |
+| Ctrl + Alt + P         | bash /home/kali/.config/polybar/launch.sh --shapes |
+| Ctrl + Alt + M         |  Marktext                                          |
 
 ### Shell EVERYWHERE!
 1. Reversed Shell
