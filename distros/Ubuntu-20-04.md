@@ -26,7 +26,6 @@ chmod +x change-gdm-background
 sudo ./change-gdm-background /path/to/image
 ```
 
-
 <a name="tilix"></a>
 ## Tilix (Optional)
 ### Set Tilix As Default Terminal

