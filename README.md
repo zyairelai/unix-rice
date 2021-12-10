@@ -20,19 +20,32 @@ sudo apt install git wget curl python3-pip neofetch tree htop fonts-noto-color-e
 - https://github.com/zyairelai/kali-anonsurf
 - https://marktext.app/
 ```
-chmod a+x {marktext.AppImage}
-mv $HOME/Downloads/{marktext.AppImage} /usr/bin/marktext
+chmod a+x {marktext.AppImage} && mv $HOME/Downloads/{marktext.AppImage} /usr/bin/marktext
 ```
 
 ## Zsh Setup
 ```
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+```
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+```
+```
 nano ~/.oh-my-zsh/lib/directories.zsh
+```
+```
 alias ll='ls -lh --group-directories-first'
+```
+```
 chsh -s $(which zsh)
+```
+```
 sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
+```
+```
 sudo update-alternatives --config x-terminal-emulator
+```
+```
 tmux source-file .tmux.conf
 ```
 
