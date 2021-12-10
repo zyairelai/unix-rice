@@ -14,7 +14,18 @@ These are the Setup for my Ubuntu 20.04 LTS
 - [Refresh Wifi Connections](https://extensions.gnome.org/extension/905/refresh-wifi-connections/)
 
 ## Uninstall Unnecessary Extensions
-- `sudo apt remove gnome-shell-extension-ubuntu-dock`
+```
+sudo apt remove gnome-shell-extension-ubuntu-dock
+```
+
+## Change Login Background
+```
+sudo apt install libglib2.0-dev-bin
+wget github.com/thiggy01/change-gdm-background/raw/master/change-gdm-background
+chmod +x change-gdm-background
+sudo ./change-gdm-background /path/to/image
+```
+
 
 <a name="tilix"></a>
 ## Tilix (Optional)
