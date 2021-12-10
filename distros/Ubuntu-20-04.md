@@ -1,7 +1,6 @@
 # Ubuntu 20.04 LTS
 These are the Setup for my Ubuntu 20.04 LTS
 
-# Installing Tools for Daily Use
 ## Install from Snap / Software Center
 - Discord
 - Sublime Text
@@ -38,7 +37,6 @@ sudo ./change-gdm-background /path/to/image
 - `sudo cp '/usr/share/icons/Yaru/256x256@2x/apps/gnome-terminal.png' /usr/share/icons/hicolor/scalable/apps/com.gexperts.Tilix.svg`
 
 
-# Problem Fixed
 ## VirtualBox Issues Fixed
 Error: `Cannot install Guest Additions on Debian`  
 Edit `/etc/fstab`  
