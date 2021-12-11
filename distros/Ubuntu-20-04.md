@@ -59,3 +59,6 @@ To
 
 ## Emoji Font Fixed
 - https://www.py4u.net/discuss/1121744
+
+## Virtualbox Guest Addition iso permission
+https://superuser.com/questions/768115/kali-linux-vm-permission-denied-to-run-shell-script-as-root
