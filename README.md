@@ -15,38 +15,28 @@ Setup for my Desktop, some configurations for my Desktop themes and shortcuts.
 
 ### Must HAVE Apps!!!
 ```
-sudo apt install git wget curl python3-pip neofetch tree htop fonts-noto-color-emoji telegram-desktop polybar rofi ranger zsh tmux fonts-powerline tilix python3-nautilus
+sudo apt install git wget curl python3-pip neofetch tree htop fonts-noto-color-emoji telegram-desktop ranger zsh tmux fonts-powerline tilix python3-nautilus mlocate
 ```
-- https://github.com/zyairelai/kali-anonsurf
-- https://marktext.app/
 ```
-chmod a+x {marktext.AppImage} && mv $HOME/Downloads/{marktext.AppImage} /usr/bin/marktext
+git clone git@github.com:zyairelai/kali-anonsurf.git
+cd kali-anonsurf
+sudo ./installer.sh
+```
+- https://github.com/marktext/marktext/releases/latest/download/marktext-x86_64.AppImage
+```
+chmod a+x marktext-x86_64.AppImage
+sudo mv marktext-x86_64.AppImage /usr/bin/marktext
 ```
 
 ## Zsh Setup
 ```
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-```
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
-```
-```
 nano ~/.oh-my-zsh/lib/directories.zsh
-```
-```
 alias ll='ls -lh --group-directories-first'
-```
-```
 chsh -s $(which zsh)
-```
-```
 sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
-```
-```
 sudo update-alternatives --config x-terminal-emulator
-```
-```
-tmux source-file .tmux.conf
 ```
 
 ### Personal Terminal Shortcuts
