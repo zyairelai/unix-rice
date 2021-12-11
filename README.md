@@ -18,7 +18,7 @@ Setup for my Desktop, some configurations for my Desktop themes and shortcuts.
 sudo apt install git wget curl python3-pip neofetch tree htop fonts-noto-color-emoji telegram-desktop ranger zsh tmux fonts-powerline tilix python3-nautilus mlocate
 ```
 ```
-git clone git@github.com:zyairelai/kali-anonsurf.git
+git clone https://github.com/zyairelai/kali-anonsurf.git
 cd kali-anonsurf
 sudo ./installer.sh
 ```
