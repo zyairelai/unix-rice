@@ -22,6 +22,7 @@ sudo apt remove gnome-shell-extension-ubuntu-dock
 sudo apt install libglib2.0-dev-bin
 wget github.com/thiggy01/change-gdm-background/raw/master/change-gdm-background
 chmod +x change-gdm-background
+sudo cp change-gdm-background /usr/share/backgrounds/
 sudo ./change-gdm-background /path/to/image
 ```
 
