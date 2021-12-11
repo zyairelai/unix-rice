@@ -3,6 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 disable r
+bindkey -s "^[OM" "^M"
 export ZSH="/home/$USER/.oh-my-zsh"
 export PATH=$PATH:/usr/local/go/bin
 
