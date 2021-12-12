@@ -55,6 +55,7 @@ sudo ln -s /bin/python3 /bin/py
 sudo ln -s /bin/python3 /bin/python
 sudo ln -s /bin/clear /bin/c
 sudo ln -s /bin/ranger /bin/r
+sudo ln -s /bin/openvpn /bin/vpn
 ```
 
 ### Keyboard Shortcuts
