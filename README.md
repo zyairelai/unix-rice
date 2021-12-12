@@ -49,19 +49,19 @@ sudo ln -s /bin/ranger /bin/r
 ```
 
 ### Keyboard Shortcuts
-| Shortcuts              | Description                                        |
-|------------------------|----------------------------------------------------|
-| Ctrl + Alt + F         | Home folder                                        |
-| Ctrl + Alt + G         |  Launch Web Browser                                |
-| Ctrl + Alt + D         | Hide all normal windows                            |
-| Ctrl + Alt + S         | Settings                                           |
-| Ctrl + Alt + Arrows    | Move to workspace (direction)                      |
-| Super + Arrows         | Move window one workspace (direction)              |
-| Alt + Super + Arrows   | Tiling Windows to (direction)                      |
-| Alt + W                | Close window                                       |
-| Ctrl + Alt + P         | bash /home/kali/.config/polybar/launch.sh --shapes |
-| Ctrl + Alt + M         |  Marktext                                          |
-
+| Shortcuts              | Description                                                            |
+|------------------------|------------------------------------------------------------------------|
+| Ctrl + Alt + F         | Home folder                                                            |
+| Ctrl + Alt + G         |  Launch Web Browser                                                    |
+| Ctrl + Alt + D         | Hide all normal windows                                                |
+| Ctrl + Alt + S         | Settings                                                               |
+| Ctrl + Alt + Arrows    | Move to workspace (direction)                                          |
+| Super + Arrows         | Move window one workspace (direction)                                  |
+| Alt + Super + Arrows   | Tiling Windows to (direction)                                          |
+| Alt + W                | Close window                                                           |
+| Ctrl + Alt + P         | `bash /home/kali/.config/polybar/launch.sh --shapes`                   |
+| Ctrl + Alt + M         |  `Marktext`                                                            |
+| Ctrl + Alt + V         | `vboxmanage startvm "vmname"` <br> To list VM `vboxmanage list vms`    |
 ### Special Folders
 ```
 nano .config/user-dirs.dirs
