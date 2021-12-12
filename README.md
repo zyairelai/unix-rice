@@ -61,3 +61,8 @@ sudo ln -s /bin/ranger /bin/r
 | Alt + W                | Close window                                       |
 | Ctrl + Alt + P         | bash /home/kali/.config/polybar/launch.sh --shapes |
 | Ctrl + Alt + M         |  Marktext                                          |
+
+### Special Folders
+```
+nano .config/user-dirs.dirs
+```
