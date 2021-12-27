@@ -46,7 +46,6 @@ sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
 sudo update-alternatives --config x-terminal-emulator
 
 mv ~/.bashrc ~/.bashrc.bck
-wget https://github.com/zyairelai/unix-rice/blob/master/dotfiles/nerd-font.ttf
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/kali-2019.bashrc -O ~/.bashrc
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/ubuntu-20-4.zshrc -O ~/.zshrc
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/tmux.conf -O ~/.tmux.conf
