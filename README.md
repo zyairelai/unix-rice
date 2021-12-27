@@ -49,8 +49,6 @@ mv ~/.bashrc ~/.bashrc.bck
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/kali-2019.bashrc -O ~/.bashrc
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/ubuntu-20-4.zshrc -O ~/.zshrc
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/tmux.conf -O ~/.tmux.conf
-mkdir ~/.config/rofi
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/rofi/config.rasi -O ~/.config/rofi/config.rasi
 ```
 
 ### Personal Terminal Shortcuts
@@ -77,7 +75,7 @@ sudo ln -s /sbin/openvpn /sbin/vpn
 | Super + Arrows        | Move window one workspace (direction)                        |
 | Alt + Super + Arrows  | Tiling Windows to (direction)                                |
 | Alt + W               | Close window                                                 |
-| Ctril + Space         | Show the overview                                            |
+| Ctrl + Space          | Show all applications                                        |
 | Ctrl + Alt + P        | `bash /home/kali/.config/polybar/launch.sh --shapes`         |
 | Ctrl + Alt + M        | `Marktext`                                                   |
 | Ctrl + Alt + V        | `virtualbox` <br> To list installed VM `vboxmanage list vms` |
