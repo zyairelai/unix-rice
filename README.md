@@ -46,13 +46,10 @@ sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
 sudo update-alternatives --config x-terminal-emulator
 
 mv ~/.bashrc ~/.bashrc.bck
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/main/dotfiles/change-gdm-background
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/main/dotfiles/nerd-font.ttf
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/main/dotfiles/zsh_history_fix
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/main/dotfiles/kali-2019.bashrc -O .bashrc
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/main/dotfiles/ubuntu-20-4.zshrc -O .zshrc
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/main/dotfiles/tmux.conf -O .tmux.conf
-sudo mv change-gdm-background /usr/bin/ && sudo mv zsh_history_fix /usr/bin/
 ```
 
 ### Personal Terminal Shortcuts
