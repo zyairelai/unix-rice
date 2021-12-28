@@ -56,9 +56,9 @@ chsh -s $(which zsh)
 nano ~/.oh-my-zsh/lib/directories.zsh
 
 mv ~/.bashrc ~/.bashrc.bck
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/kali-2019.bashrc -O ~/.bashrc
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/ubuntu-20-4.zshrc -O ~/.zshrc
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/tmux.conf -O ~/.tmux.conf
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/kali-2019.bashrc -O ~/.bashrc
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/ubuntu-20-4.zshrc -O ~/.zshrc
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/tmux.conf -O ~/.tmux.conf
 ```
 
 ### Personal Terminal Shortcuts
