@@ -1,7 +1,7 @@
-# Ubuntu 20.04 LTS
+## Ubuntu 20.04 LTS
 These are the Setup for my Ubuntu 20.04 LTS
 
-## Install from Snap / Software Center
+### Install from Snap / Software Center
 ```
 sudo snap install discord
 sudo snap install telegram-desktop
@@ -11,17 +11,31 @@ sudo snap install --classic sublime-text
 sudo snap install --classic zaproxy
 ```
 
-## Installing Gnome Extensions
+### Installing Gnome Extensions
 - [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
 - [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
 - [Refresh Wifi Connections](https://extensions.gnome.org/extension/905/refresh-wifi-connections/)
 
-## Uninstall Unnecessary Extensions
+### Must HAVE Apps!!!
+
+
 ```
-sudo apt install gnome-tweak-tool totem virtualbox && sudo apt remove gnome-shell-extension-ubuntu-dock
+sudo apt install git wget curl gnupg python3-pip neofetch tree htop fonts-noto-color-emoji telegram-desktop ranger zsh tmux fonts-powerline tilix python3-nautilus mlocate gnome-tweak-tool totem virtualbox && sudo apt remove gnome-shell-extension-ubuntu-dock
+```
+Anonsurf
+```
+git clone https://github.com/zyairelai/kali-anonsurf.git
+cd kali-anonsurf
+sudo ./installer.sh
+```
+Marktext
+```
+wget https://github.com/marktext/marktext/releases/latest/download/marktext-x86_64.AppImage
+chmod a+x marktext-x86_64.AppImage
+sudo mv marktext-x86_64.AppImage /usr/bin/marktext
 ```
 
-## Change Login Background
+### Change Login Background
 ```
 sudo apt install libglib2.0-dev-bin
 wget github.com/thiggy01/change-gdm-background/raw/master/change-gdm-background
@@ -30,16 +44,16 @@ sudo cp change-gdm-background /usr/share/backgrounds/
 sudo ./change-gdm-background /path/to/image
 ```
 
-## Zsh Setup
+### Zsh Setup
 
 ```
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 echo "alias ll='ls -lh --group-directories-first'" >> ~/.oh-my-zsh/lib/directories.zsh
-nano ~/.oh-my-zsh/lib/directories.zsh
-chsh -s $(which zsh)
 sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
 sudo update-alternatives --config x-terminal-emulator
+chsh -s $(which zsh)
+nano ~/.oh-my-zsh/lib/directories.zsh
 
 mv ~/.bashrc ~/.bashrc.bck
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/kali-2019.bashrc -O ~/.bashrc
@@ -47,24 +61,37 @@ wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/ubunt
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/tmux.conf -O ~/.tmux.conf
 ```
 
-## Local Time Fixed
+### Personal Terminal Shortcuts
+
 ```
-timedatectl set-local-rtc 1 --adjust-system-clock
+sudo ln -s /bin/xdg-open /bin/open
+sudo ln -s /bin/python3 /bin/py
+sudo ln -s /bin/python3 /bin/python
+sudo ln -s /bin/clear /bin/c
+sudo ln -s /bin/tree /bin/t
+sudo ln -s /bin/ranger /bin/r
+sudo ln -s /sbin/openvpn /sbin/vpn
 ```
 
-## Add Kali Repo
-https://miloserdov.org/?p=3609
+### Keyboard Shortcuts
+
+| Shortcuts             | Description                                                  |
+| --------------------- | ------------------------------------------------------------ |
+| Ctrl + Alt + F        | Home folder                                                  |
+| Ctrl + Alt + G        | Launch Web Browser                                           |
+| Ctrl + Alt + D        | Hide all normal windows                                      |
+| Ctrl + Alt + S        | Settings                                                     |
+| Ctrl + Alt + Arrows   | Move to workspace (direction)                                |
+| Super + Arrows        | Move window one workspace (direction)                        |
+| Alt + Super + Arrows  | Tiling Windows to (direction)                                |
+| Alt + W               | Close window                                                 |
+| Ctrl + Space          | Show all applications                                        |
+| Ctrl + Alt + P        | `bash /home/kali/.config/polybar/launch.sh --shapes`         |
+| Ctrl + Alt + M        | `Marktext`                                                   |
+| Ctrl + Alt + V        | `virtualbox` <br> To list installed VM `vboxmanage list vms` |
+| Ctrl + Alt + whatever | `vboxmanage startvm "vmname"`                                |
+
+### Local Time Fixed
 ```
-wget 'https://archive.kali.org/archive-key.asc'
-sudo apt-key add archive-key.asc
-sudo sh -c "echo 'deb https://http.kali.org/kali kali-rolling main non-free contrib' > /etc/apt/sources.list.d/kali.list"
-```
-To avoid breaking the Ubuntu, create a file at `/etc/apt/preferences.d/kali.pref ` with following contents:
-```
-sudo sh -c "echo 'Package: *'>/etc/apt/preferences.d/kali.pref; echo 'Pin: release a=kali-rolling'>>/etc/apt/preferences.d/kali.pref; echo 'Pin-Priority: 50'>>/etc/apt/preferences.d/kali.pref"
-```
-```
-Package: *
-Pin: release a=kali-rolling
-Pin-Priority: 50
+timedatectl set-local-rtc 1 --adjust-system-clock
 ```
