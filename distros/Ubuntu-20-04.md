@@ -2,10 +2,14 @@
 These are the Setup for my Ubuntu 20.04 LTS
 
 ## Install from Snap / Software Center
-- Discord
-- Sublime Text
-- Visual Studio Code
-- `sudo snap install --classic heroku`
+```
+sudo snap install discord
+sudo snap install telegram-desktop
+sudo snap install --classic code
+sudo snap install --classic heroku
+sudo snap install --classic sublime-text
+sudo snap install --classic zaproxy
+```
 
 ## Installing Gnome Extensions
 - [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
