@@ -16,3 +16,6 @@ To
 ```
 /dev/sr0        /media/cdrom0   udf,iso9660 user,exec     0       0
 ```
+
+## Ubuntu 20.04 boots to black screen with flashing cursor
+https://www.py4u.net/discuss/1121744
