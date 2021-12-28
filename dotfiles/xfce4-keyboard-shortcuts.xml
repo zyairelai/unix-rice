@@ -46,14 +46,13 @@
       <property name="&lt;Primary&gt;&lt;Alt&gt;Print" type="string" value="/usr/share/kali-themes/xfce4-screenshooter --window --clipboard"/>
       <property name="XF86Display" type="string" value="xfce4-display-settings --minimal"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;g" type="string" value="exo-open --launch WebBrowser"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;h" type="string" value="exo-open --launch FireManager"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;f" type="string" value="firefox"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;s" type="string" value="xfce4-settings-manager"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;p" type="string" value="killall -q polybar"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;p" type="string" value="bash /home/kali/.config/polybar/launcher.sh"/>
       <property name="&lt;Primary&gt;space" type="string" value="rofi -show drun -theme /home/kali/.config/rofi/config.rasi"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;m" type="string" value="marktext"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;k" type="string" value="kali-undercover"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;f" type="string" value="exo-open --launch FileManager"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
