@@ -14,7 +14,7 @@ These are the Setup for my Ubuntu 20.04 LTS
 
 ## Uninstall Unnecessary Extensions
 ```
-sudo apt remove gnome-shell-extension-ubuntu-dock
+sudo apt install gnome-tweak-tool totem virtualbox && sudo apt remove gnome-shell-extension-ubuntu-dock
 ```
 
 ## Change Login Background
@@ -26,39 +26,38 @@ sudo cp change-gdm-background /usr/share/backgrounds/
 sudo ./change-gdm-background /path/to/image
 ```
 
-<a name="tilix"></a>
-## Tilix (Optional)
-### Set Tilix As Default Terminal
-- `sudo update-alternatives --config x-terminal-emulator`
+## Zsh Setup
 
-### For OCD, can replace the Tilix to the default Terminal icon
-- `/usr/share/icons/hicolor/scalable/apps/com.gexperts.Tilix.svg`
-
-### This is the Tilix setup for Ubuntu 20.04, perhaps thing changes every updates  
-- `sudo cp '/usr/share/icons/Yaru/256x256@2x/apps/gnome-terminal.png' /usr/share/icons/hicolor/scalable/apps/com.gexperts.Tilix.svg`
-
-
-## VirtualBox Issues Fixed
-Error: `Cannot install Guest Additions on Debian`  
-Edit `/etc/fstab`  
-Change from this line  
 ```
-/dev/sr0        /media/cdrom0   udf,iso9660 user,noauto     0       0
-```
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+echo "alias ll='ls -lh --group-directories-first'" >> ~/.oh-my-zsh/lib/directories.zsh
+nano ~/.oh-my-zsh/lib/directories.zsh
+chsh -s $(which zsh)
+sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
+sudo update-alternatives --config x-terminal-emulator
 
-To  
+mv ~/.bashrc ~/.bashrc.bck
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/kali-2019.bashrc -O ~/.bashrc
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/ubuntu-20-4.zshrc -O ~/.zshrc
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/tmux.conf -O ~/.tmux.conf
 ```
-/dev/sr0        /media/cdrom0   udf,iso9660 user,exec     0       0
-```
-
-## Emoji Font Fixed
-`sudo apt reinstall fonts-noto-color-emoji`
 
 ## Local Time Fixed
-`timedatectl set-local-rtc 1 --adjust-system-clock`
+```
+timedatectl set-local-rtc 1 --adjust-system-clock
+```
 
-## Emoji Font Fixed
-- https://www.py4u.net/discuss/1121744
-
-## Virtualbox Guest Addition iso permission
-https://superuser.com/questions/768115/kali-linux-vm-permission-denied-to-run-shell-script-as-root
+## Add Kali Repo
+https://miloserdov.org/?p=3609
+```
+wget 'https://archive.kali.org/archive-key.asc'
+sudo apt-key add archive-key.asc
+sudo sh -c "echo 'deb https://http.kali.org/kali kali-rolling main non-free contrib' > /etc/apt/sources.list.d/kali.list"
+```
+To avoid breaking the Ubuntu, create a file at `/etc/apt/preferences.d/kali.pref ` with following contents:
+```
+Package: *
+Pin: release a=kali-rolling
+Pin-Priority: 50
+```
