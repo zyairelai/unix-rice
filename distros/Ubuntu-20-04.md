@@ -57,6 +57,9 @@ sudo sh -c "echo 'deb https://http.kali.org/kali kali-rolling main non-free cont
 ```
 To avoid breaking the Ubuntu, create a file at `/etc/apt/preferences.d/kali.pref ` with following contents:
 ```
+sudo sh -c "echo 'Package: *'>/etc/apt/preferences.d/kali.pref; echo 'Pin: release a=kali-rolling'>>/etc/apt/preferences.d/kali.pref; echo 'Pin-Priority: 50'>>/etc/apt/preferences.d/kali.pref"
+```
+```
 Package: *
 Pin: release a=kali-rolling
 Pin-Priority: 50
