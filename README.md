@@ -19,7 +19,7 @@ Setup for my Desktop, some configurations for my Desktop themes and shortcuts.
 ### Must HAVE Apps!!!
 
 ```
-sudo apt install git wget curl python3-pip neofetch tree htop fonts-noto-color-emoji telegram-desktop ranger zsh tmux fonts-powerline tilix python3-nautilus mlocate
+sudo apt install git wget curl gnupg python3-pip neofetch tree htop fonts-noto-color-emoji telegram-desktop ranger zsh tmux fonts-powerline tilix python3-nautilus mlocate
 ```
 Anonsurf
 ```
