@@ -20,7 +20,7 @@ sudo snap install --classic zaproxy
 
 
 ```
-sudo apt install git wget curl gnupg python3-pip neofetch tree htop fonts-noto-color-emoji telegram-desktop ranger zsh tmux fonts-powerline tilix python3-nautilus mlocate gnome-tweak-tool totem virtualbox && sudo apt remove gnome-shell-extension-ubuntu-dock
+sudo apt install git wget curl gnupg python3-pip neofetch tree htop fonts-noto-color-emoji telegram-desktop ranger zsh tmux fonts-powerline tilix python3-nautilus mlocate gnome-tweak-tool totem virtualbox burp nmap nikto wafw00f whatweb && sudo apt remove gnome-shell-extension-ubuntu-dock
 ```
 Anonsurf
 ```
