@@ -1,6 +1,11 @@
 ## Ubuntu 20.04 LTS
 These are the Setup for my Ubuntu 20.04 LTS
 
+### Firefox
+- Go to `about:config`  
+- set `True` for `toolkit.tabbox.switchByScrolling`
+- set `False` for `ui.key.menuAccessKeyFocuses`
+
 ### Install from Snap / Software Center
 ```
 sudo snap install discord
@@ -17,8 +22,6 @@ sudo snap install --classic zaproxy
 - [Refresh Wifi Connections](https://extensions.gnome.org/extension/905/refresh-wifi-connections/)
 
 ### Must HAVE Apps!!!
-
-
 ```
 sudo apt install git wget curl gnupg python3-pip neofetch tree htop fonts-noto-color-emoji telegram-desktop ranger zsh tmux fonts-powerline tilix python3-nautilus mlocate gnome-tweak-tool totem virtualbox burp nmap nikto wafw00f whatweb && sudo apt remove gnome-shell-extension-ubuntu-dock
 ```
