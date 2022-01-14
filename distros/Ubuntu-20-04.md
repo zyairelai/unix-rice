@@ -20,6 +20,7 @@ sudo snap install --classic zaproxy
 - [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
 - [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
 - [Hide Dash X](https://extensions.gnome.org/extension/805/hide-dash/)
+- [Transparent Top Bar](https://extensions.gnome.org/extension/1708/transparent-top-bar/)
 - [Refresh Wifi Connections](https://extensions.gnome.org/extension/905/refresh-wifi-connections/)
 
 ### Must HAVE Apps!!!
