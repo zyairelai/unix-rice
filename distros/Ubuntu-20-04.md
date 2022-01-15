@@ -109,6 +109,8 @@ sudo ln -s /sbin/openvpn /sbin/vpn
 | Alt + Super + Arrows  | Tiling Windows to (direction)                                |
 | Alt + W               | Close window                                                 |
 | Ctrl + Space          | Show all applications                                        |
+| Alt + D               | `gnome-extensions disable dash-to-dock@micxgx.gmail.com`     |
+| Alt + E               | `gnome-extensions enable dash-to-dock@micxgx.gmail.com`      |
 | Ctrl + Alt + M        | `Marktext`                                                   |
 | Ctrl + Alt + V        | `virtualbox` <br> To list installed VM `vboxmanage list vms` |
 | Ctrl + Alt + whatever | `vboxmanage startvm "vmname"`                                |
