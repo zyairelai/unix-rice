@@ -109,7 +109,7 @@ sudo ln -s /sbin/openvpn /sbin/vpn
 | Alt + Super + Arrows  | Tiling Windows to (direction)                                |
 | Alt + W               | Close window                                                 |
 | Ctrl + Space          | Show all applications                                        |
-| Super + D             | `dashtodock`                                                 |
+| Super + D             | `dash-to-dock`                                               |
 | Ctrl + Alt + M        | `Marktext`                                                   |
 | Ctrl + Alt + V        | `virtualbox` <br> To list installed VM `vboxmanage list vms` |
 | Ctrl + Alt + whatever | `vboxmanage startvm "vmname"`                                |
@@ -117,7 +117,7 @@ sudo ln -s /sbin/openvpn /sbin/vpn
 Dash to Dock one line
 ```
 echo "gsettings get org.gnome.shell enabled-extensions | grep 'dash-to-dock' && gnome-extensions disable dash-to-dock@micxgx.gmail.com || gnome-extensions enable dash-to-dock@micxgx.gmail.com" >> dashtodock
-chmod a+x /usr/bin/dashtodock
+chmod a+x /usr/bin/dash-to-dock
 sudo mv dashtodock /usr/bin/
 ```
 
