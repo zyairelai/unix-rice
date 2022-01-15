@@ -116,9 +116,9 @@ sudo ln -s /sbin/openvpn /sbin/vpn
 
 Dash to Dock one line
 ```
-echo "gsettings get org.gnome.shell enabled-extensions | grep 'dash-to-dock' && gnome-extensions disable dash-to-dock@micxgx.gmail.com || gnome-extensions enable dash-to-dock@micxgx.gmail.com" >> dashtodock
-chmod a+x /usr/bin/dash-to-dock
-sudo mv dashtodock /usr/bin/
+echo "gsettings get org.gnome.shell enabled-extensions | grep 'dash-to-dock' && gnome-extensions disable dash-to-dock@micxgx.gmail.com || gnome-extensions enable dash-to-dock@micxgx.gmail.com" >> dash-to-dock
+chmod a+x dash-to-dock
+sudo mv dash-to-dock /usr/bin/
 ```
 
 ### Local Time Fixed
