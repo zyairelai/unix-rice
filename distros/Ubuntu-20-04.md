@@ -25,7 +25,7 @@ sudo snap install --classic zaproxy
 
 ### Must HAVE Apps!!!
 ```
-sudo apt install git wget curl gnupg python3-pip neofetch tree htop fonts-noto-color-emoji ranger zsh tmux fonts-powerline tilix python3-nautilus mlocate gnome-tweak-tool totem virtualbox burp nmap nikto wafw00f whatweb && sudo apt remove gnome-shell-extension-ubuntu-dock
+sudo apt install git wget curl gnupg python3-pip neofetch tree htop fonts-noto-color-emoji ranger zsh tmux fonts-powerline tilix python3-nautilus mlocate gnome-tweak-tool totem virtualbox ruby-full nmap nikto wafw00f whatweb && sudo apt remove gnome-shell-extension-ubuntu-dock
 ```
 Anonsurf
 ```
@@ -38,6 +38,24 @@ Marktext
 wget https://github.com/marktext/marktext/releases/latest/download/marktext-x86_64.AppImage
 chmod a+x marktext-x86_64.AppImage
 sudo mv marktext-x86_64.AppImage /usr/bin/marktext
+```
+[RustScan](https://doc.rust-lang.org/cargo/getting-started/installation.html)
+```
+curl https://sh.rustup.rs -sSf | sh
+cargo install rustscan
+```
+[Metasploit Console](https://www.darkoperator.com/installing-metasploit-in-ubunt)
+```
+sudo apt-get install build-essential libreadline-dev libssl-dev libpq5 libpq-dev libreadline5 libsqlite3-dev libpcap-dev git-core autoconf postgresql pgadmin3 curl zlib1g-dev libxml2-dev libxslt1-dev libyaml-dev curl zlib1g-dev gawk bison libffi-dev libgdbm-dev libncurses5-dev libtool sqlite3 libgmp-dev gnupg2 dirmngr
+```
+```
+cd /opt
+sudo git clone https://github.com/rapid7/metasploit-framework.git
+sudo chown -R `whoami` /opt/metasploit-framework
+cd metasploit-framework
+sudo bash -c 'for MSF in $(ls msf*); do ln -s /opt/metasploit-framework/$MSF /usr/local/bin/$MSF;done'
+gem install bundler
+bundle install
 ```
 
 ### Change Login Background
@@ -98,4 +116,23 @@ sudo ln -s /sbin/openvpn /sbin/vpn
 ### Local Time Fixed
 ```
 timedatectl set-local-rtc 1 --adjust-system-clock
+```
+
+### Danger Zone
+Add Pentest Repository
+```
+deb http://http.kali.org/kali kali-rolling main contrib non-free
+deb https://deb.parrot.sh/parrot/ rolling main contrib non-free
+```
+Add Public Keys
+```
+sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com ED444FF07D8D0BF6 
+sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 363A96A5CEA9EA27
+```
+Normal Tools that required newest package
+```
+sudo apt install wifite golang
+```
+```
+go install github.com/OJ/gobuster/v3@latest
 ```
