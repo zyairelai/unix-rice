@@ -120,6 +120,18 @@ chmod a+x dash-to-dock
 sudo mv dash-to-dock /usr/bin/
 ```
 
+### Input Method
+- https://www.dell.com/support/kbdoc/en-my/000181184/how-to-add-chinese-pinyin-input-to-xps-9310-laptops-that-ship-with-ubuntu-20-04-in-english
+```
+sudo apt-get install ibus-pinyin ibus-sunpinyin
+```
+```
+ibus restart
+```
+```
+ibus-setup
+```
+
 ### Local Time Fixed
 ```
 timedatectl set-local-rtc 1 --adjust-system-clock
