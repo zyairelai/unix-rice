@@ -155,3 +155,8 @@ sudo apt install wifite golang
 ```
 go install github.com/OJ/gobuster/v3@latest
 ```
+### Virtualbox Guest Addition iso permission
+```
+mount -v | grep cdrom0
+sudo mount -o remount,exec,ro /media/cdrom0
+```
