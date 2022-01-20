@@ -25,7 +25,7 @@ sudo snap install --classic zaproxy
 
 ### Must HAVE Apps!!!
 ```
-sudo apt install git wget curl gnupg python3-pip neofetch tree htop fonts-noto-color-emoji ranger zsh tmux fonts-powerline tilix python3-nautilus mlocate gnome-tweak-tool totem ubuntu-restricted-extras virtualbox ruby-full nmap nikto wafw00f whatweb && sudo apt remove gnome-shell-extension-ubuntu-dock
+sudo apt install git wget curl gnupg python3-pip neofetch tree htop fonts-noto-color-emoji ranger zsh tmux fonts-powerline tilix python3-nautilus mlocate gnome-tweak-tool totem ubuntu-restricted-extras virtualbox ruby-full nmap nikto wafw00f whatweb build-essential libreadline-dev libssl-dev libpq5 libpq-dev libreadline5 libsqlite3-dev libpcap-dev git-core autoconf postgresql pgadmin3 curl zlib1g-dev libxml2-dev libxslt1-dev libyaml-dev curl zlib1g-dev gawk bison libffi-dev libgdbm-dev libncurses5-dev libtool sqlite3 libgmp-dev gnupg2 dirmngr libglib2.0-dev-bin && sudo apt remove gnome-shell-extension-ubuntu-dock
 ```
 Anonsurf
 ```
@@ -46,9 +46,6 @@ cargo install rustscan
 ```
 [Metasploit Console](https://www.darkoperator.com/installing-metasploit-in-ubunt)
 ```
-sudo apt-get install build-essential libreadline-dev libssl-dev libpq5 libpq-dev libreadline5 libsqlite3-dev libpcap-dev git-core autoconf postgresql pgadmin3 curl zlib1g-dev libxml2-dev libxslt1-dev libyaml-dev curl zlib1g-dev gawk bison libffi-dev libgdbm-dev libncurses5-dev libtool sqlite3 libgmp-dev gnupg2 dirmngr
-```
-```
 cd /opt
 sudo git clone https://github.com/rapid7/metasploit-framework.git
 sudo chown -R `whoami` /opt/metasploit-framework
@@ -60,7 +57,6 @@ bundle install
 
 ### Change Login Background
 ```
-sudo apt install libglib2.0-dev-bin
 wget github.com/thiggy01/change-gdm-background/raw/master/change-gdm-background
 chmod +x change-gdm-background
 sudo cp change-gdm-background /usr/share/backgrounds/
@@ -82,10 +78,10 @@ mv ~/.bashrc ~/.bashrc.bck
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/kali-2019.bashrc -O ~/.bashrc
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/ubuntu-20-4.zshrc -O ~/.zshrc
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/tmux.conf -O ~/.tmux.conf
+wget https://github.com/zyairelai/unix-rice/blob/master/dotfiles/nerd-font.ttf -O ~/nerd-font.ttf
 ```
 
 ### Personal Terminal Shortcuts
-
 ```
 sudo ln -s /bin/xdg-open /bin/open
 sudo ln -s /bin/python3 /bin/py
