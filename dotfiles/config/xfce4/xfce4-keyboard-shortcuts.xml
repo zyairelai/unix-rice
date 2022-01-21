@@ -50,7 +50,6 @@
       <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;p" type="string" value="killall -q polybar"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;p" type="string" value="bash /home/kali/.config/polybar/launcher.sh"/>
       <property name="&lt;Primary&gt;space" type="string" value="rofi -show drun -theme /home/kali/.config/rofi/config.rasi"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;m" type="string" value="marktext"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;k" type="string" value="kali-undercover"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;f" type="string" value="exo-open --launch FileManager"/>
     </property>
