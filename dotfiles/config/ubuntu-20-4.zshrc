@@ -122,7 +122,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Set username to consider a default context, which by default will not be shown.
 # https://github.com/bhilburn/powerlevel9k/blob/next/segments/context/README.md
-DEFAULT_USER='zyaire' # set 'luca' to others will result in not showing name
+DEFAULT_USER='zhenyean' # set 'luca' to others will result in not showing name
 
 # Set P9KGT background color, either 'light' or 'dark' (this should match the GNOME Terminal's theme).
 P9KGT_BACKGROUND='dark'
