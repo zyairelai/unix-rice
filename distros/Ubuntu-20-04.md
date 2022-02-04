@@ -25,7 +25,7 @@ sudo snap install --classic zaproxy
 
 ### Must HAVE Apps!!!
 ```
-sudo apt install git wget curl gnupg python3-pip neofetch tree htop fonts-noto-color-emoji ranger zsh tmux fonts-powerline tilix python3-nautilus mlocate gnome-tweak-tool totem ubuntu-restricted-extras virtualbox ruby-full nmap nikto wafw00f whatweb build-essential libreadline-dev libssl-dev libpq5 libpq-dev libreadline5 libsqlite3-dev libpcap-dev git-core autoconf postgresql pgadmin3 curl zlib1g-dev libxml2-dev libxslt1-dev libyaml-dev curl zlib1g-dev gawk bison libffi-dev libgdbm-dev libncurses5-dev libtool sqlite3 libgmp-dev gnupg2 dirmngr libglib2.0-dev-bin && sudo apt remove gnome-shell-extension-ubuntu-dock
+sudo apt install git wget curl gnupg python3-pip neofetch tree htop fonts-noto-color-emoji ranger screen zsh tmux fonts-powerline tilix python3-nautilus mlocate gnome-tweak-tool totem ubuntu-restricted-extras virtualbox ruby-full nmap nikto wafw00f whatweb build-essential libreadline-dev libssl-dev libpq5 libpq-dev libreadline5 libsqlite3-dev libpcap-dev git-core autoconf postgresql pgadmin3 curl zlib1g-dev libxml2-dev libxslt1-dev libyaml-dev curl zlib1g-dev gawk bison libffi-dev libgdbm-dev libncurses5-dev libtool sqlite3 libgmp-dev gnupg2 dirmngr libglib2.0-dev-bin && sudo apt remove gnome-shell-extension-ubuntu-dock
 ```
 Anonsurf
 ```
@@ -89,6 +89,7 @@ sudo ln -s /bin/python3 /bin/python
 sudo ln -s /bin/clear /bin/c
 sudo ln -s /bin/tree /bin/t
 sudo ln -s /bin/ranger /bin/r
+sudo ln -s /bin/screen /bin/s
 ```
 
 ### Keyboard Shortcuts
