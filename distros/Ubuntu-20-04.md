@@ -56,6 +56,7 @@ bundle install
 ```
 
 ### Change Login Background
+- https://www.befunky.com/features/blur-image/
 ```
 wget github.com/thiggy01/change-gdm-background/raw/master/change-gdm-background
 chmod +x change-gdm-background
