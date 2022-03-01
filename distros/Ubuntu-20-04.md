@@ -90,7 +90,7 @@ sudo ln -s /bin/python3 /bin/python
 sudo ln -s /bin/clear /bin/c
 sudo ln -s /bin/tree /bin/t
 sudo ln -s /bin/ranger /bin/r
-sudo ln -s /bin/screen /bin/s
+sudo ln -s /bin/screen /bin/sc
 ```
 
 ### Keyboard Shortcuts
