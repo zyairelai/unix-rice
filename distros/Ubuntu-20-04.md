@@ -88,9 +88,9 @@ sudo ln -s /bin/xdg-open /bin/open
 sudo ln -s /bin/python3 /bin/py
 sudo ln -s /bin/python3 /bin/python
 sudo ln -s /bin/clear /bin/c
+sudo ln -s /bin/screen /bin/sc
 sudo ln -s /bin/tree /bin/t
 sudo ln -s /bin/ranger /bin/r
-sudo ln -s /bin/screen /bin/sc
 ```
 
 ### Keyboard Shortcuts
@@ -139,12 +139,10 @@ timedatectl set-local-rtc 1 --adjust-system-clock
 Add Pentest Repository
 ```
 deb http://http.kali.org/kali kali-rolling main contrib non-free
-deb https://deb.parrot.sh/parrot/ rolling main contrib non-free
 ```
 Add Public Keys
 ```
-sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com ED444FF07D8D0BF6 
-sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 363A96A5CEA9EA27
+sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com ED444FF07D8D0BF6
 ```
 Normal Tools that required newest package
 ```
