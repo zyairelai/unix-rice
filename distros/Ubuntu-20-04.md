@@ -150,6 +150,7 @@ sudo apt install wifite golang
 ```
 ```
 go install github.com/OJ/gobuster/v3@latest
+go install github.com/ffuf/ffuf@latest
 ```
 ### Virtualbox Guest Addition iso permission
 ```
