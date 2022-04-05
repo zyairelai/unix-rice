@@ -157,3 +157,5 @@ go install github.com/ffuf/ffuf@latest
 mount -v | grep cdrom0
 sudo mount -o remount,exec,ro /media/cdrom0
 ```
+
+https://www.codegrepper.com/code-examples/shell/change+dns+to+8.8.8.8+linux
