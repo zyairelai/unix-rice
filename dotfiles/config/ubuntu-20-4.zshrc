@@ -6,6 +6,7 @@ disable r
 bindkey -s "^[OM" "^M"
 export ZSH="/home/$USER/.oh-my-zsh"
 export PATH=$PATH:/usr/local/go/bin
+unsetopt PROMPT_SP
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
