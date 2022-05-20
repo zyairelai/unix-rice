@@ -1,4 +1,4 @@
-## Ubuntu Nexpose
+## Ubuntu Scanner
 These are the Setup for my Ubuntu Scanner
 
 ### Firefox
