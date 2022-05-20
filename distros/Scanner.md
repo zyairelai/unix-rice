@@ -67,3 +67,28 @@ rm ./NeXposeSetup-Linux64.bin" >> update.sh
 ### OpenVAS
 - https://www.howtoforge.com/how-to-install-and-use-gvm-vulnerability-scanner-on-ubuntu-20-04/
 - https://stackoverflow.com/questions/46013544/yarn-install-command-error-no-such-file-or-directory-install
+- https://www.youtube.com/watch?v=3CTJwioLKnQ&ab_channel=OPENVAS
+- https://www.youtube.com/watch?v=zxzB5n1vRJE&ab_channel=HACKER_SHAHZADKHAN_777
+
+Add Kali Repository
+```
+deb http://http.kali.org/kali kali-rolling main contrib non-free
+```
+Add Public Keys
+```
+sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com ED444FF07D8D0BF6
+```
+Install GVM
+```
+sudo apt install gvm 
+sudo gvm-setup
+(Wait for about 20 mintues and get that generated admin username and password!!!)
+sudo apt install ufw
+sudo ufw allow 80
+sudo ufw allow 9392
+sudo gvm-start
+```
+If there is any issue during the installation
+```
+sudo gvm-check-setup
+```
