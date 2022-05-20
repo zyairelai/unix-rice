@@ -1,5 +1,5 @@
 ## Ubuntu Nexpose
-These are the Setup for my Ubuntu Nexpose Scanner
+These are the Setup for my Ubuntu Scanner
 
 ### Firefox
 - Go to `about:config`  
@@ -7,7 +7,7 @@ These are the Setup for my Ubuntu Nexpose Scanner
 - set `False` for `ui.key.menuAccessKeyFocuses`
 
 ### Installing Gnome Extensions
-- [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
+- https://extensions.gnome.org/extension/19/user-themes/
 
 ### Must HAVE Apps!!!
 ```
@@ -53,4 +53,13 @@ sudo ln -s /bin/screen /bin/sc
 ### Local Time Fixed
 ```
 timedatectl set-local-rtc 1 --adjust-system-clock
+```
+
+### Nexpose quick script
+```
+echo "sudo systemctl start nexposeconsole" >> start.sh 
+echo "sudo systemctl status nexposeconsole" >> status.sh 
+echo "sudo systemctl stop nexposeconsole" >> stop.sh 
+echo "wget http://download2.rapid7.com/download/NeXpose-v4/NeXposeSetup-Linux64.bin && chmod +x NeXposeSetup-Linux64.bin && sudo ./NeXposeSetup-Linux64.bin -c
+rm ./NeXposeSetup-Linux64.bin" >> update.sh 
 ```
