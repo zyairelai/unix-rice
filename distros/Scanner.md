@@ -63,3 +63,7 @@ echo "sudo systemctl stop nexposeconsole" >> stop.sh
 echo "wget http://download2.rapid7.com/download/NeXpose-v4/NeXposeSetup-Linux64.bin && chmod +x NeXposeSetup-Linux64.bin && sudo ./NeXposeSetup-Linux64.bin -c
 rm ./NeXposeSetup-Linux64.bin" >> update.sh 
 ```
+
+### OpenVAS
+- https://linuxhint.com/openvas-ubuntu-installation-tutorial/
+- https://www.howtoforge.com/how-to-install-and-use-gvm-vulnerability-scanner-on-ubuntu-20-04/
