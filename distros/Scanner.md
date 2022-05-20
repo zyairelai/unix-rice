@@ -65,5 +65,5 @@ rm ./NeXposeSetup-Linux64.bin" >> update.sh
 ```
 
 ### OpenVAS
-- https://linuxhint.com/openvas-ubuntu-installation-tutorial/
 - https://www.howtoforge.com/how-to-install-and-use-gvm-vulnerability-scanner-on-ubuntu-20-04/
+- https://stackoverflow.com/questions/46013544/yarn-install-command-error-no-such-file-or-directory-install
