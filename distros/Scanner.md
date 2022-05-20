@@ -78,17 +78,20 @@ Add Public Keys
 ```
 sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com ED444FF07D8D0BF6
 ```
-Install GVM
+Install GVM 
 ```
 sudo apt install gvm 
 sudo gvm-setup
 (Wait for about 20 mintues and get that generated admin username and password!!!)
-sudo apt install ufw
-sudo ufw allow 80
-sudo ufw allow 9392
-sudo gvm-start
 ```
 If there is any issue during the installation
 ```
 sudo gvm-check-setup
+```
+Open Firewall Port
+```
+sudo apt install ufw
+sudo ufw allow 80
+sudo ufw allow 9392
+sudo gvm-start
 ```
