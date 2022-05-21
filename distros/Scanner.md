@@ -1,27 +1,28 @@
 ## Ubuntu Scanner
-These are the Setup for my Ubuntu Scanner
+These are the Setup for my Ubuntu Scanner (8GB RAM / 100GB Storage)
+- https://www.rapid7.com/products/nexpose/system-requirements/
 
 ### Firefox
 - Go to `about:config`  
 - set `True` for `toolkit.tabbox.switchByScrolling`
 - set `False` for `ui.key.menuAccessKeyFocuses`
 
+### Bookmark
+- https://127.0.0.1:3780 
+- https://temp-mail.org/en/
+- https://www.rapid7.com/try/nexpose/
+- https://www.rapid7.com/try/insight/
+
 ### Installing Gnome Extensions
 - https://extensions.gnome.org/extension/19/user-themes/
 
 ### Must HAVE Apps!!!
 ```
-sudo apt install git wget curl gnupg tilix python3-pip fonts-noto-color-emoji screen mlocate gnome-tweak-tool nmap nikto sshuttle wafw00f whatweb build-essential
+sudo apt install git wget curl gnupg tilix python3-nautilus fonts-noto-color-emoji screen mlocate nmap sshuttle wafw00f whatweb tree htop
 ```
 Change to Tilix Default
 ```
 sudo update-alternatives --config x-terminal-emulator
-```
-
-[RustScan](https://doc.rust-lang.org/cargo/getting-started/installation.html)
-```
-curl https://sh.rustup.rs -sSf | sh
-cargo install rustscan
 ```
 
 ### Alias ll into .bashrc
@@ -42,17 +43,9 @@ sudo ln -s /bin/screen /bin/sc
 | --------------------- | ------------------------------------------------------------ |
 | Ctrl + Alt + F        | Home folder                                                  |
 | Ctrl + Alt + G        | Launch Web Browser                                           |
-| Ctrl + Alt + D        | Hide all normal windows                                      |
 | Ctrl + Alt + S        | Settings                                                     |
-| Ctrl + Alt + Arrows   | Move to workspace (direction)                                |
-| Super + Arrows        | Move window one workspace (direction)                        |
-| Alt + Super + Arrows  | Tiling Windows to (direction)                                |
 | Alt + W               | Close window                                                 |
 | Ctrl + Space          | Show all applications                                        |
-| Super + D             | `dash-to-dock`                                               |
-| Ctrl + Alt + M        | `Marktext`                                                   |
-| Ctrl + Alt + V        | `virtualbox` <br> To list installed VM `vboxmanage list vms` |
-| Ctrl + Alt + whatever | `vboxmanage startvm "vmname"`                                |
 
 ### Local Time Fixed
 ```
