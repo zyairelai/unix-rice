@@ -11,7 +11,11 @@ These are the Setup for my Ubuntu Scanner
 
 ### Must HAVE Apps!!!
 ```
-sudo apt install git wget curl gnupg python3-pip fonts-noto-color-emoji screen mlocate gnome-tweak-tool nmap nikto sshuttle wafw00f whatweb build-essential
+sudo apt install git wget curl gnupg tilix python3-pip fonts-noto-color-emoji screen mlocate gnome-tweak-tool nmap nikto sshuttle wafw00f whatweb build-essential
+```
+Change to Tilix Default
+```
+sudo update-alternatives --config x-terminal-emulator
 ```
 
 [RustScan](https://doc.rust-lang.org/cargo/getting-started/installation.html)
