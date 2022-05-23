@@ -37,7 +37,6 @@ rm ./NeXposeSetup-Linux64.bin" >> update.sh
 - https://127.0.0.1:3780 
 - https://temp-mail.org/en/
 - https://www.rapid7.com/try/nexpose/
-- https://www.rapid7.com/try/insight/
 
 # LUXURIES
 
