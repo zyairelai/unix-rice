@@ -2,6 +2,9 @@
 These are the Setup for my Ubuntu Scanner (8GB RAM / 100GB Storage)
 - https://www.rapid7.com/products/nexpose/system-requirements/
 
+### Power Settings
+- Set to never go to sleep
+
 ### Alias ll into .bashrc
 ```
 alias ll='ls -lh --group-directories-first'
@@ -40,10 +43,11 @@ rm ./NeXposeSetup-Linux64.bin" >> update.sh
 
 ### Installing Gnome Extensions
 - https://extensions.gnome.org/extension/19/user-themes/
+- https://extensions.gnome.org/extension/307/dash-to-dock/
 
 ### Must HAVE Apps!!!
 ```
-sudo apt install git wget curl gnupg tilix python3-nautilus fonts-noto-color-emoji screen mlocate nmap sshuttle wafw00f whatweb tree htop
+sudo apt install git wget curl gnupg tilix python3-nautilus fonts-noto-color-emoji gnome-tweak-tool screen mlocate nmap sshuttle wafw00f whatweb tree htop
 ```
 Change to Tilix Default
 ```
