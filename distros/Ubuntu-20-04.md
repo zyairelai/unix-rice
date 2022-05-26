@@ -99,14 +99,14 @@ sudo ln -s /bin/ranger /bin/r
 | --------------------- | ------------------------------------------------------------ |
 | Ctrl + Alt + F        | Home folder                                                  |
 | Ctrl + Alt + G        | Launch Web Browser                                           |
-| Ctrl + Alt + D        | Hide all normal windows                                      |
+| Super + D             | Hide all normal windows (Disable This)                       |
 | Ctrl + Alt + S        | Settings                                                     |
 | Ctrl + Alt + Arrows   | Move to workspace (direction)                                |
 | Super + Arrows        | Move window one workspace (direction)                        |
 | Alt + Super + Arrows  | Tiling Windows to (direction)                                |
 | Alt + W               | Close window                                                 |
 | Ctrl + Space          | Show all applications                                        |
-| Super + D             | `dash-to-dock`                                               |
+| Ctrl + Alt + D        | `dash-to-dock`                                               |
 | Ctrl + Alt + M        | `Marktext`                                                   |
 | Ctrl + Alt + V        | `virtualbox` <br> To list installed VM `vboxmanage list vms` |
 | Ctrl + Alt + whatever | `vboxmanage startvm "vmname"`                                |
