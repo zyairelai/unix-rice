@@ -15,6 +15,7 @@ alias ll='ls -lh --group-directories-first'
 sudo ln -s /bin/xdg-open /bin/open
 sudo ln -s /bin/clear /bin/c
 sudo ln -s /bin/screen /bin/sc
+sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
 ```
 
 ### Nexpose quick script
