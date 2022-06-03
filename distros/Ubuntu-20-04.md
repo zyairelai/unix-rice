@@ -135,6 +135,17 @@ ibus-setup
 timedatectl set-local-rtc 1 --adjust-system-clock
 ```
 
+### Pairing Logitech Unifying
+- https://askubuntu.com/questions/113984/is-logitechs-unifying-receiver-supported/114089#114089
+```
+sudo apt-get install git gcc
+git clone https://git.lekensteyn.nl/ltunify.git
+cd ltunify
+make install-home
+
+sudo ./ltunify pair
+```
+
 ### Danger Zone
 Add Pentest Repository
 ```
