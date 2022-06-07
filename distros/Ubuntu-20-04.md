@@ -27,13 +27,8 @@ sudo snap install --classic zaproxy
 ```
 sudo apt install git wget curl gnupg python3-pip neofetch tree htop fonts-noto-color-emoji ranger screen zsh tmux fonts-powerline tilix python3-nautilus mlocate gnome-tweak-tool totem ubuntu-restricted-extras virtualbox ruby-full nmap nikto sshuttle wafw00f whatweb build-essential libreadline-dev libssl-dev libpq5 libpq-dev libreadline5 libsqlite3-dev libpcap-dev git-core autoconf postgresql pgadmin3 curl zlib1g-dev libxml2-dev libxslt1-dev libyaml-dev curl zlib1g-dev gawk bison libffi-dev libgdbm-dev libncurses5-dev libtool sqlite3 libgmp-dev gnupg2 dirmngr libglib2.0-dev-bin && sudo apt remove gnome-shell-extension-ubuntu-dock
 ```
-Anonsurf
-```
-git clone https://github.com/zyairelai/kali-anonsurf.git
-cd kali-anonsurf
-sudo ./installer.sh
-```
-Marktext
+
+[Marktext](https://marktext.app/)
 ```
 wget https://github.com/marktext/marktext/releases/latest/download/marktext-x86_64.AppImage
 chmod a+x marktext-x86_64.AppImage
@@ -43,16 +38,6 @@ sudo mv marktext-x86_64.AppImage /usr/bin/marktext
 ```
 curl https://sh.rustup.rs -sSf | sh
 cargo install rustscan
-```
-[Metasploit Console](https://www.darkoperator.com/installing-metasploit-in-ubunt)
-```
-cd /opt
-sudo git clone https://github.com/rapid7/metasploit-framework.git
-sudo chown -R `whoami` /opt/metasploit-framework
-cd metasploit-framework
-sudo bash -c 'for MSF in $(ls msf*); do ln -s /opt/metasploit-framework/$MSF /usr/local/bin/$MSF;done'
-gem install bundler
-bundle install
 ```
 
 ### Change Login Background
