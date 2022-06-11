@@ -25,7 +25,7 @@ sudo snap install --classic zaproxy
 
 ### Must HAVE Apps!!!
 ```
-sudo apt install git wget curl gnupg python3-pip neofetch tree htop fonts-noto-color-emoji ranger screen zsh tmux fonts-powerline tilix python3-nautilus mlocate gnome-tweak-tool totem ubuntu-restricted-extras virtualbox ruby-full nmap nikto sshuttle wafw00f whatweb build-essential && sudo apt remove gnome-shell-extension-ubuntu-dock
+sudo apt install git wget curl gnupg python3-pip neofetch tree htop fonts-noto-color-emoji ranger screen zsh tmux fonts-powerline tilix python3-nautilus mlocate gnome-tweak-tool totem ubuntu-restricted-extras virtualbox ruby-full nmap nikto sshuttle wafw00f whatweb build-essential -y && sudo apt remove gnome-shell-extension-ubuntu-dock -y
 ```
 
 [Marktext](https://marktext.app/)
