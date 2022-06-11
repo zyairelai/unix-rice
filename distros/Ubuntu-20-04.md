@@ -71,6 +71,27 @@ sudo ln -s /bin/ranger /bin/r
 sudo ln -s /bin/screen /bin/sc
 sudo ln -s /bin/python3 /bin/py
 ```
+### Dash to Dock one line
+```
+echo "gsettings get org.gnome.shell enabled-extensions | grep 'dash-to-dock' && gnome-extensions disable dash-to-dock@micxgx.gmail.com || gnome-extensions enable dash-to-dock@micxgx.gmail.com" >> dash-to-dock
+echo "dbus-send --session --type=method_call --dest=org.gnome.Shell /org/gnome/Shell org.gnome.Shell.Eval string:'Main.overview.dash.hide();'" >> dash-to-dock-hide
+chmod a+x dash-to-dock && chmod a+x dash-to-dock-hide
+sudo mv dash-to-dock /usr/bin/
+sudo mv dash-to-dock-hide /usr/bin/
+```
+
+### Input Method
+- https://www.dell.com/support/kbdoc/en-my/000181184/how-to-add-chinese-pinyin-input-to-xps-9310-laptops-that-ship-with-ubuntu-20-04-in-english
+```
+sudo apt-get install ibus-pinyin ibus-sunpinyin
+ibus restart
+ibus-setup
+```
+
+### Local Time Fixed
+```
+timedatectl set-local-rtc 1 --adjust-system-clock
+```
 
 ### Keyboard Shortcuts
 | Description                              | Shortcuts             | 
@@ -89,29 +110,10 @@ sudo ln -s /bin/python3 /bin/py
 | `Marktext`                               | Ctrl + Alt + M        |
 | `BurpSuiteCommunity`                     | Ctrl + Alt + B        |
 | `dash-to-dock`                           | Ctrl + Alt + D        |
+| `dash-to-dock-hide                       | Shift + Alt + D       |
 | `subl`                                   | Ctrl + Alt + S        |
 | `virtualbox`                             | Ctrl + Alt + V        |
 | `vboxmanage startvm "vmname"`            | Ctrl + Alt + whatever |
-
-### Dash to Dock one line
-```
-echo "gsettings get org.gnome.shell enabled-extensions | grep 'dash-to-dock' && gnome-extensions disable dash-to-dock@micxgx.gmail.com || gnome-extensions enable dash-to-dock@micxgx.gmail.com" >> dash-to-dock
-chmod a+x dash-to-dock
-sudo mv dash-to-dock /usr/bin/
-```
-
-### Input Method
-- https://www.dell.com/support/kbdoc/en-my/000181184/how-to-add-chinese-pinyin-input-to-xps-9310-laptops-that-ship-with-ubuntu-20-04-in-english
-```
-sudo apt-get install ibus-pinyin ibus-sunpinyin
-ibus restart
-ibus-setup
-```
-
-### Local Time Fixed
-```
-timedatectl set-local-rtc 1 --adjust-system-clock
-```
 
 ### Bug Bounty Must Have
 Add Pentest Repository
