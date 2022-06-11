@@ -2,11 +2,12 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-disable r
 bindkey -s "^[OM" "^M"
 export ZSH="/home/$USER/.oh-my-zsh"
 export PATH=$PATH:/usr/local/go/bin
+disable r
 unsetopt PROMPT_SP
+unsetopt correct_all
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -123,7 +124,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Set username to consider a default context, which by default will not be shown.
 # https://github.com/bhilburn/powerlevel9k/blob/next/segments/context/README.md
-DEFAULT_USER='zhenyean' # set 'luca' to others will result in not showing name
+DEFAULT_USER='zyaire' # set 'luca' to others will result in not showing name
 
 # Set P9KGT background color, either 'light' or 'dark' (this should match the GNOME Terminal's theme).
 P9KGT_BACKGROUND='dark'
