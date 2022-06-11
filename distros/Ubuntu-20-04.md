@@ -33,13 +33,6 @@ wget https://github.com/marktext/marktext/releases/latest/download/marktext-x86_
 chmod a+x marktext-x86_64.AppImage
 sudo mv marktext-x86_64.AppImage /usr/bin/marktext
 ```
-[RustScan](https://doc.rust-lang.org/cargo/getting-started/installation.html)
-```
-curl https://sh.rustup.rs -sSf | sh
-cargo install rustscan
-```
-[BurpSuite](https://portswigger.net/burp/releases/professional-community-2022-3-9?requestededition=community)
-[VMware Workstation](https://www.vmware.com/asean/products/workstation-pro/workstation-pro-evaluation.html)
 
 ### Change Login Background
 - https://www.befunky.com/features/blur-image/
@@ -80,24 +73,26 @@ sudo ln -s /bin/python3 /bin/py
 ```
 
 ### Keyboard Shortcuts
+| Description                              | Shortcuts             | 
+| ---------------------------------------- | --------------------- |
+| Home folder                              | Ctrl + Alt + F        | 
+| Launch Web Browser                       | Ctrl + Alt + G        | 
+| Settings                                 | Ctrl + Alt + S        | 
+| Hide all normal windows                  | Disabled              | 
+| Move to workspace xxx                    | Ctrl + Alt + Arrows   | 
+| Move window one workspace xxx            | Super + Arrows        | 
+| Show all applications                    | Ctrl + Space          | 
+| Switch to next input source              | Shift + Alt + N       |
+| Close window                             | Alt + W               |
+| Maximize window                          | Alt + Super + Up      |
+| View Split (Tiling) on xxx               | Alt + Super + Arrows  |
+| `Marktext`                               | Ctrl + Alt + M        |
+| `BurpSuiteCommunity`                     | Ctrl + Alt + B        |
+| `dash-to-dock`                           | Ctrl + Alt + D        |
+| `virtualbox`                             | Ctrl + Alt + V        |
+| `vboxmanage startvm "vmname"`            | Ctrl + Alt + whatever |
 
-| Shortcuts             | Description                                                  |
-| --------------------- | ------------------------------------------------------------ |
-| Ctrl + Alt + F        | Home folder                                                  |
-| Ctrl + Alt + G        | Launch Web Browser                                           |
-| Super + D             | Hide all normal windows (Disable This)                       |
-| Ctrl + Alt + S        | Settings                                                     |
-| Ctrl + Alt + Arrows   | Move to workspace (direction)                                |
-| Super + Arrows        | Move window one workspace (direction)                        |
-| Alt + Super + Arrows  | View Split (Tiling) on (direction)                                |
-| Alt + W               | Close window                                                 |
-| Ctrl + Space          | Show all applications                                        |
-| Ctrl + Alt + D        | `dash-to-dock`                                               |
-| Ctrl + Alt + M        | `Marktext`                                                   |
-| Ctrl + Alt + V        | `virtualbox` <br> To list installed VM `vboxmanage list vms` |
-| Ctrl + Alt + whatever | `vboxmanage startvm "vmname"`                                |
-
-Dash to Dock one line
+### Dash to Dock one line
 ```
 echo "gsettings get org.gnome.shell enabled-extensions | grep 'dash-to-dock' && gnome-extensions disable dash-to-dock@micxgx.gmail.com || gnome-extensions enable dash-to-dock@micxgx.gmail.com" >> dash-to-dock
 chmod a+x dash-to-dock
@@ -108,11 +103,7 @@ sudo mv dash-to-dock /usr/bin/
 - https://www.dell.com/support/kbdoc/en-my/000181184/how-to-add-chinese-pinyin-input-to-xps-9310-laptops-that-ship-with-ubuntu-20-04-in-english
 ```
 sudo apt-get install ibus-pinyin ibus-sunpinyin
-```
-```
 ibus restart
-```
-```
 ibus-setup
 ```
 
@@ -132,7 +123,7 @@ make install-home
 sudo ./ltunify pair
 ```
 
-### Danger Zone
+### Bug Bounty Must Have
 Add Pentest Repository
 ```
 deb http://http.kali.org/kali kali-rolling main contrib non-free
@@ -149,6 +140,15 @@ sudo apt install wifite golang
 go install github.com/OJ/gobuster/v3@latest
 go install github.com/ffuf/ffuf@latest
 ```
+
+[RustScan](https://doc.rust-lang.org/cargo/getting-started/installation.html)
+```
+curl https://sh.rustup.rs -sSf | sh
+cargo install rustscan
+```
+[BurpSuite](https://portswigger.net/burp/releases/professional-community-2022-3-9?requestededition=community)
+[VMware Workstation](https://www.vmware.com/asean/products/workstation-pro/workstation-pro-evaluation.html)
+
 ### Virtualbox Guest Addition iso permission
 ```
 mount -v | grep cdrom0
