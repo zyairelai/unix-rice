@@ -21,11 +21,10 @@ sudo snap install --classic zaproxy
 - [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
 - [Hide Dash X](https://extensions.gnome.org/extension/805/hide-dash/)
 - [Transparent Top Bar](https://extensions.gnome.org/extension/1708/transparent-top-bar/)
-- [Refresh Wifi Connections](https://extensions.gnome.org/extension/905/refresh-wifi-connections/)
 
 ### Must HAVE Apps!!!
 ```
-sudo apt install git wget curl gnupg python3-pip neofetch tree htop fonts-noto-color-emoji ranger screen zsh tmux fonts-powerline tilix python3-nautilus mlocate gnome-tweak-tool totem ubuntu-restricted-extras virtualbox ruby-full nmap nikto sshuttle wafw00f whatweb build-essential -y && sudo apt remove gnome-shell-extension-ubuntu-dock -y
+sudo apt install git wget curl gnupg python3-pip neofetch tree htop fonts-noto-color-emoji ranger screen zsh tmux fonts-powerline tilix python3-nautilus mlocate gnome-tweak-tool totem ubuntu-restricted-extras virtualbox nmap nikto sshuttle wafw00f whatweb build-essential -y && sudo apt remove gnome-shell-extension-ubuntu-dock -y
 ```
 
 [Marktext](https://marktext.app/)
@@ -39,6 +38,8 @@ sudo mv marktext-x86_64.AppImage /usr/bin/marktext
 curl https://sh.rustup.rs -sSf | sh
 cargo install rustscan
 ```
+[BurpSuite](https://portswigger.net/burp/releases/professional-community-2022-3-9?requestededition=community)
+[VMware Workstation](https://www.vmware.com/asean/products/workstation-pro/workstation-pro-evaluation.html)
 
 ### Change Login Background
 - https://www.befunky.com/features/blur-image/
@@ -50,7 +51,6 @@ sudo ./change-gdm-background /path/to/image
 ```
 
 ### Zsh Setup
-
 ```
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
@@ -89,7 +89,7 @@ sudo ln -s /bin/python3 /bin/py
 | Ctrl + Alt + S        | Settings                                                     |
 | Ctrl + Alt + Arrows   | Move to workspace (direction)                                |
 | Super + Arrows        | Move window one workspace (direction)                        |
-| Alt + Super + Arrows  | Tiling Windows to (direction)                                |
+| Alt + Super + Arrows  | View Split (Tiling) on (direction)                                |
 | Alt + W               | Close window                                                 |
 | Ctrl + Space          | Show all applications                                        |
 | Ctrl + Alt + D        | `dash-to-dock`                                               |
