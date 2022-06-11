@@ -73,11 +73,15 @@ sudo ln -s /bin/python3 /bin/py
 ```
 ### Dash to Dock one line
 ```
-echo "gsettings get org.gnome.shell enabled-extensions | grep 'dash-to-dock' && gnome-extensions disable dash-to-dock@micxgx.gmail.com || gnome-extensions enable dash-to-dock@micxgx.gmail.com" >> dash-to-dock
-echo "dbus-send --session --type=method_call --dest=org.gnome.Shell /org/gnome/Shell org.gnome.Shell.Eval string:'Main.overview.dash.hide();'" >> dash-to-dock-hide
+echo "gsettings get org.gnome.shell enabled-extensions | grep 'dash-to-dock' && gnome-extensions disable dash-to-dock@micxgx.gmail.com && dbus-send --session --type=method_call --dest=org.gnome.Shell /org/gnome/Shell org.gnome.Shell.Eval string:'Main.overview.dash.hide();' || gnome-extensions enable dash-to-dock@micxgx.gmail.com" >> dash-to-dock
 chmod a+x dash-to-dock && chmod a+x dash-to-dock-hide
 sudo mv dash-to-dock /usr/bin/
 sudo mv dash-to-dock-hide /usr/bin/
+```
+One by one
+```
+echo "gsettings get org.gnome.shell enabled-extensions | grep 'dash-to-dock' && gnome-extensions disable dash-to-dock@micxgx.gmail.com || gnome-extensions enable dash-to-dock@micxgx.gmail.com" >> dash-to-dock
+echo "dbus-send --session --type=method_call --dest=org.gnome.Shell /org/gnome/Shell org.gnome.Shell.Eval string:'Main.overview.dash.hide();'" >> dash-to-dock-hide
 ```
 
 ### Input Method
