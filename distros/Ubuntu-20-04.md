@@ -108,7 +108,6 @@ timedatectl set-local-rtc 1 --adjust-system-clock
 | `Marktext`                               | Ctrl + Alt + M        |
 | `BurpSuiteCommunity`                     | Ctrl + Alt + B        |
 | `dash-to-dock`                           | Ctrl + Alt + D        |
-| `dash-to-dock-hide                       | Shift + Alt + D       |
 | `subl`                                   | Ctrl + Alt + S        |
 | `virtualbox`                             | Ctrl + Alt + V        |
 | `vboxmanage startvm "vmname"`            | Ctrl + Alt + whatever |
