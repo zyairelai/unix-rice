@@ -77,7 +77,7 @@ sudo ln -s /bin/python3 /bin/py
 | ---------------------------------------- | --------------------- |
 | Home folder                              | Ctrl + Alt + F        | 
 | Launch Web Browser                       | Ctrl + Alt + G        | 
-| Settings                                 | Ctrl + Alt + S        | 
+| Settings                                 | Super + S             | 
 | Hide all normal windows                  | Disabled              | 
 | Move to workspace xxx                    | Ctrl + Alt + Arrows   | 
 | Move window one workspace xxx            | Super + Arrows        | 
@@ -89,6 +89,7 @@ sudo ln -s /bin/python3 /bin/py
 | `Marktext`                               | Ctrl + Alt + M        |
 | `BurpSuiteCommunity`                     | Ctrl + Alt + B        |
 | `dash-to-dock`                           | Ctrl + Alt + D        |
+| `subl`                                   | Ctrl + Alt + S        |
 | `virtualbox`                             | Ctrl + Alt + V        |
 | `vboxmanage startvm "vmname"`            | Ctrl + Alt + whatever |
 
@@ -112,17 +113,6 @@ ibus-setup
 timedatectl set-local-rtc 1 --adjust-system-clock
 ```
 
-### Pairing Logitech Unifying
-- https://askubuntu.com/questions/113984/is-logitechs-unifying-receiver-supported/114089#114089
-```
-sudo apt-get install git gcc
-git clone https://git.lekensteyn.nl/ltunify.git
-cd ltunify
-make install-home
-
-sudo ./ltunify pair
-```
-
 ### Bug Bounty Must Have
 Add Pentest Repository
 ```
@@ -141,13 +131,26 @@ go install github.com/OJ/gobuster/v3@latest
 go install github.com/ffuf/ffuf@latest
 ```
 
-[RustScan](https://doc.rust-lang.org/cargo/getting-started/installation.html)
+- [BurpSuite](https://portswigger.net/burp/documentation/desktop/getting-started/download-and-install)
+- [VMware Workstation](https://www.vmware.com/asean/products/workstation-pro/workstation-pro-evaluation.html)
+- [RustScan](https://doc.rust-lang.org/cargo/getting-started/installation.html)
 ```
 curl https://sh.rustup.rs -sSf | sh
 cargo install rustscan
 ```
-[BurpSuite](https://portswigger.net/burp/releases/professional-community-2022-3-9?requestededition=community)
-[VMware Workstation](https://www.vmware.com/asean/products/workstation-pro/workstation-pro-evaluation.html)
+
+# Addressing Annoying Problems
+
+### Pairing Logitech Unifying
+- https://askubuntu.com/questions/113984/is-logitechs-unifying-receiver-supported/114089#114089
+```
+sudo apt-get install git gcc
+git clone https://git.lekensteyn.nl/ltunify.git
+cd ltunify
+make install-home
+
+sudo ./ltunify pair
+```
 
 ### Virtualbox Guest Addition iso permission
 ```
