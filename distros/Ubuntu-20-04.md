@@ -112,6 +112,14 @@ timedatectl set-local-rtc 1 --adjust-system-clock
 | `virtualbox`                             | Ctrl + Alt + V        |
 | `vboxmanage startvm "vmname"`            | Ctrl + Alt + whatever |
 
+### Tiling Windows Manager from Pop OS
+```
+git clone https://github.com/zyairelai/pop-shell
+cd shell
+sudo apt install node-typescript
+make local-install
+```
+
 ### Bug Bounty Must Have
 Add Pentest Repository
 ```
