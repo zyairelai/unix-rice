@@ -7,7 +7,7 @@ These are the Setup for my Linux Mint NX Scanner (8GB RAM / 100GB Storage / 2 Co
 sudo apt install git wget curl gnupg screen mlocate nmap ufw sshuttle wafw00f whatweb tree htop
 sudo ufw allow 3780
 ```
-If using tilix
+### If using tilix
 ```
 sudo apt install tilix
 sudo update-alternatives --config x-terminal-emulator
@@ -27,6 +27,7 @@ alias ll='ls -lh --group-directories-first'
 ```
 sudo ln -s /bin/xdg-open /bin/open
 sudo ln -s /bin/clear /bin/c
+sudo ln -s /bin/htop /bin/h
 sudo ln -s /bin/screen /bin/sc
 ```
 
@@ -37,9 +38,8 @@ echo "sudo systemctl status nexposeconsole" >> check.sh
 echo "sudo systemctl stop nexposeconsole" >> stop.sh 
 ```
 ```
-echo "wget http://download2.rapid7.com/download/NeXpose-v4/NeXposeSetup-Linux64.bin
+wget http://download2.rapid7.com/download/NeXpose-v4/NeXposeSetup-Linux64.bin
 chmod +x NeXposeSetup-Linux64.bin && sudo ./NeXposeSetup-Linux64.bin -c
-rm ./NeXposeSetup-Linux64.bin" >> update.sh 
 ```
 
 ## Firefox
