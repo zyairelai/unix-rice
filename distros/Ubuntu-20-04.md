@@ -106,7 +106,7 @@ timedatectl set-local-rtc 1 --adjust-system-clock
 | Maximize window                          | Alt + Super + Up      |
 | View Split (Tiling) on xxx               | Alt + Super + Arrows  |
 | `Marktext`                               | Ctrl + Alt + M        |
-| `BurpSuiteCommunity`                     | Ctrl + Alt + B        |
+| `BurpSuiteCommunity` / `java -jar burp.jar` | Ctrl + Alt + B        |
 | `dash-to-dock`                           | Ctrl + Alt + D        |
 | `subl`                                   | Ctrl + Alt + S        |
 | `virtualbox`                             | Ctrl + Alt + V        |
