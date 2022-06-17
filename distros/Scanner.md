@@ -1,10 +1,14 @@
-## Ubuntu Scanner
-These are the Setup for my Ubuntu Scanner (8GB RAM / 100GB Storage)
+## Linux Mint NX Scanner
+These are the Setup for my Linux Mint NX Scanner (8GB RAM / 100GB Storage / 2 Cores)
 - https://www.rapid7.com/products/nexpose/system-requirements/
 
 ### Must HAVE Apps!!!
 ```
-sudo apt install git wget curl gnupg tilix python3-nautilus fonts-noto-color-emoji gnome-tweak-tool screen mlocate nmap sshuttle wafw00f whatweb tree htop
+sudo apt install git wget curl gnupg tilix screen mlocate nmap sshuttle wafw00f whatweb tree htop
+```
+For GNOME
+```
+sudo apt install python3-nautilus fonts-noto-color-emoji gnome-tweak-tool
 ```
 Change to Tilix Default
 ```
