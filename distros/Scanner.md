@@ -1,5 +1,5 @@
 ## Linux Mint NX Scanner
-These are the Setup for my Linux Mint NX Scanner (8GB RAM / 100GB Storage / 2 Cores)
+These are the Setup for my Linux Mint NX Scanner (Min 6144MB RAM / 100GB Storage / 2 Cores)
 - https://www.rapid7.com/products/nexpose/system-requirements/
 
 ### Must HAVE Apps!!!
