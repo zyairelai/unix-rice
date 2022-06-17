@@ -4,15 +4,13 @@ These are the Setup for my Linux Mint NX Scanner (8GB RAM / 100GB Storage / 2 Co
 
 ### Must HAVE Apps!!!
 ```
-sudo apt install git wget curl gnupg tilix screen mlocate nmap sshuttle wafw00f whatweb tree htop
+sudo apt install git wget curl gnupg screen mlocate nmap sshuttle wafw00f whatweb tree htop
 ```
-For GNOME
+If using tilix
 ```
-sudo apt install python3-nautilus fonts-noto-color-emoji gnome-tweak-tool
-```
-Change to Tilix Default
-```
+sudo apt install tilix
 sudo update-alternatives --config x-terminal-emulator
+sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
 ```
 
 ### Power Settings
@@ -20,6 +18,7 @@ sudo update-alternatives --config x-terminal-emulator
 
 ### Alias ll into .bashrc
 ```
+nano .bashrc
 alias ll='ls -lh --group-directories-first'
 ```
 
@@ -28,7 +27,6 @@ alias ll='ls -lh --group-directories-first'
 sudo ln -s /bin/xdg-open /bin/open
 sudo ln -s /bin/clear /bin/c
 sudo ln -s /bin/screen /bin/sc
-sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
 ```
 
 ### Nexpose quick script
@@ -38,7 +36,8 @@ echo "sudo systemctl status nexposeconsole" >> check.sh
 echo "sudo systemctl stop nexposeconsole" >> stop.sh 
 ```
 ```
-echo "wget http://download2.rapid7.com/download/NeXpose-v4/NeXposeSetup-Linux64.bin && chmod +x NeXposeSetup-Linux64.bin && sudo ./NeXposeSetup-Linux64.bin -c
+echo "wget http://download2.rapid7.com/download/NeXpose-v4/NeXposeSetup-Linux64.bin
+chmod +x NeXposeSetup-Linux64.bin && sudo ./NeXposeSetup-Linux64.bin -c
 rm ./NeXposeSetup-Linux64.bin" >> update.sh 
 ```
 
@@ -51,10 +50,6 @@ rm ./NeXposeSetup-Linux64.bin" >> update.sh
 - https://127.0.0.1:3780 
 - https://temp-mail.org/en/
 - https://www.rapid7.com/try/nexpose/
-
-### Installing Gnome Extensions
-- https://extensions.gnome.org/extension/19/user-themes/
-- https://extensions.gnome.org/extension/307/dash-to-dock/
 
 ### Keyboard Shortcuts
 
