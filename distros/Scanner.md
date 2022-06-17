@@ -4,7 +4,8 @@ These are the Setup for my Linux Mint NX Scanner (8GB RAM / 100GB Storage / 2 Co
 
 ### Must HAVE Apps!!!
 ```
-sudo apt install git wget curl gnupg screen mlocate nmap sshuttle wafw00f whatweb tree htop
+sudo apt install git wget curl gnupg screen mlocate nmap ufw sshuttle wafw00f whatweb tree htop
+sudo ufw allow 3780
 ```
 If using tilix
 ```
