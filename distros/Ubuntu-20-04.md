@@ -135,6 +135,7 @@ go install github.com/ffuf/ffuf@latest
 ```
 - [VMware Workstation](https://www.vmware.com/asean/products/workstation-pro/workstation-pro-evaluation.html) (License at [Appnee](https://appnee.com/vmware-workstation-pro-universal-license-keys-collection/))
 - [BurpSuite](https://portswigger.net/burp/documentation/desktop/getting-started/download-and-install)
+- [Jython](http://search.maven.org/remotecontent?filepath=org/python/jython-standalone/2.7.0/jython-standalone-2.7.0.jar)
 ```
 git clone https://github.com/zyairelai/Burp-Loader burp
 echo "java --illegal-access=permit -Dfile.encoding=utf-8 -javaagent:/opt/burp/loader.jar -noverify -jar /opt/burp/burpsuite_pro_v2022.jar" > burp_pro
