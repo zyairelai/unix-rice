@@ -1,5 +1,4 @@
-# My Kali Setup
-Kali GNOME setup on VMware Workstation
+# Kali GNOME Setup on VMware Workstation
 
 ### Adding Debian Repository
 - `sudo nano /etc/apt/sources.list`
