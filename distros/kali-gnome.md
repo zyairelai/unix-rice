@@ -62,23 +62,6 @@ sudo timedatectl set-local-rtc 1 --adjust-system-clock
 - [Hide Dash X](https://extensions.gnome.org/extension/805/hide-dash/)
 - [Transparent Top Bar](https://extensions.gnome.org/extension/1708/transparent-top-bar/)
 
-### Change Login Background
-- https://www.befunky.com/features/blur-image/
-```
-wget github.com/thiggy01/change-gdm-background/raw/master/change-gdm-background
-chmod +x change-gdm-background
-sudo cp change-gdm-background /usr/share/backgrounds/
-sudo ./change-gdm-background /path/to/image
-```
-
-### Change Login Background
-- https://www.befunky.com/features/blur-image/
-```
-wget github.com/thiggy01/change-gdm-background/raw/master/change-gdm-background
-chmod +x change-gdm-background
-sudo cp change-gdm-background /usr/share/backgrounds/
-sudo ./change-gdm-background /path/to/image
-```
 
 ### Keyboard Shortcuts
 | Description                              | Shortcuts             | 
