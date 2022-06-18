@@ -124,23 +124,26 @@ make local-install
 ### Bug Bounty Must Have
 Add Pentest Repository
 ```
+sudo nano /etc/apt/sources.list
 deb http://http.kali.org/kali kali-rolling main contrib non-free
-```
-Add Public Keys
-```
+
 sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com ED444FF07D8D0BF6
-```
-Normal Tools that required newest package
-```
 sudo apt install wifite golang
-```
-```
+
 go install github.com/OJ/gobuster/v3@latest
 go install github.com/ffuf/ffuf@latest
 ```
-
+- [VMware Workstation](https://www.vmware.com/asean/products/workstation-pro/workstation-pro-evaluation.html) (License at [Appnee](https://appnee.com/vmware-workstation-pro-universal-license-keys-collection/))
 - [BurpSuite](https://portswigger.net/burp/documentation/desktop/getting-started/download-and-install)
-- [VMware Workstation](https://www.vmware.com/asean/products/workstation-pro/workstation-pro-evaluation.html)
+```
+git clone https://github.com/zyairelai/Burp-Loader burp
+echo "java --illegal-access=permit -Dfile.encoding=utf-8 -javaagent:/opt/burp/loader.jar -noverify -jar /opt/burp/burpsuite_pro_v2022.jar" > burp_pro
+chmod a+x burp_pro
+
+java --illegal-access=permit -Dfile.encoding=utf-8 -javaagent:loader.jar -noverify -jar burpsuite_pro_v2022.jar
+java -jar keygen.jar
+```
+
 - [RustScan](https://doc.rust-lang.org/cargo/getting-started/installation.html)
 ```
 curl https://sh.rustup.rs -sSf | sh
