@@ -68,6 +68,7 @@ sudo ln -s /bin/clear /bin/c
 sudo ln -s /bin/htop /bin/h
 sudo ln -s /bin/tree /bin/t
 sudo ln -s /bin/ranger /bin/r
+sudo ln -s /bin/neofetch /bin/n
 sudo ln -s /bin/screen /bin/sc
 sudo ln -s /bin/python3 /bin/py
 ```
