@@ -25,11 +25,12 @@ cargo install rustscan
 
 ### Burp Suite Pwofessional
 - https://portswigger.net/burp/documentation/desktop/getting-started/download-and-install
-- http://search.maven.org/remotecontent?filepath=org/python/jython-standalone/2.7.0/jython-standalone-2.7.0.jar
 ```
 git clone https://github.com/zyairelai/Burp-Loader burp
-echo "java --illegal-access=permit -Dfile.encoding=utf-8 -javaagent:/opt/burp/loader.jar -noverify -jar /opt/burp/burpsuite_pro_v2022.jar" > burp_pro
-chmod a+x burp_pro
+cd burp
+wget http://search.maven.org/remotecontent?filepath=org/python/jython-standalone/2.7.0/jython-standalone-2.7.0.jar
+echo "java --illegal-access=permit -Dfile.encoding=utf-8 -javaagent:/opt/burp/loader.jar -noverify -jar /opt/burp/burpsuite_pro_v2022.jar" > burp
+chmod a+x burp
 
 java --illegal-access=permit -Dfile.encoding=utf-8 -javaagent:loader.jar -noverify -jar burpsuite_pro_v2022.jar
 java -jar keygen.jar
