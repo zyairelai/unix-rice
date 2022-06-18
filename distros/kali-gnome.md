@@ -16,14 +16,6 @@ Personal Setup
 ```
 sudo apt install python3-pip neofetch tree htop fonts-noto-color-emoji ranger zsh tmux ufw gobuster
 ```
-Pentest Tools
-```
-sudo apt install golang-go debootstrap squashfs-tools seclists feroxbuster impacket-scripts nbtscan oscanner redis-tools snmp sipvicious tnscmd10g wkhtmltopdf && sudo python3 -m pip install git+https://github.com/Tib3rius/AutoRecon.git
-```
-One For All
-```
-sudo apt install python3-pip neofetch tree htop fonts-noto-color-emoji ranger zsh tmux ufw gobuster golang-go debootstrap squashfs-tools seclists feroxbuster impacket-scripts nbtscan oscanner redis-tools snmp sipvicious tnscmd10g wkhtmltopdf && sudo python3 -m pip install git+https://github.com/Tib3rius/AutoRecon.git
-```
 
 ### RustScan
 ```
