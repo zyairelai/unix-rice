@@ -28,6 +28,7 @@ curl https://appnee.com/vmware-workstation-pro-universal-license-keys-collection
 ### Burp Suite Pwofessional
 - https://portswigger.net/burp/documentation/desktop/getting-started/download-and-install
 - http://search.maven.org/remotecontent?filepath=org/python/jython-standalone/2.7.0/jython-standalone-2.7.0.jar
+- https://portswigger-cdn.net/burp/releases/download?product=pro
 ```
 git clone https://github.com/zyairelai/Burp-Loader burp
 cd burp
