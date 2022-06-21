@@ -85,8 +85,8 @@ sudo mv dash-to-dock /usr/bin/
 | Close window                             | Alt + W               |
 | Maximize window                          | Alt + Super + Up      |
 | View Split (Tiling) on xxx               | Alt + Super + Arrows  |
-| `Marktext`                               | Ctrl + Alt + M        |
-| `BurpSuiteCommunity` / `java -jar burp.jar` | Ctrl + Alt + B        |
+| `rofi -show drun -theme /home/kali/.config/rofi/config.rasi`     | Ctrl + Alt + M        |
+| `BurpSuiteCommunity` / `java -jar burp.jar`                      | Ctrl + Alt + B        |
 | `dash-to-dock`                           | Ctrl + Alt + D        |
 
 ### Tiling Windows Manager from Pop OS
