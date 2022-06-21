@@ -21,6 +21,7 @@ sudo snap install --classic zaproxy
 - [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
 - [Hide Dash X](https://extensions.gnome.org/extension/805/hide-dash/)
 - [Transparent Top Bar](https://extensions.gnome.org/extension/1708/transparent-top-bar/)
+- [Places Status Indicator](https://extensions.gnome.org/extension/8/places-status-indicator/)
 
 ### Must HAVE Apps!!!
 ```
