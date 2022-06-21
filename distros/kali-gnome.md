@@ -23,7 +23,7 @@ cargo install rustscan
 - set `False` for `ui.key.menuAccessKeyFocuses`
 
 ### Installing Gnome Extensions
-- [Show IP](https://extensions.gnome.org/extension/1762/lan-ip-address/)
+- [All IP Addresses]([https://extensions.gnome.org/extension/1762/lan-ip-address/](https://extensions.gnome.org/extension/3994/all-ip-addresses/))
 - [No Overview at start-up](https://extensions.gnome.org/extension/4099/no-overview/)
 
 ### Personal Terminal Shortcuts
