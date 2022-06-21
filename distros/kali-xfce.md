@@ -47,6 +47,7 @@ nano ~/.oh-my-zsh/lib/directories.zsh
 sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
 echo "alias ll='ls -lh --group-directories-first'" >> ~/.oh-my-zsh/lib/directories.zsh
 echo "\ndisable r" >> ~/.zshrc
+echo "\n. /etc/profile.d/vte.sh" >> ~/.zshrc
 ```
 
 ### XFCE4 Desktop Setup
@@ -55,7 +56,6 @@ mkdir ~/.config/rofi && mkdir ~/.config/polybar && mkdir ~/.config/xfce4/xfconf/
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/polybar/launcher.sh -O ~/.config/polybar/launcher.sh
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/polybar/config -O ~/.config/polybar/config
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/rofi/config.rasi -O ~/.config/rofi/config.rasi
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/kali-2019.bashrc -O ~/.bashrc
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/zshtheme/kali.zsh-theme -O ~/.oh-my-zsh/custom/themes/kali.zsh-theme
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/zshtheme/parrot.zsh-theme -O ~/.oh-my-zsh/custom/themes/parrot.zsh-theme
 mv ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/backup/xfce4-desktop.xml
