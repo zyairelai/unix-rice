@@ -8,7 +8,7 @@ sudo dpkg-reconfigure kali-grant-root
 ### Must HAVE Apps!!!
 Personal Setup
 ```
-sudo apt install python3-pip python3-nautilus neofetch tree htop fonts-noto-color-emoji ranger zsh tmux ufw gobuster
+sudo apt install python3-pip python3-nautilus neofetch tree htop fonts-noto-color-emoji ranger zsh tmux ufw gobuster rofi node-typescript
 ```
 
 ### RustScan
@@ -55,11 +55,8 @@ wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/confi
 ```
 git clone https://github.com/zyairelai/pop-shell
 cd pop-shell
-sudo apt install node-typescript
 make local-install
-```
 
-```
 mkdir ~/.config/rofi
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/rofi/config.rasi -O ~/.config/rofi/config.rasi
 ```
