@@ -62,6 +62,7 @@ sudo timedatectl set-local-rtc 1 --adjust-system-clock
 ### Installing Gnome Extensions
 - [Hide Dash X](https://extensions.gnome.org/extension/805/hide-dash/)
 - [Transparent Top Bar](https://extensions.gnome.org/extension/1708/transparent-top-bar/)
+- [No Overview at start-up](https://extensions.gnome.org/extension/4099/no-overview/)
 
 ### Dash to Dock one line
 ```
