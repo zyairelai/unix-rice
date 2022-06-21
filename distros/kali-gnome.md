@@ -47,10 +47,8 @@ echo "\ndisable r" >> ~/.zshrc
 sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
 nano ~/.oh-my-zsh/lib/directories.zsh
 
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/kali-2019.bashrc -O ~/.bashrc
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/zshtheme/kali.zsh-theme -O ~/.oh-my-zsh/custom/themes/kali.zsh-theme
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/zshtheme/parrot.zsh-theme -O ~/.oh-my-zsh/custom/themes/parrot.zsh-theme
-sudo update-alternatives --config x-terminal-emulator
 ```
 
 ### Tiling Windows Manager from Pop OS
@@ -93,4 +91,5 @@ deb http://ftp.debian.org/debian stable main contrib non-free
 ```
 ```
 sudo apt install tilix
+sudo update-alternatives --config x-terminal-emulator
 ```
