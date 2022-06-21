@@ -44,6 +44,7 @@ sudo ln -s /bin/screen /bin/sc
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 echo "alias ll='ls -lh --group-directories-first'" >> ~/.oh-my-zsh/lib/directories.zsh
 echo "\ndisable r" >> ~/.zshrc
+echo "\n. /etc/profile.d/vte.sh" >> ~/.zshrc
 sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
 nano ~/.oh-my-zsh/lib/directories.zsh
 
@@ -59,6 +60,7 @@ make local-install
 
 mkdir ~/.config/rofi
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/rofi/config.rasi -O ~/.config/rofi/config.rasi
+sudo gzip -d /usr/share/wordlists/rockyou.txt.gz
 ```
 
 ### Keyboard Shortcuts
