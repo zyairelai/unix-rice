@@ -81,6 +81,11 @@ sudo ln -s /bin/python3 /bin/py
 sudo ln -s /bin/screen /bin/sc
 ```
 
+### Tiling Windows Manager
+```
+go install github.com/blrsn/zentile@latest
+sudo cp ~/go/bin/zentile /usr/sbin/
+```
 ### Rename kali to VirtualBox
 - `sudo nano /etc/hostname`
 - `sudo nano /etc/hosts`
