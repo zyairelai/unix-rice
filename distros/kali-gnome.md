@@ -25,7 +25,7 @@ cargo install rustscan
 ### Installing Gnome Extensions
 - [Hide Dash X](https://extensions.gnome.org/extension/805/hide-dash/)
 - [Transparent Top Bar](https://extensions.gnome.org/extension/1708/transparent-top-bar/)
-- [Show IP](https://extensions.gnome.org/extension/941/show-ip/)
+- [Show IP](https://extensions.gnome.org/extension/1762/lan-ip-address/)
 - [No Overview at start-up](https://extensions.gnome.org/extension/4099/no-overview/)
 
 ### Personal Terminal Shortcuts
