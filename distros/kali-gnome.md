@@ -1,11 +1,5 @@
 # Kali GNOME Setup on VMware Workstation
 
-### Adding Debian Repository
-- `sudo nano /etc/apt/sources.list`
-```
-deb http://ftp.debian.org/debian stable main contrib non-free
-```
-
 ### No Sudo Password Policy
 ```
 sudo dpkg-reconfigure kali-grant-root
@@ -27,6 +21,12 @@ cargo install rustscan
 - Go to `about:config`  
 - set `True` for `toolkit.tabbox.switchByScrolling`
 - set `False` for `ui.key.menuAccessKeyFocuses`
+
+### Installing Gnome Extensions
+- [Hide Dash X](https://extensions.gnome.org/extension/805/hide-dash/)
+- [Transparent Top Bar](https://extensions.gnome.org/extension/1708/transparent-top-bar/)
+- [Show IP](https://extensions.gnome.org/extension/941/show-ip/)
+- [No Overview at start-up](https://extensions.gnome.org/extension/4099/no-overview/)
 
 ### Personal Terminal Shortcuts
 ```
@@ -53,22 +53,17 @@ wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/confi
 sudo update-alternatives --config x-terminal-emulator
 ```
 
-### Set Timezone
+### Tiling Windows Manager from Pop OS
 ```
-sudo timedatectl set-timezone Asia/Singapore
-sudo timedatectl set-local-rtc 1 --adjust-system-clock
+git clone https://github.com/zyairelai/pop-shell
+cd pop-shell
+sudo apt install node-typescript
+make local-install
 ```
 
-### Installing Gnome Extensions
-- [Hide Dash X](https://extensions.gnome.org/extension/805/hide-dash/)
-- [Transparent Top Bar](https://extensions.gnome.org/extension/1708/transparent-top-bar/)
-- [No Overview at start-up](https://extensions.gnome.org/extension/4099/no-overview/)
-
-### Dash to Dock one line
 ```
-echo "gsettings get org.gnome.shell enabled-extensions | grep 'dash-to-dock' && gnome-extensions disable dash-to-dock@micxgx.gmail.com && dbus-send --session --type=method_call --dest=org.gnome.Shell /org/gnome/Shell org.gnome.Shell.Eval string:'Main.overview.dash.hide();' || gnome-extensions enable dash-to-dock@micxgx.gmail.com" >> dash-to-dock
-chmod a+x dash-to-dock
-sudo mv dash-to-dock /usr/bin/
+mkdir ~/.config/rofi
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/rofi/config.rasi -O ~/.config/rofi/config.rasi
 ```
 
 ### Keyboard Shortcuts
@@ -80,19 +75,22 @@ sudo mv dash-to-dock /usr/bin/
 | Hide all normal windows                  | Disabled              | 
 | Move to workspace xxx                    | Ctrl + Alt + Arrows   | 
 | Move window one workspace xxx            | Super + Arrows        | 
-| Show all applications                    | Ctrl + Space          | 
-| Switch to next input source              | Shift + Alt + N       |
 | Close window                             | Alt + W               |
 | Maximize window                          | Alt + Super + Up      |
 | View Split (Tiling) on xxx               | Alt + Super + Arrows  |
 | `rofi -show drun -theme /home/kali/.config/rofi/config.rasi`     | Ctrl + Alt + M        |
-| `BurpSuiteCommunity` / `java -jar burp.jar`                      | Ctrl + Alt + B        |
-| `dash-to-dock`                           | Ctrl + Alt + D        |
 
-### Tiling Windows Manager from Pop OS
+### Set Timezone
 ```
-git clone https://github.com/zyairelai/pop-shell
-cd pop-shell
-sudo apt install node-typescript
-make local-install
+sudo timedatectl set-timezone Asia/Singapore
+sudo timedatectl set-local-rtc 1 --adjust-system-clock
+```
+
+### Adding Debian Repository
+- `sudo nano /etc/apt/sources.list`
+```
+deb http://ftp.debian.org/debian stable main contrib non-free
+```
+```
+sudo apt install tilix
 ```
