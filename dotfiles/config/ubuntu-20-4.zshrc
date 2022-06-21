@@ -5,7 +5,6 @@
 bindkey -s "^[OM" "^M"
 export ZSH="/home/$USER/.oh-my-zsh"
 export PATH=$PATH:/usr/local/go/bin
-disable r
 unsetopt PROMPT_SP
 unsetopt correct_all
 
@@ -206,6 +205,5 @@ POWERLEVEL9K_CONTEXT_SUDO_BACKGROUND=$P9KGT_TERMINAL_BACKGROUND
 POWERLEVEL9K_CONTEXT_REMOTE_BACKGROUND=$P9KGT_TERMINAL_BACKGROUND
 POWERLEVEL9K_CONTEXT_REMOTE_SUDO_BACKGROUND=$P9KGT_TERMINAL_BACKGROUND
 
-if [[ $TILIX_ID ]]; then
-        source /etc/profile.d/vte.sh
-fi
+disable r
+. /etc/profile.d/vte.sh
