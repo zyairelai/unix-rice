@@ -13,7 +13,18 @@
     <property name="box_resize" type="bool" value="false"/>
     <property name="cycle_raise" type="bool" value="false"/>
     <property name="borderless_maximize" type="bool" value="true"/>
-    <property name="workspace_names" type="empty"/>
+    <property name="workspace_names" type="array">
+      <value type="string" value="1"/>
+      <value type="string" value="2"/>
+      <value type="string" value="3"/>
+      <value type="string" value="4"/>
+      <value type="string" value="5"/>
+      <value type="string" value="6"/>
+      <value type="string" value="7"/>
+      <value type="string" value="8"/>
+      <value type="string" value="9"/>
+      <value type="string" value="0"/>
+    </property>
     <property name="activate_action" type="string" value="bring"/>
     <property name="box_move" type="bool" value="false"/>
     <property name="button_offset" type="int" value="0"/>
@@ -22,8 +33,8 @@
     <property name="cycle_apps_only" type="bool" value="false"/>
     <property name="cycle_draw_frame" type="bool" value="true"/>
     <property name="cycle_hidden" type="bool" value="true"/>
-    <property name="cycle_minimum" type="bool" value="true"/>
     <property name="cycle_minimized" type="bool" value="false"/>
+    <property name="cycle_minimum" type="bool" value="true"/>
     <property name="cycle_preview" type="bool" value="true"/>
     <property name="cycle_tabwin_mode" type="int" value="0"/>
     <property name="double_click_action" type="string" value="maximize"/>
@@ -32,8 +43,8 @@
     <property name="focus_delay" type="int" value="250"/>
     <property name="focus_hint" type="bool" value="true"/>
     <property name="focus_new" type="bool" value="true"/>
-    <property name="frame_opacity" type="int" value="100"/>
     <property name="frame_border_top" type="int" value="0"/>
+    <property name="frame_opacity" type="int" value="100"/>
     <property name="full_width_title" type="bool" value="true"/>
     <property name="horiz_scroll_opacity" type="bool" value="false"/>
     <property name="inactive_opacity" type="int" value="100"/>
@@ -63,19 +74,19 @@
     <property name="snap_to_border" type="bool" value="true"/>
     <property name="snap_to_windows" type="bool" value="false"/>
     <property name="snap_width" type="int" value="10"/>
-    <property name="vblank_mode" type="string" value="auto"/>
     <property name="tile_on_move" type="bool" value="true"/>
     <property name="title_alignment" type="string" value="center"/>
     <property name="title_horizontal_offset" type="int" value="0"/>
-    <property name="titleless_maximize" type="bool" value="false"/>
     <property name="title_shadow_active" type="string" value="false"/>
     <property name="title_shadow_inactive" type="string" value="false"/>
     <property name="title_vertical_offset_active" type="int" value="0"/>
     <property name="title_vertical_offset_inactive" type="int" value="0"/>
+    <property name="titleless_maximize" type="bool" value="false"/>
     <property name="toggle_workspaces" type="bool" value="false"/>
     <property name="unredirect_overlays" type="bool" value="true"/>
     <property name="urgent_blink" type="bool" value="false"/>
     <property name="use_compositing" type="bool" value="true"/>
+    <property name="vblank_mode" type="string" value="auto"/>
     <property name="wrap_cycle" type="bool" value="true"/>
     <property name="wrap_layout" type="bool" value="true"/>
     <property name="wrap_resistance" type="int" value="10"/>
