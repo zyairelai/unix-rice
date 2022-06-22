@@ -1,4 +1,4 @@
-# My Kali Setup
+# Kali XFCE Setup
 kali-linux-2022.2-virtualbox-amd64.ova
 
 ### Adding Debian Repository
