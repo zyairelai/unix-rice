@@ -15,7 +15,7 @@ sudo dpkg-reconfigure kali-grant-root
 ### Must HAVE Apps!!!
 Personal Setup
 ```
-sudo apt install python3-pip neofetch tree htop fonts-noto-color-emoji rofi ranger zsh tmux ufw gobuster
+sudo apt install python3-pip neofetch tree htop fonts-noto-color-emoji rofi ranger zsh tmux ufw gobuster golang-go
 ```
 
 ### RustScan
