@@ -94,25 +94,25 @@ timedatectl set-local-rtc 1 --adjust-system-clock
 ```
 
 ### Keyboard Shortcuts
-| Description                              | Shortcuts             | 
-| ---------------------------------------- | --------------------- |
-| Home folder                              | Ctrl + Alt + F        | 
-| Launch Web Browser                       | Ctrl + Alt + G        | 
-| Settings                                 | Super + S             | 
-| Hide all normal windows                  | Disabled              | 
-| Move to workspace xxx                    | Ctrl + Alt + Arrows   | 
-| Move window one workspace xxx            | Super + Arrows        | 
-| Show all applications                    | Ctrl + Space          | 
-| Switch to next input source              | Shift + Alt + N       |
-| Close window                             | Alt + W               |
-| Maximize window                          | Alt + Super + Up      |
-| View Split (Tiling) on xxx               | Alt + Super + Arrows  |
-| `Marktext`                               | Ctrl + Alt + M        |
-| `BurpSuiteCommunity` / `java -jar burp.jar` | Ctrl + Alt + B        |
-| `dash-to-dock`                           | Ctrl + Alt + D        |
-| `subl`                                   | Ctrl + Alt + S        |
-| `virtualbox`                             | Ctrl + Alt + V        |
-| `vboxmanage startvm "vmname"`            | Ctrl + Alt + whatever |
+| Description                              | Shortcuts                   | 
+| ---------------------------------------- | --------------------------- |
+| Home folder                              | Ctrl + Alt + F              | 
+| Launch Web Browser                       | Ctrl + Alt + G              | 
+| Settings                                 | Super + S                   | 
+| Hide all normal windows                  | Disabled                    | 
+| Move to workspace xxx                    | Ctrl + Super + Arrows       | 
+| Move window one workspace xxx            | Shift + Ctrl + Alt + Arrows | 
+| Show all applications                    | Ctrl + Space                | 
+| Switch to next input source              | Shift + Alt + N             |
+| Close window                             | Alt + W                     |
+| Maximize window                          | Alt + Super + Up            |
+| View Split (Tiling) on xxx               | Alt + Super + Arrows        |
+| `Marktext`                               | Ctrl + Alt + M              |
+| `java -jar burp.jar`                     | Ctrl + Alt + B              |
+| `dash-to-dock`                           | Ctrl + Alt + D              |
+| `subl`                                   | Ctrl + Alt + S              |
+| `virtualbox`                             | Ctrl + Alt + V              |
+| `vboxmanage startvm "vmname"`            | Ctrl + Alt + whatever       |
 
 ### Tiling Windows Manager from Pop OS
 ```
