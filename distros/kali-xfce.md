@@ -15,7 +15,7 @@ sudo dpkg-reconfigure kali-grant-root
 ### Must HAVE Apps!!!
 Personal Setup
 ```
-sudo apt install python3-pip neofetch tree htop fonts-noto-color-emoji polybar rofi ranger zsh tmux ufw gobuster
+sudo apt install python3-pip neofetch tree htop fonts-noto-color-emoji rofi ranger zsh tmux ufw gobuster
 ```
 
 ### RustScan
@@ -53,8 +53,6 @@ echo "\n. /etc/profile.d/vte.sh" >> ~/.zshrc
 ### XFCE4 Desktop Setup
 ```
 mkdir ~/.config/rofi && mkdir ~/.config/polybar && mkdir ~/.config/xfce4/xfconf/xfce-perchannel-xml/backup
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/polybar/launcher.sh -O ~/.config/polybar/launcher.sh
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/polybar/config -O ~/.config/polybar/config
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/rofi/config.rasi -O ~/.config/rofi/config.rasi
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/zshtheme/kali.zsh-theme -O ~/.oh-my-zsh/custom/themes/kali.zsh-theme
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/zshtheme/parrot.zsh-theme -O ~/.oh-my-zsh/custom/themes/parrot.zsh-theme
@@ -80,12 +78,17 @@ sudo ln -s /bin/neofetch /bin/n
 sudo ln -s /bin/python3 /bin/py
 sudo ln -s /bin/screen /bin/sc
 ```
+### Unzip Rockyou
+```
+sudo gzip -d /usr/share/wordlists/rockyou.txt.gz
+```
 
 ### Tiling Windows Manager
 ```
 go install github.com/blrsn/zentile@latest
 sudo cp ~/go/bin/zentile /usr/sbin/
 ```
+
 ### Rename kali to VirtualBox
 - `sudo nano /etc/hostname`
 - `sudo nano /etc/hosts`
