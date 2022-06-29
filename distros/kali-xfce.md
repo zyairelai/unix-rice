@@ -7,22 +7,16 @@ kali-linux-2022.2-virtualbox-amd64.ova
 deb http://ftp.debian.org/debian stable main contrib non-free
 ```
 
-### No Sudo Password Policy
-```
-sudo dpkg-reconfigure kali-grant-root
-```
-
 ### Must HAVE Apps!!!
-Personal Setup
-```
-sudo apt install python3-pip neofetch tree htop fonts-noto-color-emoji rofi ranger zsh tmux ufw gobuster golang-go
-```
+- `sudo apt install python3-pip neofetch tree htop fonts-noto-color-emoji rofi ranger zsh tmux ufw gobuster golang-go`
 
 ### RustScan
-```
-curl https://sh.rustup.rs -sSf | sh
-cargo install rustscan
-```
+- `curl https://sh.rustup.rs -sSf | sh`
+- `cargo install rustscan`
+
+### No Sudo Password Policy & Unzip rockyou.txt
+- `sudo dpkg-reconfigure kali-grant-root`
+- `sudo gzip -d /usr/share/wordlists/rockyou.txt.gz`
 
 ### Firefox
 - Go to `about:config`  
@@ -40,14 +34,15 @@ autologin-user-timeout=0
 
 ### Zsh Setup
 Don't forget to add tilix shortcut
+- `sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+- `nano ~/.oh-my-zsh/lib/directories.zsh`
 ```
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-nano ~/.oh-my-zsh/lib/directories.zsh
-
 sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
 echo "alias ll='ls -lh --group-directories-first'" >> ~/.oh-my-zsh/lib/directories.zsh
 echo "\ndisable r" >> ~/.zshrc
 echo "\n. /etc/profile.d/vte.sh" >> ~/.zshrc
+sudo cp -r ~/.oh-my-zsh /root/
+sudo cp ~/.zshrc /root/
 ```
 
 ### XFCE4 Desktop Setup
@@ -78,20 +73,11 @@ sudo ln -s /bin/neofetch /bin/n
 sudo ln -s /bin/python3 /bin/py
 sudo ln -s /bin/screen /bin/sc
 ```
-### Unzip Rockyou
-```
-sudo gzip -d /usr/share/wordlists/rockyou.txt.gz
-```
 
 ### Tiling Windows Manager
-```
-go install github.com/blrsn/zentile@latest
-sudo cp ~/go/bin/zentile /usr/sbin/
-```
-
-### Rename kali to VirtualBox
-- `sudo nano /etc/hostname`
-- `sudo nano /etc/hosts`
+- `go install github.com/blrsn/zentile@latest`
+- `sudo cp ~/go/bin/zentile /usr/bin/`
+- Go to `Session and Startup` to start `zentile` at startup
 
 ### Broken ZSH History 
 ```
