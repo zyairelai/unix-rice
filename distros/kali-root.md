@@ -83,7 +83,3 @@ gzip -d /usr/share/wordlists/rockyou.txt.gz
 go install github.com/blrsn/zentile@latest
 cp ~/go/bin/zentile /usr/sbin/
 ```
-
-### Rename kali to VirtualBox
-- `nano /etc/hostname`
-- `nano /etc/hosts`
