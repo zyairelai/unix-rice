@@ -42,6 +42,7 @@ sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
 echo "alias ll='ls -lh --group-directories-first'" >> ~/.oh-my-zsh/lib/directories.zsh
 echo "\ndisable r" >> ~/.zshrc
 echo "\n. /etc/profile.d/vte.sh" >> ~/.zshrc
+sleep(1)
 sudo cp -r ~/.oh-my-zsh /root/
 sudo cp ~/.zshrc /root/
 ```
