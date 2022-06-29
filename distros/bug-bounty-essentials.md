@@ -4,6 +4,7 @@
 ```
 sudo nano /etc/apt/sources.list
 deb http://http.kali.org/kali kali-rolling main contrib non-free
+deb http://http.kali.org/kali kali-last-snapshot main contrib non-free
 
 sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com ED444FF07D8D0BF6
 sudo apt install wifite golang
