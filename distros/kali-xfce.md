@@ -36,6 +36,7 @@ autologin-user-timeout=0
 Don't forget to add tilix shortcut
 - `sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 - `nano ~/.oh-my-zsh/lib/directories.zsh`
+- Change the theme to `kali`
 ```
 sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
 echo "alias ll='ls -lh --group-directories-first'" >> ~/.oh-my-zsh/lib/directories.zsh
