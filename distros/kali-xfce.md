@@ -1,11 +1,10 @@
 # Kali XFCE Setup
 kali-linux-2022.2-virtualbox-amd64.ova
 
-### Adding Debian Repository
+### Adding Debian and Stable Repository
 - `sudo nano /etc/apt/sources.list`
-```
-deb http://ftp.debian.org/debian stable main contrib non-free
-```
+- `deb http://ftp.debian.org/debian stable main contrib non-free`
+- `deb http://http.kali.org/kali kali-last-snapshot main contrib non-free`
 
 ### Must HAVE Apps!!!
 - `sudo apt install python3-pip neofetch tree htop fonts-noto-color-emoji rofi ranger zsh tmux ufw gobuster golang-go`
