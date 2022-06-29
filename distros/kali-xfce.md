@@ -74,6 +74,10 @@ sudo ln -s /bin/ranger /bin/r
 sudo ln -s /bin/neofetch /bin/n
 sudo ln -s /bin/python3 /bin/py
 sudo ln -s /bin/screen /bin/sc
+
+echo "sudo su" > s
+chmod a+x s
+sudo mv s /usr/bin/
 ```
 
 ### Tiling Windows Manager
