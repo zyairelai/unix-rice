@@ -21,6 +21,12 @@ kali-linux-2022.2-virtualbox-amd64.ova
 - Go to `about:config`  
 - set `True` for `toolkit.tabbox.switchByScrolling`
 - set `False` for `ui.key.menuAccessKeyFocuses`
+- https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/
+- https://addons.mozilla.org/en-US/firefox/addon/traduzir-paginas-web/
+- https://addons.mozilla.org/en-US/firefox/addon/hacktools/
+- https://addons.mozilla.org/en-US/firefox/addon/shodan-addon/
+- https://addons.mozilla.org/en-US/firefox/addon/cookie-editor/
+- 
 
 ### Auto Login
 - `sudo nano /etc/lightdm/lightdm.conf`
