@@ -7,7 +7,7 @@ kali-linux-2022.2-virtualbox-amd64.ova
 - `deb http://http.kali.org/kali kali-last-snapshot main contrib non-free`
 
 ### Must HAVE Apps!!!
-- `sudo apt install python3-pip neofetch tree htop fonts-noto-color-emoji rofi ranger zsh tmux ufw gobuster golang-go`
+- `sudo apt install python3-pip neofetch exif tree htop fonts-noto-color-emoji rofi ranger zsh tmux ufw gobuster golang-go`
 
 ### RustScan
 - `curl https://sh.rustup.rs -sSf | sh`
