@@ -69,6 +69,7 @@ wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/confi
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/xfce4/xfwm4.xml -O ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/xfce4/xfce4-panel.xml -O ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
 ```
+- `xfce4-panel -r && xfwm4 --replace`
 
 ### Personal Terminal Shortcuts
 ```
