@@ -1,6 +1,9 @@
 # Kali XFCE Setup
 kali-linux-2022.2-virtualbox-amd64.ova
 
+### Downgade Python 3.10 to 3.8.10
+- https://www.liquidweb.com/kb/how-to-install-pyenv-on-ubuntu-18-04/
+
 ### Adding Debian and Stable Repository
 - `sudo nano /etc/apt/sources.list`
 - `deb http://ftp.debian.org/debian stable main contrib non-free`
