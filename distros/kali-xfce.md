@@ -1,9 +1,6 @@
 # Kali XFCE Setup
 kali-linux-2022.2-virtualbox-amd64.ova
 
-### Downgade Python and install the desire pip3
-- `wget https://bootstrap.pypa.io/get-pip.py`
-
 ### Adding Debian and Stable Repository
 - `sudo nano /etc/apt/sources.list`
 - `deb http://ftp.debian.org/debian stable main contrib non-free`
@@ -15,6 +12,12 @@ kali-linux-2022.2-virtualbox-amd64.ova
 ### RustScan
 - `curl https://sh.rustup.rs -sSf | sh`
 - `cargo install rustscan`
+
+### Install DroopeScan
+- `wget https://bootstrap.pypa.io/get-pip.py`
+- `python3.9 get-pip.py`
+- `/home/kali/.local/bin/pip3.9 install droopescan`
+- `sudo cp /home/kali/.local/bin/droopescan /usr/bin/droopescan`
 
 ### No Sudo Password Policy & Unzip rockyou.txt
 - `sudo dpkg-reconfigure kali-grant-root`
