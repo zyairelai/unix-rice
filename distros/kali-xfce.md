@@ -2,6 +2,7 @@
 kali-linux-2022.2-virtualbox-amd64.ova
 
 ### Downgade Python 3.10 to 3.8.10
+- https://stackoverflow.com/questions/59549829/how-do-i-downgrade-my-version-of-python-from-3-7-5-to-3-6-5-on-ubuntu
 - https://www.liquidweb.com/kb/how-to-install-pyenv-on-ubuntu-18-04/
 
 ### Adding Debian and Stable Repository
