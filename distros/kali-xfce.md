@@ -59,6 +59,9 @@ sudo cp -r ~/.oh-my-zsh /root/
 sudo cp ~/.zshrc /root/
 ```
 
+### Special Folders
+- ` ~/.config/user-dirs.dirs`
+
 ### XFCE4 Desktop Setup
 ```
 mkdir ~/.config/rofi && mkdir ~/.config/polybar && mkdir ~/.config/xfce4/xfconf/xfce-perchannel-xml/backup
