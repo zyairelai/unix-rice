@@ -32,7 +32,7 @@ kali-linux-2022.2-virtualbox-amd64.ova
 - https://addons.mozilla.org/en-US/firefox/addon/hacktools/
 - https://addons.mozilla.org/en-US/firefox/addon/shodan-addon/
 - https://addons.mozilla.org/en-US/firefox/addon/cookie-editor/
-- 
+- https://addons.mozilla.org/en-US/firefox/addon/uaswitcher/
 
 ### Auto Login
 - `sudo nano /etc/lightdm/lightdm.conf`
