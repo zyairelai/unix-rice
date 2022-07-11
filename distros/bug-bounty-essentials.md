@@ -29,7 +29,7 @@ cargo install rustscan
 - https://addons.mozilla.org/en-US/firefox/addon/hacktools/
 - https://addons.mozilla.org/en-US/firefox/addon/shodan-addon/
 - https://addons.mozilla.org/en-US/firefox/addon/cookie-editor/
-- 
+- https://addons.mozilla.org/en-US/firefox/addon/uaswitcher/
 
 ### Chrome
 - https://chrome.google.com/webstore/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg
