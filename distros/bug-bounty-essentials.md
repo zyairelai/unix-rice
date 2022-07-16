@@ -18,6 +18,7 @@ go install github.com/ffuf/ffuf@latest
 ```
 curl https://sh.rustup.rs -sSf | sh
 cargo install rustscan
+sudo ln -s ~/.cargo/bin/rustscan /bin/r
 ```
 
 ### Firefox
