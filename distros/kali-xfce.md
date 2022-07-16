@@ -12,6 +12,7 @@ kali-linux-2022.2-virtualbox-amd64.ova
 ### RustScan
 - `curl https://sh.rustup.rs -sSf | sh`
 - `cargo install rustscan`
+- `sudo ln -s ~/.cargo/bin/rustscan /bin/r`
 
 ### Install DroopeScan
 - `wget https://bootstrap.pypa.io/get-pip.py`
@@ -86,7 +87,7 @@ wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/confi
 sudo ln -s /bin/clear /bin/c
 sudo ln -s /bin/htop /bin/h
 sudo ln -s /bin/tree /bin/t
-sudo ln -s /bin/ranger /bin/r
+sudo ln -s /bin/ranger /bin/rf
 sudo ln -s /bin/neofetch /bin/n
 sudo ln -s /bin/python3 /bin/py
 sudo ln -s /bin/screen /bin/sc
