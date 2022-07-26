@@ -7,7 +7,7 @@ kali-linux-2022.2-virtualbox-amd64.ova
 - `deb http://http.kali.org/kali kali-last-snapshot main contrib non-free`
 
 ### Must HAVE Apps!!!
-- `sudo apt install python3-pip neofetch exif tree htop fonts-noto-color-emoji rofi ranger zsh tmux ufw gobuster golang-go`
+- `sudo apt install python3-pip neofetch exif tree htop fonts-noto-color-emoji rofi ranger zsh tmux ufw gobuster golang-go remmina bloodhound`
 
 ### RustScan
 - `curl https://sh.rustup.rs -sSf | sh`
@@ -84,13 +84,16 @@ wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/confi
 
 ### Personal Terminal Shortcuts
 ```
-sudo ln -s /bin/clear /bin/c
-sudo ln -s /bin/htop /bin/h
-sudo ln -s /bin/tree /bin/t
-sudo ln -s /bin/ranger /bin/rf
-sudo ln -s /bin/neofetch /bin/n
-sudo ln -s /bin/python3 /bin/py
-sudo ln -s /bin/screen /bin/sc
+sudo ln -s /usr/bin/clear /usr/bin/c
+sudo ln -s /usr/bin/htop /usr/bin/h
+sudo ln -s /usr/bin/tree /usr/bin/t
+sudo ln -s /usr/bin/ranger /usr/bin/rf
+sudo ln -s /usr/bin/neofetch /usr/bin/n
+sudo ln -s /usr/bin/screen /usr/bin/sc
+sudo ln -s /usr/bin/python2 /usr/bin/py2
+sudo ln -s /usr/bin/python3.9 /usr/bin/python3
+sudo ln -s /usr/bin/python3 /usr/bin/py
+sudo ln -s /usr/bin/python3 /usr/bin/py3
 
 echo "sudo su" > s
 chmod a+x s
