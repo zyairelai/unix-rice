@@ -21,6 +21,11 @@ cargo install rustscan
 sudo ln -s ~/.cargo/bin/rustscan /bin/r
 ```
 
+### AutoRecon
+```
+sudo apt install gobuster golang-go kali-grant-root debootstrap squashfs-tools seclists feroxbuster impacket-scripts nbtscan oscanner redis-tools snmp sipvicious tnscmd10g wkhtmltopdf && sudo python3 -m pip install git+https://github.com/Tib3rius/AutoRecon.git
+```
+
 ### Firefox
 - Go to `about:config`  
 - set `True` for `toolkit.tabbox.switchByScrolling`
