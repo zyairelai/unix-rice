@@ -9,6 +9,11 @@ kali-linux-2022.2-virtualbox-amd64.ova
 ### Must HAVE Apps!!!
 - `sudo apt install python3-pip neofetch exif tree htop fonts-noto-color-emoji rofi ranger zsh tmux ufw gobuster golang-go remmina bloodhound`
 
+### AutoRecon
+```
+sudo apt install gobuster golang-go kali-grant-root debootstrap squashfs-tools seclists feroxbuster impacket-scripts nbtscan oscanner redis-tools snmp sipvicious tnscmd10g wkhtmltopdf && sudo python3 -m pip install git+https://github.com/Tib3rius/AutoRecon.git
+```
+
 ### RustScan
 - `curl https://sh.rustup.rs -sSf | sh`
 - `cargo install rustscan`
