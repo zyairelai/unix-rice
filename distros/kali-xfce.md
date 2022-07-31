@@ -84,6 +84,7 @@ wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/confi
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/xfce4/xfce4-power-manager.xml -O ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/xfce4/xfwm4.xml -O ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/xfce4/xfce4-panel.xml -O ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/tmux.conf -O ~/.tmux.conf
 ```
 - `xfce4-panel -r && xfwm4 --replace`
 
