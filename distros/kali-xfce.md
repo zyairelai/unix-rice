@@ -106,6 +106,14 @@ chmod a+x s
 sudo mv s /usr/bin/
 ```
 
+### Disable Sublime Update Prompt
+- Go to `Preferences` -> `Settings` and add the following:
+```
+{
+	"update_check": false,
+}
+```
+
 ### Tiling Windows Manager
 - `go install github.com/blrsn/zentile@latest`
 - `sudo cp ~/go/bin/zentile /usr/bin/`
