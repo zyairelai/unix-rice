@@ -114,6 +114,14 @@ timedatectl set-local-rtc 1 --adjust-system-clock
 | `virtualbox`                             | Ctrl + Alt + V              |
 | `vboxmanage startvm "vmname"`            | Ctrl + Alt + whatever       |
 
+### Disable Sublime Update Prompt
+- Go to `Preferences` -> `Settings` and add the following:
+```
+{
+	"update_check": false,
+}
+```
+
 ### Tiling Windows Manager from Pop OS
 ```
 git clone https://github.com/zyairelai/pop-shell
