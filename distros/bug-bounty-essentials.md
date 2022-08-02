@@ -57,13 +57,13 @@ curl https://appnee.com/vmware-workstation-pro-universal-license-keys-collection
 ```
 git clone https://github.com/zyairelai/Burp-Loader burp
 cd burp
-echo "java --illegal-access=permit -Dfile.encoding=utf-8 -javaagent:/opt/burp/loader.jar -noverify -jar /opt/burp/BURP_SUITE_PRO_VERSION.jar" > burp_illegal
-echo "java -noverify -javaagent:/opt/burp/loader.jar -jar /opt/burp/BURP_SUITE_PRO_VERSION.jar" > burp
+echo "java --illegal-access=permit -Dfile.encoding=utf-8 -javaagent:loader.jar -noverify -jar BURP_SUITE_PRO_VERSION.jar" > burp_illegal
+echo "java -noverify -javaagent:loader.jar -jar BURP_SUITE_PRO_VERSION.jar" > burp
 
 chmod a+x burp
 
 java --illegal-access=permit -Dfile.encoding=utf-8 -javaagent:loader.jar -noverify -jar BURP_SUITE_PRO_VERSION.jar
-java -noverify -javaagent:/opt/burp/loader.jar -jar /opt/burp/BURP_SUITE_PRO_VERSION.jar
+java -noverify -javaagent:loader.jar -jar BURP_SUITE_PRO_VERSION.jar
 java -jar keygen.jar
 ```
 
