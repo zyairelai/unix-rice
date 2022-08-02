@@ -44,7 +44,6 @@ sudo apt install gobuster golang-go kali-grant-root debootstrap squashfs-tools s
 - https://chrome.google.com/webstore/detail/shodan/jjalcfnidlmpjhdfepjhjbhnhkbgleap
 - https://chrome.google.com/webstore/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm
 - https://chrome.google.com/webstore/detail/dotgit/pampamgoihgcedonnphgehgondkhikel?hl=en
-- 
 
 ### VMware Workstation
 - https://www.vmware.com/asean/products/workstation-pro/workstation-pro-evaluation.html
@@ -53,9 +52,8 @@ curl https://appnee.com/vmware-workstation-pro-universal-license-keys-collection
 ```
 
 ### Burp Suite Pwofessional
-- https://portswigger.net/burp/documentation/desktop/getting-started/download-and-install
-- http://search.maven.org/remotecontent?filepath=org/python/jython-standalone/2.7.0/jython-standalone-2.7.0.jar
 - https://portswigger-cdn.net/burp/releases/download?product=pro
+- https://forum.portswigger.net/thread/jython-2-7-2-error-via-burp-suite-extensions-01800d81
 ```
 git clone https://github.com/zyairelai/Burp-Loader burp
 cd burp
