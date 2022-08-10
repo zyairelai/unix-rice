@@ -60,9 +60,6 @@ echo "alias ll='ls -lh --group-directories-first'" >> ~/.oh-my-zsh/lib/directori
 echo "\ndisable r" >> ~/.zshrc
 echo "\n. /etc/profile.d/vte.sh" >> ~/.zshrc
 echo "\nexport PATH='$PATH:/home/kali/.local/bin/'" >> .zshrc
-sleep(1)
-sudo cp -r ~/.oh-my-zsh /root/
-sudo cp ~/.zshrc /root/
 ```
 
 ### Special Folders
