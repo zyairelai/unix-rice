@@ -55,6 +55,8 @@ Don't forget to add tilix shortcut
 - `nano ~/.oh-my-zsh/lib/directories.zsh`
 - Change the theme to `kali`
 ```
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/zshtheme/kali.zsh-theme -O ~/.oh-my-zsh/custom/themes/kali.zsh-theme
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/zshtheme/parrot.zsh-theme -O ~/.oh-my-zsh/custom/themes/parrot.zsh-theme
 sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
 echo "alias ll='ls -lh --group-directories-first'" >> ~/.oh-my-zsh/lib/directories.zsh
 echo "\ndisable r" >> ~/.zshrc
@@ -69,8 +71,6 @@ echo "\nexport PATH='$PATH:/home/kali/.local/bin/'" >> .zshrc
 ```
 mkdir ~/.config/rofi && mkdir ~/.config/polybar && mkdir ~/.config/xfce4/xfconf/xfce-perchannel-xml/backup
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/rofi/config.rasi -O ~/.config/rofi/config.rasi
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/zshtheme/kali.zsh-theme -O ~/.oh-my-zsh/custom/themes/kali.zsh-theme
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/zshtheme/parrot.zsh-theme -O ~/.oh-my-zsh/custom/themes/parrot.zsh-theme
 mv ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/backup/xfce4-desktop.xml
 mv ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/backup/xfce4-keyboard-shortcuts.xml
 mv ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/backup/xfce4-power-manager.xml
@@ -90,13 +90,11 @@ wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/confi
 sudo ln -s /usr/bin/clear /usr/bin/c
 sudo ln -s /usr/bin/htop /usr/bin/h
 sudo ln -s /usr/bin/tree /usr/bin/t
-sudo ln -s /usr/bin/ranger /usr/bin/rf
 sudo ln -s /usr/bin/neofetch /usr/bin/n
 sudo ln -s /usr/bin/screen /usr/bin/sc
 sudo ln -s /usr/bin/python2 /usr/bin/py2
 sudo ln -s /usr/bin/python3.9 /usr/bin/python3
 sudo ln -s /usr/bin/python3 /usr/bin/py
-sudo ln -s /usr/bin/python3 /usr/bin/py3
 
 echo "sudo su" > s
 chmod a+x s
