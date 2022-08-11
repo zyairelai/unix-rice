@@ -53,7 +53,7 @@ curl https://appnee.com/vmware-workstation-pro-universal-license-keys-collection
 
 ### Burp Suite Pwofessional
 - https://portswigger-cdn.net/burp/releases/download?product=pro
-- https://forum.portswigger.net/thread/jython-2-7-2-error-via-burp-suite-extensions-01800d81
+- https://www.jython.org/jython-old-sites/downloads.html
 ```
 git clone https://github.com/zyairelai/Burp-Loader burp
 cd burp
