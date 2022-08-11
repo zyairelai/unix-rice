@@ -88,9 +88,6 @@ wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/confi
 ### Personal Terminal Shortcuts
 ```
 sudo ln -s /usr/bin/clear /usr/bin/c
-sudo ln -s /usr/bin/htop /usr/bin/h
-sudo ln -s /usr/bin/tree /usr/bin/t
-sudo ln -s /usr/bin/neofetch /usr/bin/n
 sudo ln -s /usr/bin/screen /usr/bin/sc
 sudo ln -s /usr/bin/python2 /usr/bin/py2
 sudo ln -s /usr/bin/python3.9 /usr/bin/python3
