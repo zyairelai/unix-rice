@@ -58,7 +58,8 @@ Don't forget to add tilix shortcut
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/zshtheme/kali.zsh-theme -O ~/.oh-my-zsh/custom/themes/kali.zsh-theme
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/zshtheme/parrot.zsh-theme -O ~/.oh-my-zsh/custom/themes/parrot.zsh-theme
 sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
-echo "alias ll='ls -lh --group-directories-first'" >> ~/.oh-my-zsh/lib/directories.zsh
+echo "alias l='ls -lh --group-directories-first'" >> ~/.oh-my-zsh/lib/directories.zsh
+echo "alias ll='ls -lah --group-directories-first'" >> ~/.oh-my-zsh/lib/directories.zsh
 echo "\ndisable r" >> ~/.zshrc
 echo "\n. /etc/profile.d/vte.sh" >> ~/.zshrc
 echo "\nexport PATH='$PATH:/home/kali/.local/bin/'" >> .zshrc
