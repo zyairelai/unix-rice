@@ -13,7 +13,6 @@ sudo snap install telegram-desktop
 sudo snap install --classic code
 sudo snap install --classic heroku
 sudo snap install --classic sublime-text
-sudo snap install --classic zaproxy
 ```
 
 ### Installing Gnome Extensions
@@ -103,20 +102,11 @@ timedatectl set-local-rtc 1 --adjust-system-clock
 | Close window                             | Alt + W                     |
 | Maximize window                          | Alt + Super + Up            |
 | View Split (Tiling) on xxx               | Alt + Super + Arrows        |
-| `Marktext`                               | Ctrl + Alt + M              |
 | `java -jar burp.jar`                     | Ctrl + Alt + B              |
 | `dash-to-dock`                           | Ctrl + Alt + D              |
 | `subl`                                   | Ctrl + Alt + S              |
 | `virtualbox`                             | Ctrl + Alt + V              |
 | `vboxmanage startvm "vmname"`            | Ctrl + Alt + whatever       |
-
-### Disable Sublime Update Prompt
-- Go to `Preferences` -> `Settings` and add the following:
-```
-{
-	"update_check": false,
-}
-```
 
 ### Tiling Windows Manager from Pop OS
 ```
