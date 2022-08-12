@@ -57,7 +57,9 @@ curl https://appnee.com/vmware-workstation-pro-universal-license-keys-collection
 ```
 git clone git@github.com:zyairelai/burp-loader.git burp
 cd burp
-echo "java -noverify -javaagent:loader.jar -jar BURP_SUITE_PRO_VERSION.jar" > burp
+echo "LOADER_LOCATION=" >> burp
+echo "BURP_SUITE_PRO_LOCATION=" >> burp
+echo "java -noverify -javaagent:$LOADER_LOCATION -jar $BURP_SUITE_PRO_LOCATION" >> burp
 
 chmod a+x burp
 
