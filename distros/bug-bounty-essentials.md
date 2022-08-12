@@ -55,7 +55,7 @@ curl https://appnee.com/vmware-workstation-pro-universal-license-keys-collection
 - https://portswigger-cdn.net/burp/releases/download?product=pro
 - https://www.jython.org/jython-old-sites/downloads.html
 ```
-git clone https://github.com/zyairelai/Burp-Loader burp
+git clone git@github.com:zyairelai/burp-loader.git burp
 cd burp
 echo "java -noverify -javaagent:loader.jar -jar BURP_SUITE_PRO_VERSION.jar" > burp
 
