@@ -21,6 +21,17 @@ cargo install rustscan
 sudo ln -s ~/.cargo/bin/rustscan /bin/r
 ```
 
+### ExploitDB
+```
+sudo git clone https://github.com/offensive-security/exploitdb.git /opt/exploitdb
+sudo ln -sf /opt/exploitdb/searchsploit /usr/local/bin/searchsploit
+```
+
+### Metasploit Framework
+```
+curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
+```
+
 ### AutoRecon
 ```
 sudo apt install gobuster golang-go kali-grant-root debootstrap squashfs-tools seclists feroxbuster impacket-scripts nbtscan oscanner redis-tools snmp sipvicious tnscmd10g wkhtmltopdf && sudo python3 -m pip install git+https://github.com/Tib3rius/AutoRecon.git
