@@ -21,6 +21,7 @@ sudo snap install --classic sublime-text
 - [Hide Dash X](https://extensions.gnome.org/extension/805/hide-dash/)
 - [Transparent Top Bar](https://extensions.gnome.org/extension/1708/transparent-top-bar/)
 - [Places Status Indicator](https://extensions.gnome.org/extension/8/places-status-indicator/)
+- [All IP Addresses](https://extensions.gnome.org/extension/3994/all-ip-addresses/)
 
 ### Must HAVE Apps!!!
 ```
