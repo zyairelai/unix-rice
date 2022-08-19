@@ -1,6 +1,10 @@
 # Kali XFCE Setup
 kali-linux-2022.2-virtualbox-amd64.ova
 
+### No Sudo Password Policy & Unzip rockyou.txt
+- `sudo dpkg-reconfigure kali-grant-root`
+- `sudo gzip -d /usr/share/wordlists/rockyou.txt.gz`
+
 ### Adding Debian and Stable Repository
 - `sudo nano /etc/apt/sources.list`
 - `deb http://ftp.debian.org/debian stable main contrib non-free`
@@ -17,17 +21,13 @@ sudo apt install gobuster golang-go kali-grant-root debootstrap squashfs-tools s
 ### RustScan
 - `curl https://sh.rustup.rs -sSf | sh`
 - `cargo install rustscan`
-- `sudo ln -s ~/.cargo/bin/rustscan /bin/r`
+- `sudo cp ~/.cargo/bin/rustscan /usr/bin/rustscan`
 
 ### Install DroopeScan
 - `wget https://bootstrap.pypa.io/get-pip.py`
 - `python3.9 get-pip.py`
 - `/home/kali/.local/bin/pip3.9 install droopescan`
 - `sudo cp /home/kali/.local/bin/droopescan /usr/bin/droopescan`
-
-### No Sudo Password Policy & Unzip rockyou.txt
-- `sudo dpkg-reconfigure kali-grant-root`
-- `sudo gzip -d /usr/share/wordlists/rockyou.txt.gz`
 
 ### Firefox
 - Go to `about:config`  
@@ -63,9 +63,6 @@ echo "\ndisable r" >> ~/.zshrc
 echo "\n. /etc/profile.d/vte.sh" >> ~/.zshrc
 echo "\nexport PATH='$PATH:/home/kali/.local/bin/'" >> .zshrc
 ```
-
-### Special Folders
-- ` ~/.config/user-dirs.dirs`
 
 ### XFCE4 Desktop Setup
 ```
@@ -105,6 +102,9 @@ sudo mv s /usr/bin/
 	"update_check": false,
 }
 ```
+
+### Special Folders
+- ` ~/.config/user-dirs.dirs`
 
 ### Tiling Windows Manager
 - `go install github.com/blrsn/zentile@latest`
