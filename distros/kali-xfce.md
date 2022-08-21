@@ -103,6 +103,14 @@ sudo mv s /usr/bin/
 }
 ```
 
+### Disable SSH Strict Host Key Checking
+- `nano ~/.ssh/config`
+```
+Host *
+    StrictHostKeyChecking no
+```
+- `chmod 400 ~/.ssh/config`
+
 ### Special Folders
 - ` ~/.config/user-dirs.dirs`
 
