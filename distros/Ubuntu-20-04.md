@@ -144,4 +144,7 @@ mount -v | grep cdrom0
 sudo mount -o remount,exec,ro /media/cdrom0
 ```
 
-https://www.codegrepper.com/code-examples/shell/change+dns+to+8.8.8.8+linux
+### Permanent DNS
+- https://www.tecmint.com/set-permanent-dns-nameservers-in-ubuntu-debian/
+- https://www.ricmedia.com/linux/set-permanent-dns-nameservers-ubuntu-debian-resolv-conf
+- https://www.codegrepper.com/code-examples/shell/change+dns+to+8.8.8.8+linux
