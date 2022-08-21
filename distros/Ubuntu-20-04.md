@@ -109,6 +109,14 @@ timedatectl set-local-rtc 1 --adjust-system-clock
 | `virtualbox`                             | Ctrl + Alt + V              |
 | `vboxmanage startvm "vmname"`            | Ctrl + Alt + whatever       |
 
+### Disable SSH Strict Host Key Checking
+- `nano ~/.ssh/config`
+```
+Host *
+    StrictHostKeyChecking no
+```
+- `chmod 400 ~/.ssh/config`
+
 ### Tiling Windows Manager from Pop OS
 ```
 git clone https://github.com/zyairelai/pop-shell
