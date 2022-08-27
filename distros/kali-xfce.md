@@ -28,6 +28,7 @@ sudo apt install gobuster golang-go kali-grant-root debootstrap squashfs-tools s
 - `python3.9 get-pip.py`
 - `/home/kali/.local/bin/pip3.9 install droopescan`
 - `sudo cp /home/kali/.local/bin/droopescan /usr/bin/droopescan`
+- `pip2 install virtualenv`
 
 ### Firefox
 - Go to `about:config`  
