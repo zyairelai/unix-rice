@@ -131,6 +131,9 @@ rm ~/.john
 - `chmod a+x cjohn`
 - `sudo mv cjohn /usr/bin/ && sudo mv cssh /usr/bin`
 
+### Clock Options
+- `%A %d %B %Y %r`
+
 ### Special Folders
 - ` ~/.config/user-dirs.dirs`
 
