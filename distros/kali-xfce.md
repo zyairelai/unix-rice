@@ -132,7 +132,7 @@ rm ~/.john
 - `sudo mv cjohn /usr/bin/ && sudo mv cssh /usr/bin`
 
 ### Clock Options
-- `%a %d %B %Y %r`
+- `%a %d %b %Y %r`
 - https://docs.xfce.org/xfce/xfce4-panel/clock
 
 ### Special Folders
