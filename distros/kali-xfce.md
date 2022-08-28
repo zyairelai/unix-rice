@@ -13,7 +13,7 @@ kali-linux-2022.2-virtualbox-amd64.ova
 ### Must HAVE Apps!!!
 - `sudo apt install python3-pip neofetch exif tree htop fonts-noto-color-emoji rofi ranger zsh tmux ufw gobuster golang-go remmina bloodhound virtualenv`
 
-### Wine32
+### Wine32 & Windows Binary Support
 - `sudo dpkg --add-architecture i386`
 - `sudo apt update`
 - `sudo apt install wine32` 
