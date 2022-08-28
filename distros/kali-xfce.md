@@ -13,6 +13,12 @@ kali-linux-2022.2-virtualbox-amd64.ova
 ### Must HAVE Apps!!!
 - `sudo apt install python3-pip neofetch exif tree htop fonts-noto-color-emoji rofi ranger zsh tmux ufw gobuster golang-go remmina bloodhound virtualenv`
 
+### Wine32
+- `sudo dpkg --add-architecture i386`
+- `sudo apt update`
+- `sudo apt install wine32` 
+- `sudo apt install mingw-w64 -y`
+
 ### AutoRecon
 ```
 sudo apt install gobuster golang-go kali-grant-root debootstrap squashfs-tools seclists feroxbuster impacket-scripts nbtscan oscanner redis-tools snmp sipvicious tnscmd10g wkhtmltopdf && sudo python3 -m pip install git+https://github.com/Tib3rius/AutoRecon.git
@@ -110,7 +116,20 @@ sudo mv s /usr/bin/
 Host *
     StrictHostKeyChecking no
 ```
+- `nano cssh`
+```
+#!/bin/bash
+rm ~/.ssh/known_hosts
+```
+- `nano cjohn`
+```
+#!/bin/bash
+rm ~/.john
+```
 - `chmod 400 ~/.ssh/config`
+- `chmod a+x cssh`
+- `chmod a+x cjohn`
+- `sudo mv cjohn /usr/bin/ && sudo mv cssh /usr/bin`
 
 ### Special Folders
 - ` ~/.config/user-dirs.dirs`
