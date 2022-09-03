@@ -25,7 +25,7 @@ sudo snap install --classic sublime-text
 
 ### Must HAVE Apps!!!
 ```
-sudo apt install git wget curl gnupg python3-pip neofetch tree htop exif fonts-noto-color-emoji ranger screen zsh tmux fonts-powerline tilix python3-nautilus mlocate gnome-tweak-tool totem ubuntu-restricted-extras nmap nikto sshuttle wafw00f whatweb build-essential -y && sudo apt remove gnome-shell-extension-ubuntu-dock -y
+sudo apt install git wget curl gnupg python3-pip neofetch tree htop exif fonts-noto-color-emoji ranger screen zsh tmux fonts-powerline tilix python3-nautilus mlocate gnome-tweak-tool totem resolvconf ubuntu-restricted-extras nmap nikto sshuttle wafw00f whatweb build-essential -y && sudo apt remove gnome-shell-extension-ubuntu-dock -y
 ```
 
 [Marktext](https://marktext.app/)
@@ -146,5 +146,3 @@ sudo mount -o remount,exec,ro /media/cdrom0
 
 ### Permanent DNS
 - https://www.tecmint.com/set-permanent-dns-nameservers-in-ubuntu-debian/
-- https://www.ricmedia.com/linux/set-permanent-dns-nameservers-ubuntu-debian-resolv-conf
-- https://www.codegrepper.com/code-examples/shell/change+dns+to+8.8.8.8+linux
