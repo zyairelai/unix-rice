@@ -28,13 +28,6 @@ sudo snap install --classic sublime-text
 sudo apt install git wget curl gnupg python3-pip neofetch tree htop exif fonts-noto-color-emoji ranger screen zsh tmux fonts-powerline tilix python3-nautilus mlocate gnome-tweak-tool totem resolvconf ubuntu-restricted-extras nmap nikto sshuttle wafw00f whatweb build-essential -y && sudo apt remove gnome-shell-extension-ubuntu-dock -y
 ```
 
-[Marktext](https://marktext.app/)
-```
-wget https://github.com/marktext/marktext/releases/latest/download/marktext-x86_64.AppImage
-chmod a+x marktext-x86_64.AppImage
-sudo mv marktext-x86_64.AppImage /usr/bin/marktext
-```
-
 ### Change Login Background
 - https://www.befunky.com/features/blur-image/
 ```
@@ -143,6 +136,9 @@ sudo ./ltunify pair
 mount -v | grep cdrom0
 sudo mount -o remount,exec,ro /media/cdrom0
 ```
+
+### Nvidia PowerSaving Mode Intel
+- `sudo prime-select intel`
 
 ### Permanent DNS
 - https://www.tecmint.com/set-permanent-dns-nameservers-in-ubuntu-debian/
