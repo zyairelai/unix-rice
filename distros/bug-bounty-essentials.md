@@ -70,7 +70,7 @@ git clone git@github.com:zyairelai/burp-loader.git burp
 cd burp
 echo "LOADER_LOCATION=" >> burp
 echo "BURP_SUITE_PRO_LOCATION=" >> burp
-echo "java -noverify -javaagent:$LOADER_LOCATION -jar $BURP_SUITE_PRO_LOCATION" >> burp
+echo "java -noverify -javaagent:\$LOADER_LOCATION -jar \$BURP_SUITE_PRO_LOCATION" >> burp
 
 chmod a+x burp
 
