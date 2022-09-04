@@ -16,8 +16,7 @@ Setup for my Desktop, some configurations for my Desktop themes and shortcuts.
   <img src="wallpaper/my-latte.png">
 </p>
 
-### Special Folders
-
-```
-nano .config/user-dirs.dirs
-```
+### Delete Boot Menu
+- https://unix.stackexchange.com/questions/552728/removed-both-linux-installations-but-bios-still-shows-them-in-boot-options
+- `bcdedit /enum firmware`
+- `bcdedit /delete <identifier>`
