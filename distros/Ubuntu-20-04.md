@@ -12,7 +12,6 @@ sudo snap install discord
 sudo snap install cherrytree
 sudo snap install telegram-desktop
 sudo snap install --classic code
-sudo snap install --classic heroku
 sudo snap install --classic sublime-text
 ```
 
@@ -42,12 +41,12 @@ sudo ./change-gdm-background /path/to/image
 ```
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
-echo "alias ll='ls -lh --group-directories-first'" >> ~/.oh-my-zsh/lib/directories.zsh
-sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
 sudo update-alternatives --config x-terminal-emulator
 chsh -s $(which zsh)
 nano ~/.oh-my-zsh/lib/directories.zsh
 
+sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
+echo "alias ll='ls -lh --group-directories-first'" >> ~/.oh-my-zsh/lib/directories.zsh
 mv ~/.bashrc ~/.bashrc.bck
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/kali-2019.bashrc -O ~/.bashrc
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/ubuntu-20-4.zshrc -O ~/.zshrc
