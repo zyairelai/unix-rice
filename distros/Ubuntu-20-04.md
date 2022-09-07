@@ -142,3 +142,10 @@ sudo mount -o remount,exec,ro /media/cdrom0
 
 ### Permanent DNS
 - https://www.tecmint.com/set-permanent-dns-nameservers-in-ubuntu-debian/
+- `sudo nano /usr/bin/ds`
+```
+#!/bin/bash
+
+echo "nameserver 8.8.8.8" >> /run/resolvconf/resolv.conf
+echo "nameserver 8.8.4.4" >> /run/resolvconf/resolv.conf
+```
