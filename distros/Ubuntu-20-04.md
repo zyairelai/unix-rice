@@ -9,6 +9,7 @@ These are the Setup for my Ubuntu 20.04 LTS
 ### Install from Snap / Software Center
 ```
 sudo snap install discord
+sudo snap install cherrytree
 sudo snap install telegram-desktop
 sudo snap install --classic code
 sudo snap install --classic heroku
@@ -25,7 +26,7 @@ sudo snap install --classic sublime-text
 
 ### Must HAVE Apps!!!
 ```
-sudo apt install git wget curl gnupg python3-pip neofetch tree htop exif fonts-noto-color-emoji ranger screen zsh tmux fonts-powerline tilix python3-nautilus mlocate gnome-tweak-tool totem resolvconf ubuntu-restricted-extras nmap nikto sshuttle wafw00f whatweb build-essential -y && sudo apt remove gnome-shell-extension-ubuntu-dock -y
+sudo apt install git wget curl gnupg python2.7 python3-pip python3.8-venv ruby-dev node-typescript default-jdk deluge neofetch tree htop exif fonts-noto-color-emoji ranger screen zsh tmux fonts-powerline tilix python3-nautilus mlocate gnome-tweak-tool totem resolvconf ubuntu-restricted-extras nmap nikto sshuttle exiftool freerdp2-x11 remmina cadaver wafw00f whatweb build-essential virtualbox -y && sudo apt remove gnome-shell-extension-ubuntu-dock -y
 ```
 
 ### Change Login Background
