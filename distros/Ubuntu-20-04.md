@@ -57,11 +57,10 @@ wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/confi
 
 ### Personal Terminal Shortcuts
 ```
-sudo ln -s /bin/xdg-open /bin/open
-sudo ln -s /bin/python3 /bin/python
-sudo ln -s /bin/clear /bin/c
-sudo ln -s /bin/screen /bin/sc
-sudo ln -s /bin/python3 /bin/py
+sudo ln -s /usr/bin/xdg-open /usr/bin/open
+sudo ln -s /usr/bin/python3 /usr/bin/python
+sudo ln -s /usr/bin/clear /usr/bin/c
+sudo ln -s /usr/bin/screen /usr/bin/sc
 ```
 ### Dash to Dock one line
 ```
@@ -104,6 +103,7 @@ timedatectl set-local-rtc 1 --adjust-system-clock
 | `vboxmanage startvm "vmname"`            | Ctrl + Alt + whatever       |
 
 ### Disable SSH Strict Host Key Checking
+- `mkdir ~/.ssh`
 - `nano ~/.ssh/config`
 ```
 Host *
