@@ -67,6 +67,21 @@ sudo ln -s /usr/bin/python3 /usr/bin/python
 sudo ln -s /usr/bin/clear /usr/bin/c
 sudo ln -s /usr/bin/screen /usr/bin/sc
 ```
+
+### Disable SSH Strict Host Key Checking
+- `mkdir ~/.ssh`
+```
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/preconfigured/scripts/sshconfig -O ~/.ssh/config
+```
+- `chmod 400 ~/.ssh/config`  
+
+### Permanent DNS
+```
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/preconfigured/scripts/ds -O /usr/bin/ds
+```
+- `sudo chmod a+x /usr/bin/ds`
+
+
 ### Dash to Dock one line
 ```
 echo "gsettings get org.gnome.shell enabled-extensions | grep 'dash-to-dock' && gnome-extensions disable dash-to-dock@micxgx.gmail.com && dbus-send --session --type=method_call --dest=org.gnome.Shell /org/gnome/Shell org.gnome.Shell.Eval string:'Main.overview.dash.hide();' || gnome-extensions enable dash-to-dock@micxgx.gmail.com" >> dash-to-dock
@@ -80,25 +95,10 @@ sudo mv dash-to-dock /usr/bin/
 - `ibus-setup`
 
 ### Local Time Fixed
-```
-timedatectl set-local-rtc 1 --adjust-system-clock
-```
+- `timedatectl set-local-rtc 1 --adjust-system-clock`
 
 ### Nvidia PowerSaving Mode Intel
 - `sudo prime-select intel`
-
-### Disable SSH Strict Host Key Checking
-- `mkdir ~/.ssh`
-```
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/preconfigured/scripts/sshconfig -O ~/.ssh/config
-```
-- `chmod 400 ~/.ssh/config`
-
-### Permanent DNS
-```
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/preconfigured/scripts/ds -O /usr/bin/ds
-```
-- `sudo chmod a+x /usr/bin/ds`
 
 ### Keyboard Shortcuts
 | Description                              | Shortcuts                   | 
