@@ -1,5 +1,5 @@
-# Kali XFCE Setup
-kali-linux-2022.2-virtualbox-amd64.ova
+# Kali XFCE 2022.2 Setup
+My PEN-200 / OSCP kali setup
 
 ### No Sudo Password Policy & Unzip rockyou.txt
 - `sudo dpkg-reconfigure kali-grant-root`
@@ -11,13 +11,9 @@ kali-linux-2022.2-virtualbox-amd64.ova
 - `deb http://http.kali.org/kali kali-last-snapshot main contrib non-free`
 
 ### Must HAVE Apps!!!
-- `sudo apt install python3-pip neofetch exif tree htop fonts-noto-color-emoji rofi ranger zsh tmux ufw gobuster golang-go remmina bloodhound virtualenv`
-
-### Wine32 & Windows Binary Support
 - `sudo dpkg --add-architecture i386`
 - `sudo apt update`
-- `sudo apt install wine32` 
-- `sudo apt install mingw-w64 -y`
+- `sudo apt install python3-pip neofetch tree htop fonts-noto-color-emoji rofi ranger zsh tmux gobuster golang-go remmina bloodhound virtualenv wine32 mingw-w64 -y`
 
 ### AutoRecon
 ```
@@ -57,13 +53,11 @@ autologin-user-timeout=0
 ```
 
 ### Zsh Setup
-Don't forget to add tilix shortcut
 - `sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 - `nano ~/.oh-my-zsh/lib/directories.zsh`
 - Change the theme to `kali`
 ```
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/zshtheme/kali.zsh-theme -O ~/.oh-my-zsh/custom/themes/kali.zsh-theme
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/zshtheme/parrot.zsh-theme -O ~/.oh-my-zsh/custom/themes/parrot.zsh-theme
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/zshtheme/kali.zsh-theme -O ~/.oh-my-zsh/custom/themes/kali.zsh-theme
 sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
 echo "alias ll='ls -ah --group-directories-first'" >> ~/.oh-my-zsh/lib/directories.zsh
 echo "\ndisable r" >> ~/.zshrc
@@ -71,23 +65,34 @@ echo "\n. /etc/profile.d/vte.sh" >> ~/.zshrc
 echo "\nexport PATH='$PATH:/home/kali/.local/bin/'" >> .zshrc
 ```
 
+### For ZSH root
+- `cd /root/`
+- `sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+- `nano ~/.oh-my-zsh/lib/directories.zsh`
+- Change the theme to `kali`
+```
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/zshtheme/kali.zsh-theme -O ~/.oh-my-zsh/custom/themes/kali.zsh-theme
+echo "alias ll='ls -ah --group-directories-first'" >> ~/.oh-my-zsh/lib/directories.zsh
+echo "\ndisable r" >> ~/.zshrc
+echo "\n. /etc/profile.d/vte.sh" >> ~/.zshrc
+```
+
 ### XFCE4 Desktop Setup
 ```
 mkdir ~/.config/rofi && mkdir ~/.config/polybar && mkdir ~/.config/xfce4/xfconf/xfce-perchannel-xml/backup
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/rofi/config.rasi -O ~/.config/rofi/config.rasi
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/rofi/config.rasi -O ~/.config/rofi/config.rasi
 mv ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/backup/xfce4-desktop.xml
 mv ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/backup/xfce4-keyboard-shortcuts.xml
 mv ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/backup/xfce4-power-manager.xml
 mv ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/backup/xfwm4.xml
 mv ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/backup/xfce4-panel.xml
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/xfce4/xfce4-desktop.xml -O ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/xfce4/xfce4-keyboard-shortcuts.xml -O ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/xfce4/xfce4-power-manager.xml -O ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/xfce4/xfwm4.xml -O ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/xfce4/xfce4-panel.xml -O ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/tmux.conf -O ~/.tmux.conf
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/xfce4/xfce4-desktop.xml -O ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/xfce4/xfce4-keyboard-shortcuts.xml -O ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/xfce4/xfce4-power-manager.xml -O ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/xfce4/xfwm4.xml -O ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/xfce4/xfce4-panel.xml -O ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/tmux.conf -O ~/.tmux.conf
 ```
-- `xfce4-panel -r && xfwm4 --replace`
 
 ### Personal Terminal Shortcuts
 ```
@@ -95,7 +100,6 @@ sudo ln -s /usr/bin/clear /usr/bin/c
 sudo ln -s /usr/bin/screen /usr/bin/sc
 sudo ln -s /usr/bin/python2 /usr/bin/py2
 sudo ln -s /usr/bin/python3.9 /usr/bin/python3
-sudo ln -s /usr/bin/python3 /usr/bin/py
 
 echo "sudo su" > s
 chmod a+x s
@@ -107,45 +111,31 @@ sudo mv s /usr/bin/
 ```
 {
 	"update_check": false,
+    "font": 14
 }
 ```
 
 ### Disable SSH Strict Host Key Checking
-- `nano ~/.ssh/config`
+- `mkdir ~/.ssh`
 ```
-Host *
-    StrictHostKeyChecking no
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/preconfigured/scripts/sshconfig -O ~/.ssh/config
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/preconfigured/scripts/cssh
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/preconfigured/scripts/cjohn
 ```
-- `nano cssh`
 ```
-#!/bin/bash
-rm ~/.ssh/known_hosts
+chmod 400 ~/.ssh/config
+chmod a+x cssh
+chmod a+x cjohn
+sudo mv cjohn /usr/bin/ && sudo mv cssh /usr/bin
 ```
-- `nano cjohn`
-```
-#!/bin/bash
-rm ~/.john
-```
-- `chmod 400 ~/.ssh/config`
-- `chmod a+x cssh`
-- `chmod a+x cjohn`
-- `sudo mv cjohn /usr/bin/ && sudo mv cssh /usr/bin`
+
+# No Longer Useful
 
 ### Clock Options
 - `%a %d %b %Y %r`
 - https://docs.xfce.org/xfce/xfce4-panel/clock
 
-### Special Folders
-- ` ~/.config/user-dirs.dirs`
-
-### Tiling Windows Manager
+### Tiling Windows Manager 
 - `go install github.com/blrsn/zentile@latest`
 - `sudo cp ~/go/bin/zentile /usr/bin/`
 - Go to `Session and Startup` to start `zentile` at startup
-
-### Broken ZSH History 
-```
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/zsh_history_fix
-chmod a+x zsh_history_fix
-sudo mv zsh_history_fix /usr/bin/zsh_history_fix
-```

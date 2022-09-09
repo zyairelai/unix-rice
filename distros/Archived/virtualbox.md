@@ -22,7 +22,7 @@ https://www.py4u.net/discuss/1121744
 
 ### Broken ZSH History 
 ```
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/zsh_history_fix
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/zsh_history_fix
 chmod a+x zsh_history_fix
 sudo mv zsh_history_fix /usr/bin/zsh_history_fix
 ```

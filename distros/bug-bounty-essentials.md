@@ -1,43 +1,32 @@
 # Bug Bounty Essentials
 
-### Add Pentest Repository
-```
-sudo nano /etc/apt/sources.list
-deb http://http.kali.org/kali kali-rolling main contrib non-free
-deb http://http.kali.org/kali kali-last-snapshot main contrib non-free
-
-sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com ED444FF07D8D0BF6
-sudo apt install wifite golang
-
-go install github.com/OJ/gobuster/v3@latest
-go install github.com/ffuf/ffuf@latest
-```
-
 ### RustScan
 - https://doc.rust-lang.org/cargo/getting-started/installation.html
-```
-curl https://sh.rustup.rs -sSf | sh
-cargo install rustscan
-sudo ln -s ~/.cargo/bin/rustscan /bin/r
-```
+- `curl https://sh.rustup.rs -sSf | sh`
+- `cargo install rustscan`
+- `sudo cp ~/.cargo/bin/rustscan /usr/bin/rustscan`
 
 ### ExploitDB
-```
-sudo git clone https://github.com/offensive-security/exploitdb.git /opt/exploitdb
-sudo ln -sf /opt/exploitdb/searchsploit /usr/local/bin/searchsploit
-```
+- `sudo git clone https://github.com/offensive-security/exploitdb.git /opt/exploitdb`
+- `sudo ln -sf /opt/exploitdb/searchsploit /usr/local/bin/searchsploit`
 
 ### Metasploit Framework
 ```
 curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
 ```
 
-### AutoRecon
+### Wordlists
+- `sudo mkdir /usr/share/wordlists`
 ```
-sudo apt install gobuster golang-go kali-grant-root debootstrap squashfs-tools seclists feroxbuster impacket-scripts nbtscan oscanner redis-tools snmp sipvicious tnscmd10g wkhtmltopdf && sudo python3 -m pip install git+https://github.com/Tib3rius/AutoRecon.git
+wget https://raw.githubusercontent.com/v0re/dirb/master/wordlists/common.txt
+wget https://raw.githubusercontent.com/v0re/dirb/master/wordlists/big.txt
+wget https://github.com/daviddias/node-dirbuster/raw/master/lists/directory-list-2.3-medium.txt
+wget https://github.com/praetorian-inc/Hob0Rules/raw/master/wordlists/rockyou.txt.gz
 ```
+- `sudo gzip -d /usr/share/wordlists/rockyou.txt.gz`
 
-### Firefox
+
+### Firefox Extensions
 - Go to `about:config`  
 - set `True` for `toolkit.tabbox.switchByScrolling`
 - set `False` for `ui.key.menuAccessKeyFocuses`
@@ -48,7 +37,7 @@ sudo apt install gobuster golang-go kali-grant-root debootstrap squashfs-tools s
 - https://addons.mozilla.org/en-US/firefox/addon/cookie-editor/
 - https://addons.mozilla.org/en-US/firefox/addon/uaswitcher/
 
-### Chrome
+### Chrome Extensions
 - https://chrome.google.com/webstore/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg
 - https://chrome.google.com/webstore/detail/hack-tools/cmbndhnoonmghfofefkcccljbkdpamhi
 - https://chrome.google.com/webstore/detail/trufflehog/bafhdnhjnlcdbjcdcnafhdcphhnfnhjc
@@ -93,6 +82,20 @@ java -jar keygen.jar
 - Upload Scanne
 - AutoRepeater
 - Autorize
+
+### Add Pentest Repository (DANGER ZONE)
+```
+sudo nano /etc/apt/sources.list
+deb http://http.kali.org/kali kali-last-snapshot main contrib non-free
+sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com ED444FF07D8D0BF6
+
+sudo apt install wifite golang
+
+go install github.com/OJ/gobuster/v3@latest
+go install github.com/ffuf/ffuf@latest
+
+sudo apt install gobuster golang-go kali-grant-root debootstrap squashfs-tools seclists feroxbuster impacket-scripts nbtscan oscanner redis-tools snmp sipvicious tnscmd10g wkhtmltopdf && sudo python3 -m pip install git+https://github.com/Tib3rius/AutoRecon.git
+```
 
 # Reverse Shell over WAN
 - https://stackoverflow.com/questions/71621855/how-can-i-use-a-reverse-shell-over-global-internet

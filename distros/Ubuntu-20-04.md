@@ -1,11 +1,6 @@
 ## Ubuntu 20.04 LTS
 These are the Setup for my Ubuntu 20.04 LTS
 
-### Firefox
-- Go to `about:config`  
-- set `True` for `toolkit.tabbox.switchByScrolling`
-- set `False` for `ui.key.menuAccessKeyFocuses`
-
 ### Install from Snap / Software Center
 ```
 sudo snap install discord
@@ -38,21 +33,32 @@ sudo ./change-gdm-background /path/to/image
 ```
 
 ### Zsh Setup
-```
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
-sudo update-alternatives --config x-terminal-emulator
-chsh -s $(which zsh)
-nano ~/.oh-my-zsh/lib/directories.zsh
+- https://github.com/zyairelai/unix-rice/blob/master/dotfiles/nerd-font.ttf
+- `sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+- `git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k`
+- `nano ~/.oh-my-zsh/lib/directories.zsh`
+- `sudo update-alternatives --config x-terminal-emulator`
+- `chsh -s $(which zsh)`
 
+```
 sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
 echo "alias ll='ls -lh --group-directories-first'" >> ~/.oh-my-zsh/lib/directories.zsh
 mv ~/.bashrc ~/.bashrc.bck
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/kali-2019.bashrc -O ~/.bashrc
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/ubuntu-20-4.zshrc -O ~/.zshrc
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/config/tmux.conf -O ~/.tmux.conf
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/kali-2019.bashrc -O ~/.bashrc
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/ubuntu-20-4.zshrc -O ~/.zshrc
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/tmux.conf -O ~/.tmux.conf
 ```
-- https://github.com/zyairelai/unix-rice/blob/master/dotfiles/nerd-font.ttf
+
+### For ZSH root
+- `sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+- `nano ~/.oh-my-zsh/lib/directories.zsh`
+- Change the theme to `kali`
+```
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/zshtheme/kali.zsh-theme -O ~/.oh-my-zsh/custom/themes/kali.zsh-theme
+echo "alias ll='ls -ah --group-directories-first'" >> ~/.oh-my-zsh/lib/directories.zsh
+echo "\ndisable r" >> ~/.zshrc
+echo "\n. /etc/profile.d/vte.sh" >> ~/.zshrc
+```
 
 ### Personal Terminal Shortcuts
 ```
@@ -69,17 +75,30 @@ sudo mv dash-to-dock /usr/bin/
 ```
 
 ### Input Method
-- https://www.dell.com/support/kbdoc/en-my/000181184/how-to-add-chinese-pinyin-input-to-xps-9310-laptops-that-ship-with-ubuntu-20-04-in-english
-```
-sudo apt-get install ibus-pinyin ibus-sunpinyin
-ibus restart
-ibus-setup
-```
+- `sudo apt-get install ibus-pinyin`
+- `ibus restart`
+- `ibus-setup`
 
 ### Local Time Fixed
 ```
 timedatectl set-local-rtc 1 --adjust-system-clock
 ```
+
+### Nvidia PowerSaving Mode Intel
+- `sudo prime-select intel`
+
+### Disable SSH Strict Host Key Checking
+- `mkdir ~/.ssh`
+```
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/preconfigured/scripts/sshconfig -O ~/.ssh/config
+```
+- `chmod 400 ~/.ssh/config`
+
+### Permanent DNS
+```
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/preconfigured/scripts/ds -O /usr/bin/ds
+```
+- `sudo chmod a+x /usr/bin/ds`
 
 ### Keyboard Shortcuts
 | Description                              | Shortcuts                   | 
@@ -95,20 +114,13 @@ timedatectl set-local-rtc 1 --adjust-system-clock
 | Close window                             | Alt + W                     |
 | Maximize window                          | Alt + Super + Up            |
 | View Split (Tiling) on xxx               | Alt + Super + Arrows        |
-| `java -jar burp.jar`                     | Ctrl + Alt + B              |
+| `/opt/burp/burp`                         | Ctrl + Alt + B              |
 | `dash-to-dock`                           | Ctrl + Alt + D              |
 | `subl`                                   | Ctrl + Alt + S              |
 | `virtualbox`                             | Ctrl + Alt + V              |
-| `vboxmanage startvm "vmname"`            | Ctrl + Alt + whatever       |
+| `vboxmanage startvm "Kali 2022.2"`       | Ctrl + Alt + K              |
 
-### Disable SSH Strict Host Key Checking
-- `mkdir ~/.ssh`
-- `nano ~/.ssh/config`
-```
-Host *
-    StrictHostKeyChecking no
-```
-- `chmod 400 ~/.ssh/config`
+# No Longer Useful 
 
 ### Tiling Windows Manager from Pop OS
 ```
@@ -117,8 +129,6 @@ cd shell
 sudo apt install node-typescript
 make local-install
 ```
-
-# Addressing Annoying Problems
 
 ### Pairing Logitech Unifying
 - https://askubuntu.com/questions/113984/is-logitechs-unifying-receiver-supported/114089#114089
@@ -129,23 +139,4 @@ cd ltunify
 make install-home
 
 sudo ./ltunify pair
-```
-
-### Virtualbox Guest Addition iso permission
-```
-mount -v | grep cdrom0
-sudo mount -o remount,exec,ro /media/cdrom0
-```
-
-### Nvidia PowerSaving Mode Intel
-- `sudo prime-select intel`
-
-### Permanent DNS
-- https://www.tecmint.com/set-permanent-dns-nameservers-in-ubuntu-debian/
-- `sudo nano /usr/bin/ds`
-```
-#!/bin/bash
-
-echo "nameserver 8.8.8.8" >> /run/resolvconf/resolv.conf
-echo "nameserver 8.8.4.4" >> /run/resolvconf/resolv.conf
 ```
