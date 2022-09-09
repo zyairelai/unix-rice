@@ -110,7 +110,7 @@ sudo mv s /usr/bin/
 ```
 {
 	"update_check": false,
-    "font": 14
+	"font": 14
 }
 ```
 
