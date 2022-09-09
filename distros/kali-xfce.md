@@ -98,7 +98,6 @@ wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/tmux.
 ```
 sudo ln -s /usr/bin/clear /usr/bin/c
 sudo ln -s /usr/bin/screen /usr/bin/sc
-sudo ln -s /usr/bin/python2 /usr/bin/py2
 sudo ln -s /usr/bin/python3.9 /usr/bin/python3
 
 echo "sudo su" > s
