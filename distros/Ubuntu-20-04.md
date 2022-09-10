@@ -6,6 +6,7 @@ These are the Setup for my Ubuntu 20.04 LTS
 sudo snap install discord
 sudo snap install cherrytree
 sudo snap install telegram-desktop
+sudo snap install --classic go
 sudo snap install --classic code
 sudo snap install --classic sublime-text
 ```
@@ -22,7 +23,6 @@ sudo snap install --classic sublime-text
 ```
 sudo apt install git wget curl gnupg python2.7 python3-pip python3.8-venv ruby-dev node-typescript default-jdk deluge neofetch tree htop exif fonts-noto-color-emoji ranger screen zsh tmux fonts-powerline tilix python3-nautilus mlocate gnome-tweak-tool totem resolvconf ubuntu-restricted-extras nmap nikto sshuttle exiftool freerdp2-x11 remmina cadaver wafw00f whatweb build-essential virtualbox -y && sudo apt remove gnome-shell-extension-ubuntu-dock -y
 ```
-- `wget https://go.dev/dl/go1.17.1.linux-amd64.tar.gz`
 
 ### Change Login Background
 - https://www.befunky.com/features/blur-image/
