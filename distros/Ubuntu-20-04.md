@@ -34,7 +34,7 @@ sudo ./change-gdm-background /path/to/image
 ```
 
 ### Zsh Setup
-- https://github.com/zyairelai/unix-rice/blob/master/dotfiles/nerd-font.ttf
+- https://github.com/zyairelai/unix-rice/raw/master/preconfigured/nerd-font.ttf
 - `sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 - `git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k`
 - `nano ~/.oh-my-zsh/lib/directories.zsh`
