@@ -70,17 +70,17 @@ sudo ln -s /usr/bin/screen /usr/bin/sc
 ```
 
 ### Disable SSH Strict Host Key Checking
-- `mkdir ~/.ssh`
 ```
+mkdir ~/.ssh
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/preconfigured/scripts/sshconfig -O ~/.ssh/config
+chmod 400 ~/.ssh/config
 ```
-- `chmod 400 ~/.ssh/config`  
 
 ### Permanent DNS
 ```
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/preconfigured/scripts/ds -O /usr/bin/ds
+sudo wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/preconfigured/scripts/ds -O /usr/bin/ds
+sudo chmod a+x /usr/bin/ds
 ```
-- `sudo chmod a+x /usr/bin/ds`
 
 
 ### Dash to Dock one line
