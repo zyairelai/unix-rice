@@ -13,7 +13,7 @@ My PEN-200 / OSCP kali setup
 ### Must HAVE Apps!!!
 - `sudo dpkg --add-architecture i386`
 - `sudo apt update`
-- `sudo apt install python3-pip neofetch tree htop fonts-noto-color-emoji rofi ranger zsh tmux gobuster golang-go remmina bloodhound virtualenv wine32 mingw-w64 -y`
+- `sudo apt install python3-pip neofetch tree htop fonts-noto-color-emoji rofi ranger zsh tmux golang-go remmina bloodhound virtualenv wine32 mingw-w64 -y`
 
 ### AutoRecon
 ```
