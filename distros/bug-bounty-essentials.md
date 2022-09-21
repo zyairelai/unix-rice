@@ -90,8 +90,6 @@ deb http://http.kali.org/kali kali-last-snapshot main contrib non-free
 sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com ED444FF07D8D0BF6
 
 sudo apt install wifite golang
-
-go install github.com/OJ/gobuster/v3@latest
 go install github.com/ffuf/ffuf@latest
 
 sudo apt install gobuster golang-go kali-grant-root debootstrap squashfs-tools seclists feroxbuster impacket-scripts nbtscan oscanner redis-tools snmp sipvicious tnscmd10g wkhtmltopdf && sudo python3 -m pip install git+https://github.com/Tib3rius/AutoRecon.git
