@@ -4,6 +4,7 @@ My PEN-200 / OSCP kali setup
 ### No Sudo Password Policy & Unzip rockyou.txt
 - `sudo dpkg-reconfigure kali-grant-root`
 - `sudo gzip -d /usr/share/wordlists/rockyou.txt.gz`
+- https://linuxconfig.org/how-to-enable-root-login-on-kali-linux
 
 ### Adding Debian and Stable Repository
 - `sudo nano /etc/apt/sources.list`
