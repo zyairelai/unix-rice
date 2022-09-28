@@ -20,6 +20,23 @@ Clean and clear Kali 2022.2 Setup for PWK / OSCP
 - `python3.9 get-pip.py`
 - `pip2 install virtualenv`
 
+### Personal Terminal Shortcuts
+```
+sudo ln -s /usr/bin/clear /usr/bin/c
+sudo ln -s /usr/bin/screen /usr/bin/sc
+sudo ln -s /usr/bin/python3.9 /usr/bin/python3
+```
+# After Reboot
+
+### Auto Login
+- `sudo nano /etc/lightdm/lightdm.conf`
+```
+[SeatDefaults]
+autologin-guest=false
+autologin-user=root
+autologin-user-timeout=0
+```
+
 ### AutoRecon
 ```
 sudo apt install gobuster golang-go kali-grant-root debootstrap squashfs-tools seclists feroxbuster impacket-scripts nbtscan oscanner redis-tools snmp sipvicious tnscmd10g wkhtmltopdf && sudo python3 -m pip install git+https://github.com/Tib3rius/AutoRecon.git
@@ -36,15 +53,6 @@ sudo apt install gobuster golang-go kali-grant-root debootstrap squashfs-tools s
 - set `False` for `ui.key.menuAccessKeyFocuses`
 - https://addons.mozilla.org/en-US/firefox/addon/hacktools/
 - https://addons.mozilla.org/en-US/firefox/addon/cookie-editor/
-
-### Auto Login
-- `sudo nano /etc/lightdm/lightdm.conf`
-```
-[SeatDefaults]
-autologin-guest=false
-autologin-user=root
-autologin-user-timeout=0
-```
 
 ### For ZSH root
 - `cd /root/`
@@ -79,13 +87,6 @@ Need Extra Review
 mv ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/backup/xfce4-panel.xml
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/xfce4/xfce4-panel.xml -O ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/tmux.conf -O ~/.tmux.conf
-```
-
-### Personal Terminal Shortcuts
-```
-sudo ln -s /usr/bin/clear /usr/bin/c
-sudo ln -s /usr/bin/screen /usr/bin/sc
-sudo ln -s /usr/bin/python3.9 /usr/bin/python3
 ```
 
 ### Disable Sublime Update Prompt
