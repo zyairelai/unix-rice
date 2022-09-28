@@ -15,7 +15,7 @@ Clean and clear Kali 2022.2 Setup for PWK / OSCP
 ### Must HAVE Apps!!!
 - `sudo dpkg --add-architecture i386`
 - `sudo apt update`
-- `sudo apt install kali-root-login python3-pip neofetch tree htop fonts-noto-color-emoji rofi ranger zsh tmux golang-go remmina virtualenv wine32 mingw-w64 -y`
+- `sudo apt install kali-root-login python3-pip neofetch tree htop fonts-noto-color-emoji rofi zsh tmux golang-go remmina virtualenv wine32 mingw-w64 -y`
 - `wget https://bootstrap.pypa.io/get-pip.py`
 - `python3.9 get-pip.py`
 - `pip2 install virtualenv`
