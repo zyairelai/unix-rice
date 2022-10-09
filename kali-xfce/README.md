@@ -1,8 +1,12 @@
 # Kali XFCE 2022.2 Setup
-- `wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/setup.sh`
-- `chmod a+x setup.sh`
-- `sudo ./setup.sh`
-- `./local.sh`
+```
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/setup.sh
+chmod a+x setup.sh
+sudo ./setup.sh
+```
+```
+./local.sh
+```
 
 ### Firefox Configuration
 - Go to `about:config`  
