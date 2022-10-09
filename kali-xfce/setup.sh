@@ -59,6 +59,8 @@ wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotf
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/user-dirs.dirs -O ~/.config/user-dirs.dirs
 
 # Personal Terminal Shortcuts
+sudo chown -R kali /opt
+sudo chown -R kali /var/www
 sudo ln -s /usr/bin/clear /usr/bin/c
 sudo ln -s /usr/bin/screen /usr/bin/sc
 
@@ -83,6 +85,5 @@ wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/loca
 chmod a+x local.sh
 
 # Clean Up everything
-sudo rm *.deb
-sudo rm get-pip.py
+sudo rm *.deb get-pip.py setup.sh
 sudo rm -rf Desktop Documents Downloads Music Pictures Public Templates Videos
