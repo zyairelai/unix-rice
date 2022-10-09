@@ -58,11 +58,6 @@ wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotf
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/tmux.conf -O ~/.tmux.conf
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/user-dirs.dirs -O ~/.config/user-dirs.dirs
 
-# Clean Up everything
-rm *.deb
-rm get-pip.py
-rm -rf Desktop Documents Downloads Music Pictures Public Templates Videos
-
 # Personal Terminal Shortcuts
 sudo ln -s /usr/bin/clear /usr/bin/c
 sudo ln -s /usr/bin/screen /usr/bin/sc
@@ -86,3 +81,8 @@ sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
 # Local Setup
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/local.sh
 chmod a+x local.sh
+
+# Clean Up everything
+sudo rm *.deb
+sudo rm get-pip.py
+sudo rm -rf Desktop Documents Downloads Music Pictures Public Templates Videos
