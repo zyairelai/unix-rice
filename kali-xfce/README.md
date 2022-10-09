@@ -4,17 +4,17 @@
 - `sudo ./setup.sh`
 - `./local.sh`
 
+### Firefox Configuration
+- Go to `about:config`  
+- set `True` for `toolkit.tabbox.switchByScrolling`
+- set `False` for `ui.key.menuAccessKeyFocuses`
+
 ### No Sudo Password Policy
 - `sudo dpkg-reconfigure kali-grant-root`
 
 ### Debian Package for Tilix
 - `sudo nano /etc/apt/sources.list`
 - `sudo apt install tilix`
-
-### Firefox Configuration
-- Go to `about:config`  
-- set `True` for `toolkit.tabbox.switchByScrolling`
-- set `False` for `ui.key.menuAccessKeyFocuses`
 
 ### Disable Sublime Update Prompt
 - Go to `Preferences` -> `Settings` and add the following:
