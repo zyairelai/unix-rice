@@ -18,6 +18,12 @@
 - `sudo nano /etc/apt/sources.list`
 - `sudo apt install tilix`
 
+### In case you forgot
+- Change Tilix Shortcut 
+- Change Tilix Font Size
+- Delete Folder Bookmark
+- Change Default Application
+
 ### Disable Sublime Update Prompt
 - Go to `Preferences` -> `Settings` and add the following:
 ```
