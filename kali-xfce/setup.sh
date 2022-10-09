@@ -59,6 +59,8 @@ wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotf
 sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
 
 # XFCE4 Desktop Setup
+mkdir ~/.ssh
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/sshconfig -O ~/.ssh/config
 mkdir ~/.config/rofi && mkdir ~/.config/polybar && mkdir ~/.config/xfce4/xfconf/xfce-perchannel-xml/backup
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/rofi/config.rasi -O ~/.config/rofi/config.rasi
 mv ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/backup/xfce4-desktop.xml
@@ -72,15 +74,20 @@ wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotf
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/xfce4/xfwm4.xml -O ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/xfce4/xfce4-panel.xml -O ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/tmux.conf -O ~/.tmux.conf
+mv ~/.config/user-dirs.dirs ~/.config/user-dirs.bak
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/user-dirs.dirs -O ~/.config/user-dirs.dirs
 
 # Personal Terminal Shortcuts
 sudo rm /usr/bin/python3
 sudo ln -s /usr/bin/clear /usr/bin/c
 sudo ln -s /usr/bin/screen /usr/bin/sc
 sudo ln -s /usr/bin/python3.9 /usr/bin/python3
-mkdir ~/.ssh
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/sshconfig -O ~/.ssh/config
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/cssh -O /usr/bin/cssh
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/cjohn -O /usr/bin/cjohn
+
+echo "#\!/bin/bash\nrm ~/.john" > cjohn
+echo "#\!/bin/bash\nrm ~/.ssh/known_hosts" > cssh
 echo "sudo su" > s 
 chmod a+x s && sudo mv s /usr/bin/
+chmod a+x cssh && sudo mv cssh /usr/bin/
+chmod a+x cjohn && sudo mv cjohn /usr/bin/
+
+reboot

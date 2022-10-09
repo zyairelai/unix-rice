@@ -1,4 +1,7 @@
 # Kali XFCE 2022.2 Setup
+```
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/setup.sh
+```
 
 ### No Sudo Password Policy
 - `sudo dpkg-reconfigure kali-grant-root`
@@ -11,13 +14,6 @@
 - Go to `about:config`  
 - set `True` for `toolkit.tabbox.switchByScrolling`
 - set `False` for `ui.key.menuAccessKeyFocuses`
-- Some useful browser plugins
-- https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/
-- https://addons.mozilla.org/en-US/firefox/addon/traduzir-paginas-web/
-- https://addons.mozilla.org/en-US/firefox/addon/shodan-addon/
-- https://addons.mozilla.org/en-US/firefox/addon/hacktools/
-- https://addons.mozilla.org/en-US/firefox/addon/cookie-editor/
-- https://addons.mozilla.org/en-US/firefox/addon/uaswitcher/
 
 ### ZSH for root
 - `cd /root/`
@@ -63,6 +59,14 @@ wget https://github.com/itm4n/PrintSpoofer/releases/download/v1.0/PrintSpoofer64
 - `curl https://sh.rustup.rs -sSf | sh`
 - `cargo install rustscan`
 - `sudo cp ~/.cargo/bin/rustscan /usr/bin/rustscan`
+
+### Firefox Browser Plugins
+- https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/
+- https://addons.mozilla.org/en-US/firefox/addon/traduzir-paginas-web/
+- https://addons.mozilla.org/en-US/firefox/addon/shodan-addon/
+- https://addons.mozilla.org/en-US/firefox/addon/hacktools/
+- https://addons.mozilla.org/en-US/firefox/addon/cookie-editor/
+- https://addons.mozilla.org/en-US/firefox/addon/uaswitcher/
 
 ### Clock Options
 - `%a %d %b %Y %r`
