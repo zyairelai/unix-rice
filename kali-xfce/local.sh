@@ -18,4 +18,10 @@ wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotf
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/zsh/directories.zsh -O ~/.oh-my-zsh/lib/directories.zsh
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/zsh/kali.zsh-theme -O ~/.oh-my-zsh/custom/themes/kali.zsh-theme
 
+# Configure Python
+wget https://bootstrap.pypa.io/get-pip.py
+python3.9 get-pip.py
+/home/kali/.local/bin/pip3.9 install droopescan
+sudo cp /home/kali/.local/bin/droopescan /usr/bin/droopescan
+
 reboot

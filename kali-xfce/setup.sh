@@ -8,6 +8,17 @@ fi
 # Extract Rockyou.txt
 sudo gzip -d /usr/share/wordlists/rockyou.txt.gz
 
+# Import necessarily repository packages
+sudo echo "
+# deb http://ftp.debian.org/debian stable main contrib non-free
+# See https://www.kali.org/docs/general-use/kali-linux-sources-list-repositories/
+# deb http://http.kali.org/kali kali-rolling main contrib non-free
+deb http://http.kali.org/kali kali-last-snapshot main contrib non-free
+
+# Additional line for source packages
+# deb-src http://http.kali.org/kali kali-rolling main contrib non-free
+" >> /etc/apt/sources.list
+
 # Enable Login without Password
 sudo echo "
 [SeatDefaults]
@@ -24,20 +35,11 @@ chmod a+x rustscan && sudo mv rustscan /usr/bin/
 # Installing necessarily tools
 sudo dpkg --add-architecture i386
 sudo apt update
-sudo apt install python-pip tilix neofetch htop fonts-noto-color-emoji rofi ranger remmina golang-go kali-grant-root kali-root-login -y
+sudo apt install python-pip neofetch htop fonts-noto-color-emoji rofi ranger remmina golang-go kali-grant-root kali-root-login -y
 # sudo apt install wine32 mingw-w64 seclists -y
-
-# Installing Debian Packages
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 wget https://code.visualstudio.com/sha/download\?build=stable\&os=linux-deb-x64 -O vscode.deb
 sudo dpkg -i *.deb
-
-# Configure Python
-wget https://bootstrap.pypa.io/get-pip.py
-sleep 1
-python3.9 get-pip.py
-/home/kali/.local/bin/pip3.9 install droopescan
-sudo cp /home/kali/.local/bin/droopescan /usr/bin/droopescan
 pip2 install virtualenv
 
 # XFCE4 Desktop Setup
@@ -52,11 +54,7 @@ wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotf
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/tmux.conf -O ~/.tmux.conf
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/user-dirs.dirs -O ~/.config/user-dirs.dirs
 sudo wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/ssh/sshd_config -O ~/etc/ssh/sshd_config
-
-# Clean Up everything
-rm *.deb
-rm get-pip.py
-rm -rf Desktop Documents Downloads Music Pictures Public Templates Videos
+rm -rf *.deb Desktop Documents Downloads Music Pictures Public Templates Videos
 
 # Personal Terminal Shortcuts
 sudo ln -s /usr/bin/clear /usr/bin/c

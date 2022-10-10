@@ -16,6 +16,13 @@ sudo ./setup.sh
 ### No Sudo Password Policy
 ```sudo dpkg-reconfigure kali-grant-root```
 
+### In case you forgot
+- `Appearance` > `Fonts` > `DPI`
+- Delete Folder Bookmark
+- Change Default Application
+- Change Tilix Shortcut 
+- Change Tilix Font Size
+
 ### Disable Sublime Update Prompt
 - Go to `Preferences` -> `Settings` and add the following:
 ```

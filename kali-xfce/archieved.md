@@ -1,13 +1,6 @@
 # No longer useful for me but just in case
 
 ### Debian Package for Tilix
-```
-# Import necessarily repository packages
-sudo echo "
-# deb http://ftp.debian.org/debian stable main contrib non-free
-deb http://http.kali.org/kali kali-last-snapshot main contrib non-free
-" >> /etc/apt/sources.list
-```
 - `sudo nano /etc/apt/sources.list`
 - `sudo apt install tilix`
 
