@@ -41,6 +41,10 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 wget https://code.visualstudio.com/sha/download\?build=stable\&os=linux-deb-x64 -O vscode.deb
 sudo dpkg -i *.deb
 pip2 install virtualenv
+sudo rm pip python python3
+sudo ln -s /usr/bin/pip2 /usr/bin/pip
+sudo ln -s /usr/bin/python3.9 /usr/bin/python
+sudo ln -s /usr/bin/python3.9 /usr/bin/python3
 
 # Personal Terminal Shortcuts
 sudo ln -s /usr/bin/clear /usr/bin/c
