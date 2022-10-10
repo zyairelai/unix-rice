@@ -16,12 +16,6 @@ autologin-user=kali
 autologin-user-timeout=0
 " >> /etc/lightdm/lightdm.conf
 
-# Import necessarily repository packages
-sudo echo "
-# deb http://ftp.debian.org/debian stable main contrib non-free
-deb http://http.kali.org/kali kali-last-snapshot main contrib non-free
-" >> /etc/apt/sources.list
-
 # Installing Rustscan
 wget https://github.com/RustScan/RustScan/releases/download/1.9.0/rustscan
 sleep 1
@@ -30,7 +24,7 @@ chmod a+x rustscan && sudo mv rustscan /usr/bin/
 # Installing necessarily tools
 sudo dpkg --add-architecture i386
 sudo apt update
-sudo apt install python-pip neofetch htop fonts-noto-color-emoji rofi ranger remmina golang-go kali-grant-root kali-root-login -y
+sudo apt install python-pip tilix neofetch htop fonts-noto-color-emoji rofi ranger remmina golang-go kali-grant-root kali-root-login -y
 # sudo apt install wine32 mingw-w64 seclists -y
 
 # Installing Debian Packages

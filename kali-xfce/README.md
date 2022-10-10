@@ -16,10 +16,6 @@ sudo ./setup.sh
 ### No Sudo Password Policy
 ```sudo dpkg-reconfigure kali-grant-root```
 
-### Debian Package for Tilix
-- `sudo nano /etc/apt/sources.list`
-- `sudo apt install tilix`
-
 ### Disable Sublime Update Prompt
 - Go to `Preferences` -> `Settings` and add the following:
 ```
