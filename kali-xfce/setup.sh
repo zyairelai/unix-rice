@@ -12,12 +12,12 @@ sudo gzip -d /usr/share/wordlists/rockyou.txt.gz
 sudo echo "
 # deb http://ftp.debian.org/debian stable main contrib non-free
 # See https://www.kali.org/docs/general-use/kali-linux-sources-list-repositories/
-# deb http://http.kali.org/kali kali-rolling main contrib non-free
+deb http://http.kali.org/kali kali-rolling main contrib non-free
 deb http://http.kali.org/kali kali-last-snapshot main contrib non-free
 
 # Additional line for source packages
 # deb-src http://http.kali.org/kali kali-rolling main contrib non-free
-" >> /etc/apt/sources.list
+" > /etc/apt/sources.list
 
 # Enable Login without Password
 sudo echo "
