@@ -20,6 +20,7 @@ deb http://http.kali.org/kali kali-last-snapshot main contrib non-free
 " > /etc/apt/sources.list
 
 # Enable Login without Password
+sudo cp /etc/lightdm/lightdm.conf /etc/lightdm/lightdm.conf.bak
 sudo echo "
 [SeatDefaults]
 autologin-guest=false
