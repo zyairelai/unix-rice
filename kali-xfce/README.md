@@ -1,19 +1,20 @@
 # Kali XFCE 2022.2 Setup
 
 ### No Sudo Password Policy
-- `sudo dpkg-reconfigure kali-grant-root`
+```
+sudo dpkg-reconfigure kali-grant-root
+```
 
 ### Firefox Configuration
-- Go to `about:config`  
-- set `True` for `toolkit.tabbox.switchByScrolling`
-- set `False` for `ui.key.menuAccessKeyFocuses`
+- `about:config`  
+- `True` - `toolkit.tabbox.switchByScrolling`
+- `False` - `ui.key.menuAccessKeyFocuses`
 
 ### Script Automation
 ```
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/setup.sh
 chmod a+x setup.sh
 sudo ./setup.sh
-sleep
 ./local.sh
 ```
 
