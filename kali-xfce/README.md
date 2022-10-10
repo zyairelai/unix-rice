@@ -1,7 +1,9 @@
 # Kali XFCE 2022.2 Setup
-- `wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/setup.sh`
-- `chmod a+x setup.sh`
-- `sudo ./setup.sh`
+```
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/setup.sh
+chmod a+x setup.sh
+sudo ./setup.sh
+```
 - `./local.sh`
 
 ### Firefox Configuration
@@ -12,17 +14,11 @@
 # Rebooting After running `local.sh`
 
 ### No Sudo Password Policy
-- `sudo dpkg-reconfigure kali-grant-root`
+```sudo dpkg-reconfigure kali-grant-root```
 
 ### Debian Package for Tilix
 - `sudo nano /etc/apt/sources.list`
 - `sudo apt install tilix`
-
-### In case you forgot
-- Change Tilix Shortcut 
-- Change Tilix Font Size
-- Delete Folder Bookmark
-- Change Default Application
 
 ### Disable Sublime Update Prompt
 - Go to `Preferences` -> `Settings` and add the following:

@@ -48,7 +48,7 @@ pip2 install virtualenv
 
 # XFCE4 Desktop Setup
 mkdir ~/.ssh && mkdir ~/.config/rofi && mkdir ~/.config/polybar
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/sshconfig -O ~/.ssh/config
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/ssh/config -O ~/.ssh/config
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/rofi/config.rasi -O ~/.config/rofi/config.rasi
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/xfce4/xfce4-desktop.xml -O ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/xfce4/xfce4-keyboard-shortcuts.xml -O ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
@@ -57,10 +57,14 @@ wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotf
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/xfce4/xfce4-panel.xml -O ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/tmux.conf -O ~/.tmux.conf
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/user-dirs.dirs -O ~/.config/user-dirs.dirs
+sudo wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/ssh/sshd_config -O ~/etc/ssh/sshd_config
+
+# Clean Up everything
+rm *.deb
+rm get-pip.py
+rm -rf Desktop Documents Downloads Music Pictures Public Templates Videos
 
 # Personal Terminal Shortcuts
-sudo chown -R kali /opt
-sudo chown -R kali /var/www
 sudo ln -s /usr/bin/clear /usr/bin/c
 sudo ln -s /usr/bin/screen /usr/bin/sc
 
@@ -83,7 +87,3 @@ sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
 # Local Setup
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/local.sh
 chmod a+x local.sh
-
-# Clean Up everything
-sudo rm *.deb get-pip.py setup.sh
-sudo rm -rf Desktop Documents Downloads Music Pictures Public Templates Videos
