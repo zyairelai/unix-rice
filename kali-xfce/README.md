@@ -19,16 +19,17 @@ sleep
 
 ### Optional Tools to be installed
 - `sudo nano /etc/apt/sources.list`
+- `sudo apt update` 
 - `sudo apt install tilix wine32 mingw-w64 seclists -y`
 
-### OCD Being OCD
+### Eye Candy Setup
 - `Appearance` > `Fonts` > `DPI`
 - Delete Folder Bookmark
 - Change Default Application
 - Change Tilix Shortcut 
 - Change Tilix Font Size `85-24-13`
 
-### Sublime Text 3211
+### Sublime Text Build 3211
 - Go to `Preferences` -> `Settings` and add the following:
 ```
 {
