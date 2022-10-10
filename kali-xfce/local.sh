@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Configure Python
+wget https://bootstrap.pypa.io/get-pip.py
+python3.9 get-pip.py
+/home/kali/.local/bin/pip3.9 install droopescan
+sudo cp /home/kali/.local/bin/droopescan /usr/bin/droopescan
+
 # XFCE4 Desktop Setup
 mkdir ~/.ssh && mkdir ~/.config/rofi && mkdir ~/.config/polybar
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/sshconfig -O ~/.ssh/config
@@ -18,10 +24,6 @@ wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotf
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/zsh/directories.zsh -O ~/.oh-my-zsh/lib/directories.zsh
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/zsh/kali.zsh-theme -O ~/.oh-my-zsh/custom/themes/kali.zsh-theme
 
-# Configure Python
-wget https://bootstrap.pypa.io/get-pip.py
-python3.9 get-pip.py
-/home/kali/.local/bin/pip3.9 install droopescan
-sudo cp /home/kali/.local/bin/droopescan /usr/bin/droopescan
-
+sudo apt install tilix
+sudo rm -rf get-pip.py *.deb Desktop Documents Downloads Music Pictures Public Templates Videos setup.sh local.sh
 reboot

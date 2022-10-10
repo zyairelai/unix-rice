@@ -54,7 +54,6 @@ wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotf
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/tmux.conf -O ~/.tmux.conf
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/user-dirs.dirs -O ~/.config/user-dirs.dirs
 sudo wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/ssh/sshd_config -O ~/etc/ssh/sshd_config
-rm -rf *.deb Desktop Documents Downloads Music Pictures Public Templates Videos
 
 # Personal Terminal Shortcuts
 sudo ln -s /usr/bin/clear /usr/bin/c

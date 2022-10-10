@@ -3,18 +3,23 @@
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/setup.sh
 chmod a+x setup.sh
 sudo ./setup.sh
+sleep
+./local.sh
 ```
-- `./local.sh`
+
+### No Sudo Password Policy
+```sudo dpkg-reconfigure kali-grant-root```
 
 ### Firefox Configuration
 - Go to `about:config`  
 - set `True` for `toolkit.tabbox.switchByScrolling`
 - set `False` for `ui.key.menuAccessKeyFocuses`
 
-# Rebooting After running `local.sh`
+# After Rebooting
 
-### No Sudo Password Policy
-```sudo dpkg-reconfigure kali-grant-root```
+### Debian Package for Tilix
+- `sudo nano /etc/apt/sources.list`
+- `sudo apt install tilix`
 
 ### In case you forgot
 - `Appearance` > `Fonts` > `DPI`
