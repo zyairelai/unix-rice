@@ -24,6 +24,5 @@ wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotf
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/zsh/directories.zsh -O ~/.oh-my-zsh/lib/directories.zsh
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/zsh/kali.zsh-theme -O ~/.oh-my-zsh/custom/themes/kali.zsh-theme
 
-sudo apt install tilix
 sudo rm -rf get-pip.py *.deb Desktop Documents Downloads Music Pictures Public Templates Videos setup.sh local.sh
 reboot

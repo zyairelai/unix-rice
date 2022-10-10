@@ -35,7 +35,7 @@ chmod a+x rustscan && sudo mv rustscan /usr/bin/
 # Installing necessarily tools
 sudo dpkg --add-architecture i386
 sudo apt update
-sudo apt install python-pip neofetch htop fonts-noto-color-emoji rofi ranger remmina golang-go kali-grant-root kali-root-login -y
+sudo apt install tilix python-pip neofetch htop fonts-noto-color-emoji rofi ranger remmina golang-go kali-grant-root kali-root-login -y
 # sudo apt install wine32 mingw-w64 seclists -y
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 wget https://code.visualstudio.com/sha/download\?build=stable\&os=linux-deb-x64 -O vscode.deb
