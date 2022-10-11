@@ -55,15 +55,18 @@ chmod a+x cjohn && sudo mv cjohn /usr/bin/
 ### ZSH Setup
 - `sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 - `git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k`
-- `wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/mint-cinnamon/dotfiles/directories.zsh -O ~/.oh-my-zsh/lib/directories.zsh`
 - `chsh -s $(which zsh)`
-- `sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh`
-- `wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/mint-cinnamon/dotfiles/nord.json -O ~/.config/tilix/schemes/nord.json`
-- `wget https://github.com/zyairelai/unix-rice/blob/master/mint-cinnamon/dotfiles/nerd-font.ttf?raw=true -O nerd-font.ttf`
+```
+sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/mint-cinnamon/dotfiles/powerzshrc -O ~/.zshrc
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/mint-cinnamon/dotfiles/directories.zsh -O ~/.oh-my-zsh/lib/directories.zsh
+wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/mint-cinnamon/dotfiles/nord.json -O ~/.config/tilix/schemes/nord.json
+wget https://github.com/zyairelai/unix-rice/blob/master/mint-cinnamon/dotfiles/nerd-font.ttf?raw=true -O nerd-font.ttf
+```
 
-### Clean Up
-- `timedatectl set-local-rtc 1 --adjust-system-clock`
-- https://itsfoss.com/wrong-time-dual-boot/
+```
+timedatectl set-local-rtc 1 --adjust-system-clock
+```
 
 # Pentest Fun
 
@@ -103,7 +106,8 @@ sudo apt install plank
 ### Nordic Theme 
 - `wget https://github.com/EliverLara/Nordic/releases/download/v2.2.0/Nordic.tar.xz`
 - `wget https://github.com/EliverLara/Nordic/releases/download/v2.2.0/Nordic-darker.tar.xz`
-- `tar -xf *.tar.xz`
+- `tar -xf Nordic.tar.xz`
+- `tar -xf Nordic-darker.tar.xz`
 - `sudo mv Nordic /usr/share/themes/`
 - `sudo mv Nordic-darker /usr/share/themes/`
 
