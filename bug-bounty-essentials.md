@@ -1,7 +1,11 @@
 # Bug Bounty Essentials
 
 ### RustScan
-- https://doc.rust-lang.org/cargo/getting-started/installation.html
+```
+wget https://github.com/RustScan/RustScan/releases/download/1.9.0/rustscan
+sleep 1
+chmod a+x rustscan && sudo mv rustscan /usr/bin/
+```
 - `curl https://sh.rustup.rs -sSf | sh`
 - `cargo install rustscan`
 - `sudo cp ~/.cargo/bin/rustscan /usr/bin/rustscan`
@@ -16,15 +20,14 @@ curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/t
 ```
 
 ### Wordlists
-- `sudo mkdir /usr/share/wordlists`
 ```
-wget https://raw.githubusercontent.com/v0re/dirb/master/wordlists/common.txt
-wget https://raw.githubusercontent.com/v0re/dirb/master/wordlists/big.txt
-wget https://github.com/daviddias/node-dirbuster/raw/master/lists/directory-list-2.3-medium.txt
-wget https://github.com/praetorian-inc/Hob0Rules/raw/master/wordlists/rockyou.txt.gz
+sudo mkdir /usr/share/wordlists
+sudo wget https://raw.githubusercontent.com/v0re/dirb/master/wordlists/common.txt -O /usr/share/wordlists/common.txt
+sudo wget https://raw.githubusercontent.com/v0re/dirb/master/wordlists/big.txt -O /usr/share/wordlists/big.txt
+sudo wget https://github.com/daviddias/node-dirbuster/raw/master/lists/directory-list-2.3-medium.txt -O /usr/share/wordlists/directory-list-2.3-medium.txt
+sudo wget https://github.com/praetorian-inc/Hob0Rules/raw/master/wordlists/rockyou.txt.gz -O /usr/share/wordlists/rockyou.txt.gz
+sudo gzip -d /usr/share/wordlists/rockyou.txt.gz
 ```
-- `sudo gzip -d /usr/share/wordlists/rockyou.txt.gz`
-
 
 ### Firefox Extensions
 - Go to `about:config`  
@@ -55,16 +58,20 @@ curl https://appnee.com/vmware-workstation-pro-universal-license-keys-collection
 - https://portswigger-cdn.net/burp/releases/download?product=pro
 - https://www.jython.org/jython-old-sites/downloads.html
 ```
+wget http://search.maven.org/remotecontent?filepath=org/python/jython-standalone/2.7.0/jython-standalone-2.7.0.jar -O jython-standalone-2.7.0.jar
+```
+```
 git clone git@github.com:zyairelai/burp-loader.git burp
 cd burp
-echo "LOADER_LOCATION=" >> burp
-echo "BURP_SUITE_PRO_LOCATION=" >> burp
+echo "LOADER_LOCATION=/opt/burp/loader.jar" >> burp
+echo "BURP_SUITE_PRO_LOCATION=/opt/burp/burpsuitepro.jar" >> burp
 echo "java -noverify -javaagent:\$LOADER_LOCATION -jar \$BURP_SUITE_PRO_LOCATION" >> burp
 
 chmod a+x burp
-
-java -noverify -javaagent:loader.jar -jar BURP_SUITE_PRO_VERSION.jar
 java -jar keygen.jar
+```
+```
+java -noverify -javaagent:loader.jar -jar BURP_SUITE_PRO_VERSION.jar
 ```
 
 ### Burp Extender
