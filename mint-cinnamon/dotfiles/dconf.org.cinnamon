@@ -1,0 +1,140 @@
+[/]
+alttab-switcher-delay=100
+app-menu-label=''
+desklet-snap-interval=25
+desktop-effects=true
+desktop-effects-on-dialogs=false
+enable-vfade=true
+enabled-applets=['panel1:right:0:systray@cinnamon.org:63', 'panel1:right:1:xapp-status@cinnamon.org:64', 'panel1:right:2:printers@cinnamon.org:66', 'panel1:right:3:removable-drives@cinnamon.org:67', 'panel1:right:4:keyboard@cinnamon.org:68', 'panel1:right:5:favorites@cinnamon.org:69', 'panel1:right:6:network@cinnamon.org:70', 'panel1:right:7:sound@cinnamon.org:71', 'panel1:right:8:calendar@cinnamon.org:73', 'panel1:right:9:expo@cinnamon.org:74', 'panel1:left:1:scale@cinnamon.org:75', 'panel1:left:2:workspace-switcher@cinnamon.org:76', 'panel1:left:3:windows-quick-list@cinnamon.org:79']
+enabled-desklets=@as []
+next-applet-id=80
+panel-edit-mode=false
+panel-launchers=['DEPRECATED']
+panel-zone-icon-sizes='[{"panelId": 1, "left": 0, "center": 0, "right": 24}]'
+panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 24, "center": 28, "right": 16}]'
+panels-autohide=['1:false']
+panels-enabled=['1:0:left']
+panels-height=['1:30']
+window-effect-speed=1
+workspace-expo-view-as-grid=true
+workspace-osd-visible=false
+
+[desktop/applications/calculator]
+exec='gnome-calculator'
+
+[desktop/applications/terminal]
+exec='tilix'
+
+[desktop/interface]
+clock-show-date=false
+clock-show-seconds=true
+clock-use-24h=false
+cursor-blink-time=1200
+cursor-size=24
+cursor-theme='Adwaita'
+gtk-theme='Mint-Y-Dark'
+icon-theme='Mint-Y-Dark'
+keyboard-layout-show-flags=true
+text-scaling-factor=1.2000000000000002
+
+[desktop/keybindings]
+custom-list=['custom4', 'custom2', 'custom1', '__dummy__', 'custom0', 'custom3']
+looking-glass-keybinding=@as []
+
+[desktop/keybindings/custom-keybindings/custom0]
+binding=['<Primary><Alt>v']
+command='virtualbox'
+name='VirtualBox'
+
+[desktop/keybindings/custom-keybindings/custom1]
+binding=['<Primary><Alt>s']
+command='subl'
+name='Sublime Text'
+
+[desktop/keybindings/custom-keybindings/custom2]
+binding=['<Primary><Alt>g']
+command='google-chrome'
+name='Google Chrome'
+
+[desktop/keybindings/custom-keybindings/custom3]
+binding=['<Primary><Alt>k']
+command='vboxmanage startvm "Kali 2022.2"'
+name='Kali 2022.2'
+
+[desktop/keybindings/custom-keybindings/custom4]
+binding=['<Primary><Alt>b']
+command='/opt/burp/burp'
+name='Burp Suite'
+
+[desktop/keybindings/media-keys]
+home=['<Super>e', 'XF86Explorer', '<Primary><Alt>f']
+logout=['<Control><Alt>Delete']
+screensaver=['<Control><Alt>l', '<Super>l']
+terminal=['<Primary><Alt>t', '<Super>Return', '<Super>KP_Enter']
+www=['XF86WWW', '<Primary><Alt>h']
+
+[desktop/keybindings/wm]
+close=['<Alt>F4', '<Alt>w']
+minimize=['<Super>Down']
+move-to-monitor-left=['<Super><Shift>Left', '<Alt><Super>Left']
+move-to-monitor-right=['<Super><Shift>Right', '<Alt><Super>Right']
+push-tile-down=@as []
+push-tile-up=@as []
+show-desktop=['<Super>d', '<Primary><Alt>d']
+switch-to-workspace-1=@as []
+switch-to-workspace-down=['<Control><Alt>Down']
+toggle-maximized=['<Alt>F10', '<Super>Up']
+
+[desktop/media-handling]
+autorun-never=false
+
+[desktop/notifications]
+display-notifications=false
+
+[desktop/peripherals/keyboard]
+delay=uint32 500
+numlock-state=true
+repeat-interval=uint32 30
+
+[desktop/peripherals/mouse]
+double-click=400
+drag-threshold=8
+natural-scroll=false
+speed=0.0
+
+[desktop/peripherals/touchpad]
+speed=0.18000000000000005
+
+[desktop/screensaver]
+show-clock=false
+
+[desktop/session]
+idle-delay=uint32 0
+
+[desktop/sound]
+event-sounds=false
+
+[desktop/wm/preferences]
+min-window-opacity=30
+num-workspaces=4
+theme='Mint-Y'
+workspace-names=@as []
+
+[muffin]
+center-new-windows=true
+draggable-border-width=10
+tile-maximize=true
+workspace-cycle=false
+workspaces-only-on-primary=true
+
+[settings-daemon/peripherals/keyboard]
+numlock-state='on'
+
+[sounds]
+login-enabled=false
+logout-enabled=false
+switch-enabled=false
+tile-enabled=false
+
+[theme]
+name='Mint-Y-Dark'

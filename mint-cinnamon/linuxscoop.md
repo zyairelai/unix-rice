@@ -8,10 +8,9 @@
 
 ### Whitesur-GTK-Theme-nord
 ```
-sudo apt install git
 git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git
 cd WhiteSur-gtk-theme
-./install --nord
+./install.sh --nord
 ```
 
 ### Nordzy Icon
@@ -49,7 +48,6 @@ unzip plank-dock-theme.zip -d ~/.local/share/plank/themes/
 ```
 wget https://github.com/Ulauncher/Ulauncher/releases/download/5.15.0/ulauncher_5.15.0_all.deb
 sudo dpkg -i ulauncher_5.15.0_all.deb
-mkdir ~/.config/ulauncher/user-themes
 unzip ulauncher-theme.zip -d ~/.config/ulauncher/user-themes/
 ```
 
@@ -92,7 +90,3 @@ sudo apt install nautilus nautilus-admin python3-nautilus
 ```
 - Go to System Settings > Login Window > Background
 
-Save all my setup
-```
-dconf dump /org/cinnamon/ > cinnamon.dconf
-```
