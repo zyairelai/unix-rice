@@ -58,20 +58,18 @@ curl https://appnee.com/vmware-workstation-pro-universal-license-keys-collection
 - https://portswigger-cdn.net/burp/releases/download?product=pro
 - https://www.jython.org/jython-old-sites/downloads.html
 ```
+wget https://portswigger-cdn.net/burp/releases/download?product=pro -O burppro.jar
 wget http://search.maven.org/remotecontent?filepath=org/python/jython-standalone/2.7.0/jython-standalone-2.7.0.jar -O jython-standalone-2.7.0.jar
 ```
 ```
 git clone git@github.com:zyairelai/burp-loader.git burp
 cd burp
 echo "LOADER_LOCATION=/opt/burp/loader.jar" >> burp
-echo "BURP_SUITE_PRO_LOCATION=/opt/burp/burpsuitepro.jar" >> burp
+echo "BURP_SUITE_PRO_LOCATION=/opt/burp/burppro.jar" >> burp
 echo "java -noverify -javaagent:\$LOADER_LOCATION -jar \$BURP_SUITE_PRO_LOCATION" >> burp
 
 chmod a+x burp
 java -jar keygen.jar
-```
-```
-java -noverify -javaagent:loader.jar -jar BURP_SUITE_PRO_VERSION.jar
 ```
 
 ### Burp Extender
@@ -89,18 +87,6 @@ java -noverify -javaagent:loader.jar -jar BURP_SUITE_PRO_VERSION.jar
 - Upload Scanne
 - AutoRepeater
 - Autorize
-
-### Add Pentest Repository (DANGER ZONE)
-```
-sudo nano /etc/apt/sources.list
-deb http://http.kali.org/kali kali-last-snapshot main contrib non-free
-sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com ED444FF07D8D0BF6
-
-sudo apt install wifite golang
-go install github.com/ffuf/ffuf@latest
-
-sudo apt install gobuster golang-go kali-grant-root debootstrap squashfs-tools seclists feroxbuster impacket-scripts nbtscan oscanner redis-tools snmp sipvicious tnscmd10g wkhtmltopdf && sudo python3 -m pip install git+https://github.com/Tib3rius/AutoRecon.git
-```
 
 # Reverse Shell over WAN
 - https://stackoverflow.com/questions/71621855/how-can-i-use-a-reverse-shell-over-global-internet
