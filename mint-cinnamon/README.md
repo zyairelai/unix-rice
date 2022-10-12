@@ -6,11 +6,11 @@ Linux Mint 21 is not allowing us to run `setup.sh` when its freshly installed.
 sudo mkdir /var/www
 sudo mkdir /usr/share/wordlists
 sudo chown -R $USER /opt
-wget https://raw.githubusercontent.com/v0re/dirb/master/wordlists/common.txt -O /usr/share/wordlists/common.txt
-wget https://raw.githubusercontent.com/v0re/dirb/master/wordlists/big.txt -O /usr/share/wordlists/big.txt
-wget https://github.com/daviddias/node-dirbuster/raw/master/lists/directory-list-2.3-medium.txt -O /usr/share/wordlists/directory-list-2.3-medium.txt
-wget https://github.com/praetorian-inc/Hob0Rules/raw/master/wordlists/rockyou.txt.gz -O /usr/share/wordlists/rockyou.txt.gz
-gzip -d /usr/share/wordlists/rockyou.txt.gz
+sudo wget https://raw.githubusercontent.com/v0re/dirb/master/wordlists/common.txt -O /usr/share/wordlists/common.txt
+sudo wget https://raw.githubusercontent.com/v0re/dirb/master/wordlists/big.txt -O /usr/share/wordlists/big.txt
+sudo wget https://github.com/daviddias/node-dirbuster/raw/master/lists/directory-list-2.3-medium.txt -O /usr/share/wordlists/directory-list-2.3-medium.txt
+sudo wget https://github.com/praetorian-inc/Hob0Rules/raw/master/wordlists/rockyou.txt.gz -O /usr/share/wordlists/rockyou.txt.gz
+sudo gzip -d /usr/share/wordlists/rockyou.txt.gz
 ```
 
 ### Installing Nessarily Tools
@@ -55,6 +55,7 @@ chmod a+x cjohn && sudo mv cjohn /usr/bin/
 - `git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k`
 - `chsh -s $(which zsh)`
 ```
+mkdir -p ~/.config/tilix/schemes/
 sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/mint-cinnamon/dotfiles/powerzshrc -O ~/.zshrc
 wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/mint-cinnamon/dotfiles/directories.zsh -O ~/.oh-my-zsh/lib/directories.zsh
@@ -125,8 +126,13 @@ sudo apt install plank
 - `cd Nordzy-cursors`
 - `./install.sh`
 
-### Plank + Ulauncher theme
+### Plank theme
+- `mkdir -p ~/.local/share/plank/themes/`
 - `unzip plank-dock-theme.zip -d ~/.local/share/plank/themes/`
+
+### Ulauncher theme
+- `mkdir -p ~/.config/ulauncher/user-themes/`
+- `wget https://github.com/zyairelai/unix-rice/blob/master/mint-cinnamon/dotfiles/ulauncher-theme.zip`
 - `unzip ulauncher-theme.zip -d ~/.config/ulauncher/user-themes/`
 
 ### Final Touch
