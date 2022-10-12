@@ -5,17 +5,17 @@ desklet-snap-interval=25
 desktop-effects=true
 desktop-effects-on-dialogs=false
 enable-vfade=true
-enabled-applets=['panel1:right:0:systray@cinnamon.org:63', 'panel1:right:4:removable-drives@cinnamon.org:67', 'panel1:right:8:network@cinnamon.org:70', 'panel1:right:7:sound@cinnamon.org:71', 'panel1:right:9:calendar@cinnamon.org:73', 'panel1:left:0:expo@cinnamon.org:74', 'panel1:left:1:workspace-switcher@cinnamon.org:76', 'panel1:left:2:window-list@cinnamon.org:88']
+enabled-applets=['panel1:right:0:systray@cinnamon.org:63', 'panel1:right:0:removable-drives@cinnamon.org:67', 'panel2:right:3:network@cinnamon.org:70', 'panel1:right:1:sound@cinnamon.org:71', 'panel1:center:0:calendar@cinnamon.org:73', 'panel1:left:0:expo@cinnamon.org:74', 'panel1:left:1:workspace-switcher@cinnamon.org:76', 'panel2:left:1:window-list@cinnamon.org:89', 'panel1:left:2:windows-quick-list@cinnamon.org:91', 'panel1:right:4:user@cinnamon.org:92', 'panel2:right:0:scale@cinnamon.org:93']
 enabled-desklets=@as []
-next-applet-id=89
+next-applet-id=95
 panel-edit-mode=false
 panel-launchers=['DEPRECATED']
-panel-zone-icon-sizes='[{"panelId":1,"left":0,"center":0,"right":24}]'
-panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 18, "center": 28, "right": 16}]'
-panel-zone-text-sizes='[{"panelId":1,"left":0,"center":0,"right":0}]'
+panel-zone-icon-sizes='[{"panelId":1,"left":0,"center":0,"right":24},{"left":0,"center":0,"right":0,"panelId":2}]'
+panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 18, "center": 28, "right": 16}, {"left": 10, "center": 28, "right": 28, "panelId": 2}]'
+panel-zone-text-sizes='[{"panelId":1,"left":0,"center":0,"right":0},{"left":0,"center":0,"right":0,"panelId":2}]'
 panels-autohide=['1:false', '2:false']
-panels-enabled=['1:0:top']
-panels-height=['1:25', '2:40']
+panels-enabled=['1:0:top', '2:0:bottom']
+panels-height=['1:25', '2:25']
 panels-hide-delay=['1:0', '2:0']
 panels-show-delay=['1:0', '2:0']
 window-effect-speed=1
@@ -41,14 +41,14 @@ exec='gnome-calculator'
 exec='tilix'
 
 [desktop/background]
-picture-uri='file:///usr/share/backgrounds/Shibuya.jpg'
+picture-uri='file:///usr/share/backgrounds/custom/ign_outer_space.png'
 
 [desktop/background/slideshow]
 delay=15
-image-source='directory:///usr/share/backgrounds'
+image-source='directory:///usr/share/backgrounds/custom'
 
 [desktop/interface]
-clock-show-date=false
+clock-show-date=true
 clock-show-seconds=true
 clock-use-24h=false
 cursor-blink-time=1200
@@ -90,6 +90,7 @@ command='/opt/burp/burp'
 name='Burp Suite'
 
 [desktop/keybindings/media-keys]
+area-screenshot-clip=['<Control><Shift>Print', '<Shift><Super>s']
 home=['<Super>e', 'XF86Explorer', '<Primary><Alt>f']
 logout=['<Control><Alt>Delete']
 screensaver=['<Control><Alt>l', '<Super>l']
@@ -166,6 +167,17 @@ workspaces-only-on-primary=true
 [settings-daemon/peripherals/keyboard]
 numlock-state='on'
 
+[settings-daemon/plugins/power]
+critical-battery-action='nothing'
+idle-dim-battery=false
+idle-dim-time=600
+lid-close-ac-action='suspend'
+lid-close-battery-action='suspend'
+sleep-display-ac=0
+sleep-display-battery=0
+sleep-inactive-ac-timeout=0
+sleep-inactive-battery-timeout=0
+
 [sounds]
 login-enabled=false
 logout-enabled=false
@@ -173,4 +185,4 @@ switch-enabled=false
 tile-enabled=false
 
 [theme]
-name='Mint-Y-Dark'
+name='Nordic-darker'
