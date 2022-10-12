@@ -20,12 +20,6 @@ sudo ./setup.sh
 
 # After Rebooting
 
-### Optional Tools to be installed
-- `sudo nano /etc/apt/sources.list`
-- `sudo dpkg --add-architecture i386`
-- `sudo apt update` 
-- `sudo apt install wine32 -y`
-
 ### Eye Candy Setup
 - `Appearance` > `Fonts` > `DPI`
 - Delete Folder Bookmark
