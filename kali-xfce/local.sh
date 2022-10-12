@@ -3,8 +3,8 @@
 # Configure Python
 wget https://bootstrap.pypa.io/get-pip.py
 python3.9 get-pip.py
-/home/kali/.local/bin/pip3.9 install droopescan
-sudo cp /home/kali/.local/bin/droopescan /usr/bin/droopescan
+~/.local/bin/pip3.9 install droopescan
+sudo cp ~/.local/bin/droopescan /usr/bin/droopescan
 
 # XFCE4 Desktop Setup
 mkdir ~/.ssh && mkdir ~/.config/rofi
