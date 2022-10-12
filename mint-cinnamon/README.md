@@ -128,11 +128,12 @@ sudo apt install plank
 
 ### Plank theme
 - `mkdir -p ~/.local/share/plank/themes/`
+- `wget https://github.com/zyairelai/unix-rice/raw/master/mint-cinnamon/dotfiles/plank-dock-theme.zip`
 - `unzip plank-dock-theme.zip -d ~/.local/share/plank/themes/`
 
 ### Ulauncher theme
 - `mkdir -p ~/.config/ulauncher/user-themes/`
-- `wget https://github.com/zyairelai/unix-rice/blob/master/mint-cinnamon/dotfiles/ulauncher-theme.zip`
+- `wget https://github.com/zyairelai/unix-rice/raw/master/mint-cinnamon/dotfiles/ulauncher-theme.zip`
 - `unzip ulauncher-theme.zip -d ~/.config/ulauncher/user-themes/`
 
 ### Final Touch
