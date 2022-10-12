@@ -25,7 +25,7 @@ chmod a+x rustscan && sudo mv rustscan /usr/bin/
 # Installing necessarily tools
 sudo dpkg --add-architecture i386
 sudo apt update
-sudo apt install tilix python-pip python3-nautilus neofetch htop totem eog fonts-noto-color-emoji rofi ranger remmina golang-go mingw-w64 wine32 seclists veil kali-grant-root kali-root-login -y
+sudo apt install tilix python-pip python3-nautilus neofetch htop totem eog gnome-disk-utility fonts-noto-color-emoji rofi ranger remmina golang-go mingw-w64 wine32 seclists veil kali-grant-root kali-root-login -y
 wget https://download.sublimetext.com/sublime-text_build-3211_amd64.deb
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 wget https://code.visualstudio.com/sha/download\?build=stable\&os=linux-deb-x64 -O vscode.deb
