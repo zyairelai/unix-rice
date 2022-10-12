@@ -6,8 +6,6 @@ Linux Mint 21 is not allowing us to run `setup.sh` when its freshly installed.
 sudo mkdir /var/www
 sudo mkdir /usr/share/wordlists
 sudo chown -R $USER /opt
-sudo chown -R $USER /var/www/
-sudo chown -R $USER /usr/share/
 wget https://raw.githubusercontent.com/v0re/dirb/master/wordlists/common.txt -O /usr/share/wordlists/common.txt
 wget https://raw.githubusercontent.com/v0re/dirb/master/wordlists/big.txt -O /usr/share/wordlists/big.txt
 wget https://github.com/daviddias/node-dirbuster/raw/master/lists/directory-list-2.3-medium.txt -O /usr/share/wordlists/directory-list-2.3-medium.txt
