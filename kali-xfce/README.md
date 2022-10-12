@@ -24,7 +24,7 @@ sudo ./setup.sh
 - `sudo nano /etc/apt/sources.list`
 - `sudo dpkg --add-architecture i386`
 - `sudo apt update` 
-- `sudo apt install tilix wine32 mingw-w64 seclists -y`
+- `sudo apt install wine32 -y`
 
 ### Eye Candy Setup
 - `Appearance` > `Fonts` > `DPI`
