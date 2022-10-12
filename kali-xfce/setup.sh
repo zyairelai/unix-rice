@@ -8,16 +8,6 @@ fi
 # Extract Rockyou.txt
 sudo gzip -d /usr/share/wordlists/rockyou.txt.gz
 
-# Import necessarily repository packages
-sudo echo "# deb http://ftp.debian.org/debian stable main contrib non-free
-# See https://www.kali.org/docs/general-use/kali-linux-sources-list-repositories/
-deb http://http.kali.org/kali kali-rolling main contrib non-free
-deb http://http.kali.org/kali kali-last-snapshot main contrib non-free
-
-# Additional line for source packages
-# deb-src http://http.kali.org/kali kali-rolling main contrib non-free
-" > /etc/apt/sources.list
-
 # Enable Login without Password
 sudo cp /etc/lightdm/lightdm.conf /etc/lightdm/lightdm.conf.bak
 sudo echo "
@@ -33,8 +23,9 @@ sleep 1
 chmod a+x rustscan && sudo mv rustscan /usr/bin/
 
 # Installing necessarily tools
+sudo dpkg --add-architecture i386
 sudo apt update
-sudo apt install tilix python-pip python3-nautilus nautilus neofetch htop totem eog fonts-noto-color-emoji rofi ranger remmina golang-go mingw-w64 seclists veil kali-grant-root kali-root-login -y
+sudo apt install tilix python-pip python3-nautilus neofetch htop totem eog fonts-noto-color-emoji rofi ranger remmina golang-go mingw-w64 wine32 seclists veil kali-grant-root kali-root-login -y
 wget https://download.sublimetext.com/sublime-text_build-3211_amd64.deb
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 wget https://code.visualstudio.com/sha/download\?build=stable\&os=linux-deb-x64 -O vscode.deb
