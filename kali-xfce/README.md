@@ -22,6 +22,7 @@ sudo ./setup.sh
 
 ### Optional Tools to be installed
 - `sudo nano /etc/apt/sources.list`
+- `sudo dpkg --add-architecture i386`
 - `sudo apt update` 
 - `sudo apt install tilix wine32 mingw-w64 seclists -y`
 
