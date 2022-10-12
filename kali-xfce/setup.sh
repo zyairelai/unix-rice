@@ -33,7 +33,6 @@ sleep 1
 chmod a+x rustscan && sudo mv rustscan /usr/bin/
 
 # Installing necessarily tools
-sudo dpkg --add-architecture i386
 sudo apt update
 sudo apt install tilix python-pip python3-nautilus nautilus neofetch htop totem eog fonts-noto-color-emoji rofi ranger remmina golang-go kali-grant-root kali-root-login -y
 wget https://download.sublimetext.com/sublime-text_build-3211_amd64.deb
