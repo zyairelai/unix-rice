@@ -5,16 +5,16 @@ desklet-snap-interval=25
 desktop-effects=true
 desktop-effects-on-dialogs=false
 enable-vfade=true
-enabled-applets=['panel1:right:0:systray@cinnamon.org:63', 'panel1:right:0:removable-drives@cinnamon.org:67', 'panel2:right:3:network@cinnamon.org:70', 'panel1:right:1:sound@cinnamon.org:71', 'panel1:center:0:calendar@cinnamon.org:73', 'panel1:left:0:expo@cinnamon.org:74', 'panel1:left:1:workspace-switcher@cinnamon.org:76', 'panel2:left:1:window-list@cinnamon.org:89', 'panel1:left:2:windows-quick-list@cinnamon.org:91', 'panel1:right:4:user@cinnamon.org:92', 'panel2:right:0:scale@cinnamon.org:93']
+enabled-applets=['panel1:right:0:systray@cinnamon.org:63', 'panel1:right:2:network@cinnamon.org:70', 'panel1:right:3:sound@cinnamon.org:71', 'panel1:right:1:calendar@cinnamon.org:73', 'panel1:left:0:expo@cinnamon.org:74', 'panel1:left:1:workspace-switcher@cinnamon.org:76', 'panel1:left:4:window-list@cinnamon.org:89', 'panel1:left:3:windows-quick-list@cinnamon.org:91', 'panel1:left:2:scale@cinnamon.org:101']
 enabled-desklets=@as []
-next-applet-id=95
+next-applet-id=104
 panel-edit-mode=false
 panel-launchers=['DEPRECATED']
-panel-zone-icon-sizes='[{"panelId":1,"left":0,"center":0,"right":24},{"left":0,"center":0,"right":0,"panelId":2}]'
-panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 18, "center": 28, "right": 16}, {"left": 10, "center": 28, "right": 28, "panelId": 2}]'
-panel-zone-text-sizes='[{"panelId":1,"left":0,"center":0,"right":0},{"left":0,"center":0,"right":0,"panelId":2}]'
+panel-zone-icon-sizes='[{"panelId":1,"left":0,"center":0,"right":24}]'
+panel-zone-symbolic-icon-sizes='[{"panelId":1,"left":18,"center":28,"right":16}]'
+panel-zone-text-sizes='[{"panelId":1,"left":0,"center":0,"right":0}]'
 panels-autohide=['1:false', '2:false']
-panels-enabled=['1:0:top', '2:0:bottom']
+panels-enabled=['1:0:bottom']
 panels-height=['1:25', '2:25']
 panels-hide-delay=['1:0', '2:0']
 panels-show-delay=['1:0', '2:0']
@@ -61,7 +61,7 @@ keyboard-layout-show-flags=true
 text-scaling-factor=1.2000000000000002
 
 [desktop/keybindings]
-custom-list=['custom4', 'custom2', 'custom1', '__dummy__', 'custom0', 'custom3']
+custom-list=['custom3', 'custom0', '__dummy__', 'custom1', 'custom2', 'custom4']
 looking-glass-keybinding=@as []
 
 [desktop/keybindings/custom-keybindings/custom0]
