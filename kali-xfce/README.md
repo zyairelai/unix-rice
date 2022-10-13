@@ -27,6 +27,14 @@ sudo ./setup.sh
 - Change Tilix Shortcut 
 - Change Tilix Font Size `85-24-13`
 
+# Extra touch for Desktop
+- `git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k`
+- `wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/zsh/power.zshrc -O ~/.zshrc`
+- `wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/movescreen.py`
+- `chmod a+x movescreen.py && sudo mv /usr/local/bin/`
+- Go to `Window Manager` and change the left right workspace
+- `sudo apt install `
+
 ### Sublime Text Build 3211
 - Go to `Preferences` -> `Settings` and add the following:
 ```
