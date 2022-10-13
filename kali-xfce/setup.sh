@@ -29,6 +29,8 @@ sudo apt install tilix neofetch htop totem eog gnome-disk-utility fonts-noto-col
 wget https://download.sublimetext.com/sublime-text_build-3211_amd64.deb
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 wget https://code.visualstudio.com/sha/download\?build=stable\&os=linux-deb-x64 -O vscode.deb
+wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
+sudo python2 get-pip.py
 sudo dpkg -i *.deb
 pip2 install virtualenv
 sudo rm /usr/bin/pip 
