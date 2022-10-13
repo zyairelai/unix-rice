@@ -38,7 +38,7 @@ wget https://github.com/itm4n/PrintSpoofer/releases/download/v1.0/PrintSpoofer64
 
 ### Clock Options
 - `%a %d %b %Y %r`
-- `%a, %b %e, %l:%M:%S%p`
+- `%a %b %e, %l:%M:%S %p`
 - https://docs.xfce.org/xfce/xfce4-panel/clock
 
 ### Tiling Windows Manager 
