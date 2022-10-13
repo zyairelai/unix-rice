@@ -33,7 +33,11 @@ sudo ./setup.sh
 - `wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/kali-xfce/dotfiles/movescreen.py`
 - `chmod a+x movescreen.py && sudo mv /usr/local/bin/`
 - Go to `Window Manager` and change the left right workspace
-- `sudo apt install `
+- `sudo apt install wmctrl`
+
+# Add input languages
+- `sudo apt-get install ibus ibus-pinyin`
+- Open `ibus preferences`
 
 ### Sublime Text Build 3211
 - Go to `Preferences` -> `Settings` and add the following:
