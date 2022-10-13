@@ -17,6 +17,15 @@ autologin-user=kali
 autologin-user-timeout=0
 " >> /etc/lightdm/lightdm.conf
 
+# Import necessarily repository packages
+sudo echo "# See https://www.kali.org/docs/general-use/kali-linux-sources-list-repositories/
+deb http://http.kali.org/kali kali-rolling main contrib non-free
+# deb http://http.kali.org/kali kali-last-snapshot main contrib non-free
+
+# Additional line for source packages
+# deb-src http://http.kali.org/kali kali-rolling main contrib non-free
+" > /etc/apt/sources.list
+
 # Installing Rustscan
 wget https://github.com/RustScan/RustScan/releases/download/1.9.0/rustscan
 sleep 1
@@ -25,7 +34,8 @@ chmod a+x rustscan && sudo mv rustscan /usr/bin/
 # Installing necessarily tools
 sudo dpkg --add-architecture i386
 sudo apt update
-sudo apt install tilix neofetch htop totem eog gnome-disk-utility fonts-noto-color-emoji rofi ranger remmina golang-go mingw-w64 wine32 seclists veil kali-grant-root kali-root-login -y
+sudo apt install tilix neofetch htop eog gnome-disk-utility fonts-noto-color-emoji rofi ranger remmina kali-grant-root kali-root-login -y
+# sudo apt install tilix neofetch htop totem eog gnome-disk-utility fonts-noto-color-emoji rofi ranger remmina golang-go mingw-w64 wine32 seclists veil kali-grant-root kali-root-login -y
 wget https://download.sublimetext.com/sublime-text_build-3211_amd64.deb
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 wget https://code.visualstudio.com/sha/download\?build=stable\&os=linux-deb-x64 -O vscode.deb
@@ -33,7 +43,7 @@ wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
 sudo python2 get-pip.py
 sudo dpkg -i *.deb
 pip2 install virtualenv
-sudo rm /usr/bin/pip 
+sudo rm /usr/bin/pip
 sudo rm /usr/bin/python 
 sudo rm /usr/bin/python3
 sudo ln -s /usr/bin/pip2 /usr/bin/pip
