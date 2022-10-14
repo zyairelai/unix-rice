@@ -65,3 +65,6 @@ DD9AF44B 99C49590 D2DBDEE1 75860FD2
 8C8BB2AD B2ECE5A4 EFC08AF2 25A9B864
 ------ END LICENSE ------
 ```
+
+# Kali Main Machine Snapshots
+- https://www.kali.org/docs/installation/btrfs/
