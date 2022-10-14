@@ -39,6 +39,9 @@ sudo ./setup.sh
 - `sudo apt-get install ibus ibus-pinyin`
 - Open `ibus preferences`
 
+# Update Linux Kernel 
+- `sudo apt install linux-image-5.18.0-kali5-amd64 linux-headers-5.18.0-kali5-amd64`
+
 ### Sublime Text Build 3211
 - Go to `Preferences` -> `Settings` and add the following:
 ```
