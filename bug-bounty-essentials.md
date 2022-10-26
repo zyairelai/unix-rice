@@ -88,6 +88,18 @@ java -jar keygen.jar
 - AutoRepeater
 - Autorize
 
+### Burp Extender By Stök
+- https://portswigger.net/blog/burp-suite-tips-from-power-user-and-hackfluencer-stok
+- Burp Bounty Pro
+- HUNT Scanner Redux
+- Taborator
+- Turbo intruder
+- Flow
+- Logger++
+- Autorize
+- Auto repeater
+- Upload Scanner
+
 # Reverse Shell over WAN
 - https://stackoverflow.com/questions/71621855/how-can-i-use-a-reverse-shell-over-global-internet
 - https://www.sitepoint.com/use-ngrok-test-local-site/
