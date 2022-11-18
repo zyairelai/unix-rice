@@ -72,21 +72,26 @@ chmod a+x burp
 java -jar keygen.jar
 ```
 
-### Burp Extender
-- Active Scan ++
+![image](https://user-images.githubusercontent.com/49854907/202732750-40b4288f-a737-4d2f-8586-beac32d7c982.png)
+
+### Burp Extender Scanners
 - Additional CSRF Checks
 - CSRF Scanner
 - CMS Scanner
-- Backslash Powered Scanner
+- J2EEScan
 - Retire.js
-- Logger++
-- JSON Web Tokens
 - Software Vulnerability Scanner
 - XSS Validator
-- J2EEScan
-- Upload Scanne
+- Flow
+- Turbo intruder
+- Backslash Powered Scanner
+
+### Burp Extender that I know what it does
+- Active Scan ++
+- Logger++
 - AutoRepeater
 - Autorize
+- Upload Scanner
 
 ### Burp Extender By Stök
 - https://portswigger.net/blog/burp-suite-tips-from-power-user-and-hackfluencer-stok
