@@ -33,6 +33,7 @@ sudo gzip -d /usr/share/wordlists/rockyou.txt.gz
 - Go to `about:config`  
 - set `True` for `toolkit.tabbox.switchByScrolling`
 - set `False` for `ui.key.menuAccessKeyFocuses`
+- https://addons.mozilla.org/en-US/firefox/addon/pwnfox/
 - https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/
 - https://addons.mozilla.org/en-US/firefox/addon/traduzir-paginas-web/
 - https://addons.mozilla.org/en-US/firefox/addon/hacktools/
