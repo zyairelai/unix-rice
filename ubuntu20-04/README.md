@@ -1,6 +1,11 @@
 ## Ubuntu 20.04 LTS
 These are the Setup for my Ubuntu 20.04 LTS
 
+### Sudo No Password Prompt
+```
+echo "username  ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/username
+```
+
 ### Install from Snap / Software Center
 ```
 sudo snap install discord
