@@ -4,12 +4,12 @@ Linux Mint 21.2 is not allowing us to run `setup.sh` when its freshly installed.
 # Load all my setup
 - `wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/mint-cinnamon/dotfiles/dconf.org.cinnamon`
 ```
-dconf load /org/cinnamon/ < dconf.org.cinnamon
+dconf load /org/cinnamon/ < dconf_org_cinnamon
 ```
 
 # Save all my setup
 ```
-dconf dump /org/cinnamon/ > dconf.org.cinnamon
+dconf dump /org/cinnamon/ > dconf_org_cinnamon
 ```
 
 ### Allow Permissions + Wordlists
@@ -26,7 +26,7 @@ sudo gzip -d /usr/share/wordlists/rockyou.txt.gz
 ### Installing Nessarily Tools
 - `sudo apt update`
 ```
-sudo apt install git tilix python3-pip python3 htop screen tmux fonts-powerline ffuf hydra john nmap nikto remmina sshuttle wafw00f whatweb zsh build-essential ruby-dev -y
+sudo apt install git tilix python3-pip python3 htop screen tmux fonts-powerline ffuf hydra john nmap nikto remmina sshuttle wafw00f whatweb zsh build-essential docker.io docker-compose ruby-dev -y
 ```
 ### Installing Debian Packages
 ```
