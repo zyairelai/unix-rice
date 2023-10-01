@@ -28,6 +28,10 @@ sudo gzip -d /usr/share/wordlists/rockyou.txt.gz
 ```
 sudo apt install git tilix python3-pip python3 htop screen tmux fonts-powerline ffuf hydra john nmap nikto remmina sshuttle wafw00f whatweb zsh build-essential docker.io docker-compose ruby-dev -y
 ```
+```
+sudo systemctl start docker
+sudo chmod 666 /var/run/docker.sock
+```
 ### Installing Debian Packages
 ```
 wget https://download.sublimetext.com/sublime-text_build-3211_amd64.deb
