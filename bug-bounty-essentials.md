@@ -1,5 +1,9 @@
 # Bug Bounty Essentials
 
+### Light Weight Windows for Payload Testing
+- https://atlasos.net/downloads
+- https://sasnet.ovh/
+
 ### RustScan
 ```
 wget https://github.com/RustScan/RustScan/releases/download/1.9.0/rustscan
@@ -9,15 +13,6 @@ chmod a+x rustscan && sudo mv rustscan /usr/bin/
 - `curl https://sh.rustup.rs -sSf | sh`
 - `cargo install rustscan`
 - `sudo cp ~/.cargo/bin/rustscan /usr/bin/rustscan`
-
-### ExploitDB
-- `sudo git clone https://github.com/offensive-security/exploitdb.git /opt/exploitdb`
-- `sudo ln -sf /opt/exploitdb/searchsploit /usr/local/bin/searchsploit`
-
-### Metasploit Framework
-```
-curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
-```
 
 ### Wordlists
 ```
@@ -30,35 +25,35 @@ sudo gzip -d /usr/share/wordlists/rockyou.txt.gz
 ```
 
 ### Firefox Extensions
-- Go to `about:config`  
+- Go to `about:config`
 - set `True` for `toolkit.tabbox.switchByScrolling`
 - set `False` for `ui.key.menuAccessKeyFocuses`
-- https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/pwnfox-an-idor-hunters-best-friend/
 - https://addons.mozilla.org/en-US/firefox/addon/pwnfox/
-- https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/
-- https://addons.mozilla.org/en-US/firefox/addon/traduzir-paginas-web/
 - https://addons.mozilla.org/en-US/firefox/addon/hacktools/
-- https://addons.mozilla.org/en-US/firefox/addon/shodan-addon/
+- https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/
 - https://addons.mozilla.org/en-US/firefox/addon/cookie-editor/
+
+- https://addons.mozilla.org/en-US/firefox/addon/tab-auto-refresh/
+- https://addons.mozilla.org/en-US/firefox/addon/traduzir-paginas-web/
+- https://addons.mozilla.org/en-US/firefox/addon/shodan-addon/
 - https://addons.mozilla.org/en-US/firefox/addon/uaswitcher/
 
+
 ### Chrome Extensions
-- https://chrome.google.com/webstore/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg
-- https://chrome.google.com/webstore/detail/hack-tools/cmbndhnoonmghfofefkcccljbkdpamhi
 - https://chrome.google.com/webstore/detail/trufflehog/bafhdnhjnlcdbjcdcnafhdcphhnfnhjc
 - https://chrome.google.com/webstore/detail/shodan/jjalcfnidlmpjhdfepjhjbhnhkbgleap
-- https://chrome.google.com/webstore/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm
 - https://chrome.google.com/webstore/detail/dotgit/pampamgoihgcedonnphgehgondkhikel?hl=en
 
 ### VMware Workstation
 - https://www.vmware.com/asean/products/workstation-pro/workstation-pro-evaluation.html
 ```
-curl https://appnee.com/vmware-workstation-pro-universal-license-keys-collection/ | grep -i -A 20 'Workstation 16.x'
+curl https://appnee.com/vmware-workstation-pro-universal-license-keys-collection/ | grep -i -A 20 'Workstation 17.x'
 ```
 
 ### Burp Suite Pwofessional
 - https://portswigger-cdn.net/burp/releases/download?product=pro
 - https://www.jython.org/jython-old-sites/downloads.html
+- https://github.com/yeswehack/PwnFox/releases/tag/v1.0.3
 ```
 wget https://portswigger-cdn.net/burp/releases/download?product=pro -O burppro.jar
 wget http://search.maven.org/remotecontent?filepath=org/python/jython-standalone/2.7.0/jython-standalone-2.7.0.jar -O jython-standalone-2.7.0.jar
@@ -73,6 +68,10 @@ echo "java -noverify -javaagent:\$LOADER_LOCATION -jar \$BURP_SUITE_PRO_LOCATION
 chmod a+x burp
 java -jar keygen.jar
 ```
+Limit Ram Usage
+```
+java -Xmx2048m -jar JavaApplication.jar 
+```
 
 ![image](https://user-images.githubusercontent.com/49854907/202732750-40b4288f-a737-4d2f-8586-beac32d7c982.png)
 
@@ -81,19 +80,27 @@ java -jar keygen.jar
 - CSRF Scanner
 - CMS Scanner
 - J2EEScan
-- Retire.js
 - Software Vulnerability Scanner
 - XSS Validator
-- Flow
-- Turbo intruder
-- Backslash Powered Scanner
 
 ### Burp Extender that I know what it does
 - Active Scan ++
 - Logger++
-- AutoRepeater
 - Autorize
+- Retire.js
 - Upload Scanner
+
+# Burp Suite Top 10 Extender from Linkedin
+- https://www.linkedin.com/feed/update/urn:li:activity:7035196865658646528
+- H1 Report Finder
+- WordPress Scanner
+- Pentest Mapper
+- Autowasp
+- burp_bug_finder
+- Auth Analyzer
+- NoSQL Scanner
+- Nuclei Burp Integration
+- Wordlist Extractor  
 
 ### Burp Extender By Stök
 - https://portswigger.net/blog/burp-suite-tips-from-power-user-and-hackfluencer-stok
@@ -102,7 +109,6 @@ java -jar keygen.jar
 - Taborator
 - Turbo intruder
 - Flow
-- Logger++
 - Autorize
 - Auto repeater
 - Upload Scanner

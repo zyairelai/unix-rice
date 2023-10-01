@@ -1,7 +1,7 @@
-# Linux Mint Cinnamon 21
-Linux Mint 21 is not allowing us to run `setup.sh` when its freshly installed.
+# Linux Mint Cinnamon 21.2
+Linux Mint 21.2 is not allowing us to run `setup.sh` when its freshly installed.
 
-### Wifte Problem
+### Wifite Problem
 - https://github.com/derv82/wifite2/issues/263
 
 ### Allow Permissions + Wordlists
