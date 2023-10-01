@@ -26,7 +26,7 @@ sudo gzip -d /usr/share/wordlists/rockyou.txt.gz
 ### Installing Nessarily Tools
 - `sudo apt update`
 ```
-sudo apt install git tilix python3-pip python3 htop screen tmux fonts-powerline ffuf hydra john nmap nikto remmina sshuttle wafw00f whatweb zsh build-essentia ruby-dev -y
+sudo apt install git tilix python3-pip python3 htop screen tmux fonts-powerline ffuf hydra john nmap nikto remmina sshuttle wafw00f whatweb zsh build-essential ruby-dev -y
 ```
 ### Installing Debian Packages
 ```
@@ -51,7 +51,7 @@ chmod a+x cjohn && sudo mv cjohn /usr/bin/
 ```
 # Pentest Fun
 ###
-- `sudo git clone git clone https://github.com/danielmiessler/SecLists.git /usr/share/SecLists`
+- `sudo git clone https://github.com/danielmiessler/SecLists.git /usr/share/SecLists`
 ### Exploit DB
 - `sudo git clone https://github.com/offensive-security/exploitdb.git /opt/exploitdb`
 - `sudo ln -sf /opt/exploitdb/searchsploit /usr/bin/searchsploit`
