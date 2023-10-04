@@ -12,21 +12,10 @@ dconf load /org/cinnamon/ < dconf_org_cinnamon
 dconf dump /org/cinnamon/ > dconf_org_cinnamon
 ```
 
-### Allow Permissions + Wordlists
-```
-sudo mkdir /usr/share/wordlists
-sudo chown -R $USER /usr/share/wordlists
-sudo chown -R $USER /opt
-sudo wget https://raw.githubusercontent.com/v0re/dirb/master/wordlists/common.txt -O /usr/share/wordlists/common.txt
-sudo wget https://raw.githubusercontent.com/v0re/dirb/master/wordlists/big.txt -O /usr/share/wordlists/big.txt
-sudo wget https://github.com/daviddias/node-dirbuster/raw/master/lists/directory-list-2.3-medium.txt -O /usr/share/wordlists/directory-list-2.3-medium.txt
-sudo wget https://github.com/praetorian-inc/Hob0Rules/raw/master/wordlists/rockyou.txt.gz -O /usr/share/wordlists/rockyou.txt.gz
-sudo gzip -d /usr/share/wordlists/rockyou.txt.gz
-```
 ### Installing Nessarily Tools
 - `sudo apt update`
 ```
-sudo apt install git tilix python3-pip python3 htop screen tmux fonts-powerline ffuf hydra john nmap nikto remmina sshuttle wafw00f whatweb zsh build-essential docker.io docker-compose ruby-dev -y
+sudo apt install git tilix python3-pip python3 htop screen tmux fonts-powerline ffuf hydra john nmap nikto remmina sshuttle wafw00f zsh build-essential docker.io docker-compose ruby-dev -y
 ```
 ```
 sudo systemctl start docker
@@ -37,34 +26,21 @@ sudo chmod 666 /var/run/docker.sock
 wget https://download.sublimetext.com/sublime-text_build-3211_amd64.deb
 wget https://code.visualstudio.com/sha/download\?build=stable\&os=linux-deb-x64 -O vscode.deb
 wget https://github.com/Ulauncher/Ulauncher/releases/download/5.15.0/ulauncher_5.15.0_all.deb
-wget https://github.com/RustScan/RustScan/releases/download/1.9.0/rustscan
-chmod a+x rustscan && sudo mv rustscan /usr/bin/
 sudo dpkg -i *.deb
 ```
 ### Personal Terminal Shortcuts
 ```
 sudo ln -s /usr/bin/clear /usr/bin/c
 sudo ln -s /usr/bin/screen /usr/bin/sc
-
-echo "#\!/bin/bash\nrm ~/.john" > cjohn
-echo "#\!/bin/bash\nrm ~/.ssh/known_hosts" > cssh
 echo "sudo -i" > s 
 chmod a+x s && sudo mv s /usr/bin/
-chmod a+x cssh && sudo mv cssh /usr/bin/
-chmod a+x cjohn && sudo mv cjohn /usr/bin/
+sudo ln -s /usr/bin/s /usr/bin/i
 ```
 # Pentest Fun
-### FeroxBuster
-- https://github.com/epi052/feroxbuster
-- `curl -sL https://raw.githubusercontent.com/epi052/feroxbuster/main/install-nix.sh | bash`
-- `sudo mv feroxbuster /usr/bin/`
-### FFUF
-- `wget https://github.com/ffuf/ffuf/releases/download/v1.5.0/ffuf_1.5.0_linux_amd64.tar.gz`
-- `tar xf ffuf_1.5.0_linux_amd64.tar.gz --wildcards ffuf`
-- `chmod 755 ffuf && sudo mv ffuf /usr/bin/`
-- `echo "[general] \n  colors = true" >> ~/.ffufrc`
 ### SecLists
-- `sudo git clone https://github.com/danielmiessler/SecLists.git /usr/share/SecLists`
+```
+sudo git clone https://github.com/danielmiessler/SecLists.git /usr/share/SecLists
+```
 ### Exploit DB
 - `sudo git clone https://gitlab.com/exploit-database/exploitdb.git /opt/exploitdb`
 - `sudo ln -sf /opt/exploitdb/searchsploit /usr/bin/searchsploit`
@@ -72,11 +48,3 @@ chmod a+x cjohn && sudo mv cjohn /usr/bin/
 ```
 curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
 ```
-### Firefox Extensions
-- Go to `about:config`
-- set `True` for `toolkit.tabbox.switchByScrolling`
-- set `False` for `ui.key.menuAccessKeyFocuses`
-- https://addons.mozilla.org/en-US/firefox/addon/pwnfox/
-- https://addons.mozilla.org/en-US/firefox/addon/hacktools/
-- https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/
-- https://addons.mozilla.org/en-US/firefox/addon/cookie-editor/
