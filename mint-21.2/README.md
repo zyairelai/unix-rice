@@ -54,12 +54,20 @@ chmod a+x cssh && sudo mv cssh /usr/bin/
 chmod a+x cjohn && sudo mv cjohn /usr/bin/
 ```
 # Pentest Fun
-###
+### FeroxBuster
+- https://github.com/epi052/feroxbuster
+- `curl -sL https://raw.githubusercontent.com/epi052/feroxbuster/main/install-nix.sh | bash`
+- `sudo mv feroxbuster /usr/bin/`
+### FFUF
+- `wget https://github.com/ffuf/ffuf/releases/download/v1.5.0/ffuf_1.5.0_linux_amd64.tar.gz`
+- `tar xf ffuf_1.5.0_linux_amd64.tar.gz --wildcards ffuf`
+- `chmod 755 ffuf && sudo mv ffuf /usr/bin/`
+- `echo "[general] \n  colors = true" >> ~/.ffufrc`
+### SecLists
 - `sudo git clone https://github.com/danielmiessler/SecLists.git /usr/share/SecLists`
 ### Exploit DB
-- `sudo git clone https://github.com/offensive-security/exploitdb.git /opt/exploitdb`
+- `sudo git clone https://gitlab.com/exploit-database/exploitdb.git /opt/exploitdb`
 - `sudo ln -sf /opt/exploitdb/searchsploit /usr/bin/searchsploit`
-
 ### Metasploit Framework
 ```
 curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
