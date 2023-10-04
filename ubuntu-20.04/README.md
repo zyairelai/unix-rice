@@ -6,17 +6,8 @@ These are the Setup for my Ubuntu 20.04 LTS
 echo "username  ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/username
 ```
 
-### Install from Snap / Software Center
-```
-sudo snap install discord
-sudo snap install cherrytree
-sudo snap install telegram-desktop
-sudo snap install --classic go
-sudo snap install --classic code
-sudo snap install --classic sublime-text
-```
-
 ### Installing Gnome Extensions
+- `sudo apt install chrome-gnome-shell`
 - [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
 - [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
 - [Hide Dash X](https://extensions.gnome.org/extension/805/hide-dash/)
@@ -26,7 +17,7 @@ sudo snap install --classic sublime-text
 
 ### Must HAVE Apps!!!
 ```
-sudo apt install git wget curl gnupg python2.7 python3-pip python3.8-venv ruby-dev node-typescript default-jdk deluge neofetch tree htop exif fonts-noto-color-emoji ranger screen zsh tmux fonts-powerline tilix python3-nautilus mlocate gnome-tweak-tool totem resolvconf ubuntu-restricted-extras nmap nikto sshuttle exiftool freerdp2-x11 remmina cadaver wafw00f whatweb build-essential virtualbox -y && sudo apt remove gnome-shell-extension-ubuntu-dock -y
+sudo apt install git wget curl gnupg python2.7 python3-pip ruby-dev node-typescript chrome-gnome-shell openjdk-17-jdk deluge neofetch tree htop fonts-noto-color-emoji screen zsh tmux fonts-powerline tilix python3-nautilus mlocate gnome-tweak-tool totem resolvconf ubuntu-restricted-extras nmap nikto sshuttle exif exiftool remmina cadaver wafw00f whatweb build-essential -y && sudo apt remove gnome-shell-extension-ubuntu-dock -y
 ```
 
 ### Change Login Background
@@ -39,31 +30,31 @@ sudo ./change-gdm-background /path/to/image
 ```
 
 ### Zsh Setup
-- https://github.com/zyairelai/unix-rice/raw/master/preconfigured/nerd-font.ttf
+- https://github.com/zyairelai/unix-rice/raw/master/ubuntu-20.04/nerd-font.ttf
 - `sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 - `git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k`
-- `nano ~/.oh-my-zsh/lib/directories.zsh`
 - `sudo update-alternatives --config x-terminal-emulator`
 - `chsh -s $(which zsh)`
 
 ```
-sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
-echo "alias ll='ls -lh --group-directories-first'" >> ~/.oh-my-zsh/lib/directories.zsh
 mv ~/.bashrc ~/.bashrc.bck
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/kali-2019.bashrc -O ~/.bashrc
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/ubuntu-20-4.zshrc -O ~/.zshrc
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/tmux.conf -O ~/.tmux.conf
+mv ~/.zshrc ~/.zshrc.bak
+mv ~/.oh-my-zsh/lib/directories.zsh ~/.oh-my-zsh/lib/directories.zsh.bak
+wget https://raw.githubusercontent.com/zyairelai/kali-rice/master/dotfiles/zsh/kali.zshrc -O ~/.zshrc
+wget https://raw.githubusercontent.com/zyairelai/kali-rice/master/dotfiles/zsh/directories.zsh -O ~/.oh-my-zsh/lib/directories.zsh
+wget https://raw.githubusercontent.com/zyairelai/kali-rice/master/dotfiles/zsh/kali.zsh-theme -O ~/.oh-my-zsh/custom/themes/kali.zsh-theme
+sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
 ```
 
-### For ZSH root
-- `sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
-- `nano ~/.oh-my-zsh/lib/directories.zsh`
-- Change the theme to `kali`
+# For ZSH root
 ```
-wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/dotfiles/zshtheme/kali.zsh-theme -O ~/.oh-my-zsh/custom/themes/kali.zsh-theme
-echo "alias ll='ls -ah --group-directories-first'" >> ~/.oh-my-zsh/lib/directories.zsh
-echo "\ndisable r" >> ~/.zshrc
-echo "\n. /etc/profile.d/vte.sh" >> ~/.zshrc
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+mv ~/.zshrc ~/.zshrc.bak
+mv ~/.oh-my-zsh/lib/directories.zsh ~/.oh-my-zsh/lib/directories.zsh.bak
+wget https://raw.githubusercontent.com/zyairelai/kali-rice/master/dotfiles/zsh/kali.zshrc -O ~/.zshrc
+wget https://raw.githubusercontent.com/zyairelai/kali-rice/master/dotfiles/zsh/directories.zsh -O ~/.oh-my-zsh/lib/directories.zsh
+wget https://raw.githubusercontent.com/zyairelai/kali-rice/master/dotfiles/zsh/kali.zsh-theme -O ~/.oh-my-zsh/custom/themes/kali.zsh-theme
+sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
 ```
 
 ### Personal Terminal Shortcuts
