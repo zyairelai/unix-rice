@@ -97,7 +97,9 @@ java -Xmx2048m -jar JavaApplication.jar
 - JSON Decoder
 - JSON Web Tokens
 - Log4Shell Everywhere
+- Log4Shell Scanner
 - NoSQLi Scanner
+- PHP Object Injection Check
 - Retire.js
 - Software Vulnerability Scanner
 - SSL Scanner
