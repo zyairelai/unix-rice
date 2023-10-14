@@ -1,3 +1,5 @@
+You might also like >> [kali-rice](https://github.com/zyairelai/kali-rice)
+
 ## Unix-Rice 
 
 Configurations and dotfiles for my Desktop themes and shortcuts. 
