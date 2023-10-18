@@ -1,13 +1,13 @@
 # Linux Mint Cinnamon 21.2
 Linux Mint 21.2 is not allowing us to run `setup.sh` when its freshly installed.
 
-## Load all my setup
+### Load all my setup
 - `wget https://raw.githubusercontent.com/zyairelai/unix-rice/master/mint-21.2/dconf_org_cinnamon`
 ```
 dconf load /org/cinnamon/ < dconf_org_cinnamon
 ```
 
-## Save all my setup
+### Save all my setup
 ```
 dconf dump /org/cinnamon/ > dconf_org_cinnamon
 ```
