@@ -3,7 +3,7 @@ These are the Setup for my Ubuntu 20.04 LTS
 
 ### Sudo No Password Prompt
 ```
-echo "username  ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/username
+echo "<username>  ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/<username>
 ```
 
 ### Installing Gnome Extensions
