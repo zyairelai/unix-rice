@@ -18,6 +18,7 @@ dconf dump /org/cinnamon/ > dconf_org_cinnamon
 ```
 
 ### Installing Nessarily Tools
+- https://go.dev/doc/install
 - `sudo apt update`
 ```
 sudo apt install git tilix python3-pip python3 htop screen tmux fonts-powerline ffuf whatweb nmap nikto remmina sshuttle wafw00f zsh build-essential docker.io docker-compose ruby-dev -y
