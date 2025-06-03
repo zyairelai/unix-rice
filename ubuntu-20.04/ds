@@ -1,16 +1,10 @@
 #!/bin/bash
 
-# Check for root privileges
-if [[ "$EUID" -ne 0 ]]; then
-  echo "❌ Please run this script as sudo or root."
-  exit 1
-fi
-
 # Define file path
 NETPLAN_FILE="/etc/netplan/01-network-manager-all.yaml"
 
 # Create new netplan config
-tee $NETPLAN_FILE > /dev/null <<EOF
+sudo tee $NETPLAN_FILE > /dev/null <<EOF
 network:
   version: 2
   ethernets:
@@ -21,7 +15,5 @@ network:
 EOF
 
 # Apply the configuration
-echo "⚙️ Applying netplan..."
-netplan apply
-
+sudo netplan apply
 echo "✅ Done. DNS set to 8.8.8.8 and 8.8.4.4 for interface wlp2s0."
