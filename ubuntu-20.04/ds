@@ -1,19 +1,31 @@
 #!/bin/bash
 
-# Define file path
-NETPLAN_FILE="/etc/netplan/01-network-manager-all.yaml"
+SYS_RESOLVED_FILE="/etc/systemd/resolved.conf"
 
-# Create new netplan config
 sudo tee $NETPLAN_FILE > /dev/null <<EOF
-network:
-  version: 2
-  ethernets:
-    wlp2s0:
-      dhcp4: yes
-      nameservers:
-        addresses: [8.8.8.8, 8.8.4.4]
+[Resolve]
+DNS=DNS=8.8.8.8
 EOF
 
+sudo cat /etc/systemd/resolved.conf
+sudo systemctl restart systemd-resolved
+echo "
+✅ Done. DNS set to 8.8.8.8 via systemd-resolved"
+
+# Define file path
+#NETPLAN_FILE="/etc/netplan/01-network-manager-all.yaml"
+
+# Create new netplan config
+# sudo tee $NETPLAN_FILE > /dev/null <<EOF
+# network:
+#   version: 2
+#   ethernets:
+#     wlp2s0:
+#       dhcp4: yes
+#       nameservers:
+#         addresses: [8.8.8.8, 8.8.4.4]
+# EOF
+
 # Apply the configuration
-sudo netplan apply
-echo "✅ Done. DNS set to 8.8.8.8 and 8.8.4.4 for interface wlp2s0."
+#sudo netplan apply
+#echo "✅ Done. DNS set to 8.8.8.8 for interface wlp2s0"
