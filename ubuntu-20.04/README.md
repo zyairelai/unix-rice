@@ -60,7 +60,6 @@ sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
 ### Personal Terminal Shortcuts
 ```
 sudo ln -s /usr/bin/xdg-open /usr/bin/open
-sudo ln -s /usr/bin/python3 /usr/bin/python
 sudo ln -s /usr/bin/clear /usr/bin/c
 sudo ln -s /usr/bin/screen /usr/bin/sc
 ```
